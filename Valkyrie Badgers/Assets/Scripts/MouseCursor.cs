@@ -20,6 +20,9 @@ public class MouseCursor : MonoBehaviour {
     public GameObject defaultCursor;
     public GameObject itemCursor;
 
+    [HideInInspector]
+    public Item currentDraggedItem;
+
     GameObject currentCursor;
 
     private void Start()
@@ -31,12 +34,18 @@ public class MouseCursor : MonoBehaviour {
     public void DragItem(Item item)
     {
         SetCursor(itemCursor, item.icon);
+
+        currentDraggedItem = item;
     }
 
     public void SetCursor(GameObject cursorObject, Sprite sprite = null)
     {
         if (currentCursor)
+        {
             currentCursor.SetActive(false);
+            if (currentDraggedItem)
+                currentDraggedItem = null;
+        }
 
         currentCursor = cursorObject;
         currentCursor.SetActive(true);

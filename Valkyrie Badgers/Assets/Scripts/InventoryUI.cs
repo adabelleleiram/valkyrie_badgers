@@ -5,12 +5,14 @@ public class InventoryUI : MonoBehaviour
     public Transform itemsParent;
     InventorySlot[] slots;
     Inventory inventory;
+    ItemDescription description;
 
     void Start()
     {
         inventory = GameHandler.inventory;
         inventory.OnItemChangedCallback += UpdateUI;
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+        description = GetComponentInChildren<ItemDescription>();
     }
 
     void UpdateUI()
@@ -23,5 +25,7 @@ public class InventoryUI : MonoBehaviour
             else
                 slots[i].ClearSlot();
         }
+
+        description.ClearDescription();
     }
 }

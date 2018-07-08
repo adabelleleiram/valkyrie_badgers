@@ -22,13 +22,14 @@ public class InventorySlot : MonoBehaviour
         item = null;
         icon.sprite = null;
         icon.enabled = false;
+        active.enabled = false;
     }
 
     public void OnMouseDown()
     {
         if (item)
         {
-            MouseCursor.instance.SetCursor(MouseCursor.instance.itemCursor, item.icon);
+            MouseCursor.instance.DragItem(item);
             icon.enabled = false;
             ShowItemDescription();
         }
@@ -40,7 +41,6 @@ public class InventorySlot : MonoBehaviour
         {
             MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
             icon.enabled = true;
-
         }
     }
 

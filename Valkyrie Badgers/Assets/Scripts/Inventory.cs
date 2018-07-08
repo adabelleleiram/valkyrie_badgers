@@ -2,28 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour
+{
 
 
-  public delegate void OnItemChanged();
-  public OnItemChanged OnItemChangedCallback;
+    public delegate void OnItemChanged();
+    public OnItemChanged OnItemChangedCallback;
 
-  public List<Item> items = new List<Item>();
+    public List<Item> items = new List<Item>();
 
-  public void Add(Item item)
-  {
-    if ( !item.isDefaultItem)
+    public void Add(Item item)
     {
-      items.Add(item);
-      if ( OnItemChangedCallback != null )
-        OnItemChangedCallback.Invoke();
+        if (!item.isDefaultItem)
+        {
+            items.Add(item);
+            if (OnItemChangedCallback != null)
+                OnItemChangedCallback.Invoke();
+        }
     }
-  }
 
-  public void Remove(Item item)
-  {
-    items.Remove(item);
-    if (OnItemChangedCallback != null)
-      OnItemChangedCallback.Invoke();
-  }
+    public void Remove(Item item)
+    {
+        items.Remove(item);
+        if (OnItemChangedCallback != null)
+            OnItemChangedCallback.Invoke();
+    }
 }

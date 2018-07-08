@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class ItemCombine : MonoBehaviour {
 
-    public Item itemToCombineWith;
+    Item itemToCombineWith;
 
     private void OnMouseEnter()
     {
-        Debug.Log("Mouse enter");
+        //Kolla zoomed item osv här kanske?
 
+        itemToCombineWith = MouseCursor.instance.currentDraggedItem;      
+    }
+
+    private void OnMouseExit()
+    {
+        itemToCombineWith = null;
+    }
+
+    private void Update()
+    {
+        if (itemToCombineWith && Input.GetMouseButtonUp(0))
+        {
+            GameHandler.inventory.Remove(itemToCombineWith);
+            Destroy(gameObject);
+        }
     }
 }
