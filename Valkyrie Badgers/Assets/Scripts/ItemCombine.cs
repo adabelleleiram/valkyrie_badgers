@@ -6,13 +6,9 @@ public class ItemCombine : MonoBehaviour {
 
     public Item itemToCombineWith;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void OnMouseEnter()
+    {
+        Debug.Log("Mouse enter");
+
+    }
 }

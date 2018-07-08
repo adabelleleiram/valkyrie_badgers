@@ -9,8 +9,6 @@ public class InventorySlot : MonoBehaviour
     public Image icon;
     public Image active;
     public ItemDescription description;
-    public MouseCursor mouseCursor;
-
 
     public void AddItem(Item newItem)
     {
@@ -30,8 +28,7 @@ public class InventorySlot : MonoBehaviour
     {
         if (item)
         {
-            Debug.Log("OnMouseDown");
-            mouseCursor.SetCursor(mouseCursor.itemCursor, item.icon);
+            MouseCursor.instance.SetCursor(MouseCursor.instance.itemCursor, item.icon);
             icon.enabled = false;
             ShowItemDescription();
         }
@@ -41,9 +38,7 @@ public class InventorySlot : MonoBehaviour
     {
         if(item)
         {
-            Debug.Log("OnMouseUp");
-
-            mouseCursor.SetCursor(mouseCursor.defaultCursor);
+            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
             icon.enabled = true;
 
         }
@@ -54,8 +49,6 @@ public class InventorySlot : MonoBehaviour
         if (item)
         {
             ShowItemDescription();
-            Debug.Log("OnClick");
-
         }
     }
 
