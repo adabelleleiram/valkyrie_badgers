@@ -23,20 +23,23 @@ public class InventorySlot : MonoBehaviour {
   public void UseItem()
   {
     if (item != null)
+    {
       item.Use();
-    active.enabled = !active.enabled;
-    if ( active.enabled )
-    {
-      Debug.Log("Player pick up");
-      GameHandler.player.SetItem(item);
-      description.enabled = true;
-      description.text = item.description;
+      active.enabled = !active.enabled;
+      if (active.enabled)
+      {
+        Debug.Log("Player pick up");
+          GameHandler.player.SetItem(item);
+          description.enabled = true;
+          description.text = item.description;
+      }
+      else
+      {
+        Debug.Log("Player drops");
+          GameHandler.player.SetItem(null);
+        description.enabled = false;
+      }
     }
-    else
-    {
-      Debug.Log("Player drops");
-      GameHandler.player.SetItem(null);
-      description.enabled = false;
-    }
+      
   }
 }
