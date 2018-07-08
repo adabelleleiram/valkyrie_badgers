@@ -5,6 +5,7 @@ public class InventorySlot : MonoBehaviour {
   Item item;
   public Image icon;
   public Image active;
+  public Text description;
   public void AddItem(Item newItem)
   {
     item = newItem;
@@ -28,11 +29,14 @@ public class InventorySlot : MonoBehaviour {
     {
       Debug.Log("Player pick up");
       GameHandler.player.SetItem(item);
+      description.enabled = true;
+      description.text = item.description;
     }
     else
     {
       Debug.Log("Player drops");
       GameHandler.player.SetItem(null);
+      description.enabled = false;
     }
   }
 }

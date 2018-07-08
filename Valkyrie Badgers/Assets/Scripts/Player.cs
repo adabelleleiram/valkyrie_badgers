@@ -17,9 +17,6 @@ public class Player : MonoBehaviour {
     if (item != null && Input.GetMouseButtonDown(0) )
     {
       Debug.Log("Clicking");
-      Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-      spawnPosition.z = 0.0f;
-      GameHandler.inventory.Remove(item);
     }
   }
 }
