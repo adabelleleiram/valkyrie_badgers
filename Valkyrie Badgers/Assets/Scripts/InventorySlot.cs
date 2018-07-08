@@ -1,42 +1,75 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour {
-  Item item;
-  public Image icon;
-  public Image active;
-  public Text description;
-  public void AddItem(Item newItem)
-  {
-    item = newItem;
-    icon.sprite = item.icon;
-    icon.enabled = true;
-  }
+public class InventorySlot : MonoBehaviour
+{
+    [HideInInspector]
+    public Item item;
 
-  public void ClearSlot()
-  {
-    item = null;
-    icon.sprite = null;
-    icon.enabled = false;
-  }
+    public Image icon;
+    public Image active;
+    public ItemDescription description;
+    public MouseCursor mouseCursor;
 
-  public void UseItem()
-  {
-    if (item != null)
-      item.Use();
-    active.enabled = !active.enabled;
-    if ( active.enabled )
+
+    public void AddItem(Item newItem)
     {
-      Debug.Log("Player pick up");
-      GameHandler.player.SetItem(item);
-      description.enabled = true;
-      description.text = item.description;
+        item = newItem;
+        icon.sprite = item.icon;
+        icon.enabled = true;
     }
-    else
+
+    public void ClearSlot()
     {
-      Debug.Log("Player drops");
-      GameHandler.player.SetItem(null);
-      description.enabled = false;
+        item = null;
+        icon.sprite = null;
+        icon.enabled = false;
     }
-  }
+
+    public void OnMouseDown()
+    {
+        if (item)
+        {
+            Debug.Log("OnMouseDown");
+            mouseCursor.SetCursor(mouseCursor.itemCursor, item.icon);
+            icon.enabled = false;
+            ShowItemDescription();
+        }
+    }
+
+    public void OnMouseUp()
+    {
+        if(item)
+        {
+            Debug.Log("OnMouseUp");
+
+            mouseCursor.SetCursor(mouseCursor.defaultCursor);
+            icon.enabled = true;
+
+        }
+    }
+
+    public void OnClick()
+    {
+        if (item)
+        {
+            ShowItemDescription();
+            Debug.Log("OnClick");
+
+        }
+    }
+
+    public void ShowItemDescription()
+    {
+        if (!item)
+            return;
+
+        active.enabled = true;
+        description.SetDescription(this);
+    }
+
+    public void Deactivate()
+    {
+        active.enabled = false;
+    }
 }

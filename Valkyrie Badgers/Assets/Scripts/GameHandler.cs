@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameHandler : MonoBehaviour {
-
+public class GameHandler : MonoBehaviour
+{
     #region Public Variables
-    public static Player player;
     public static Inventory inventory;
 
     #endregion
@@ -18,7 +17,6 @@ public class GameHandler : MonoBehaviour {
         {
             instance = this;
 
-            player = GetComponent<Player>();
             inventory = GetComponent<Inventory>();
 
             DontDestroyOnLoad(gameObject);
