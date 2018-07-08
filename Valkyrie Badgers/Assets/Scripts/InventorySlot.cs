@@ -27,12 +27,12 @@ public class InventorySlot : MonoBehaviour {
     if ( active.enabled )
     {
       Debug.Log("Player pick up");
-      Player.instance.SetItem(item);
+      GameHandler.player.SetItem(item);
     }
     else
     {
       Debug.Log("Player drops");
-      Player.instance.SetItem(null);
+      GameHandler.player.SetItem(null);
     }
   }
 }
