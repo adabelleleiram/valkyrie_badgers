@@ -5,16 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class EventListener : MonoBehaviour {
 
+  int ClickRangeDoors = 100;
   void Update () {
 		if (Input.GetMouseButtonDown(0))
     {
       float MousePosx = Input.mousePosition.x;
       int Scene = SceneManager.GetActiveScene().buildIndex;
-      if ( MousePosx < 100 && Scene > 0 )
+      if ( MousePosx < ClickRangeDoors && Scene > 0 )
       {
         SceneManager.LoadScene(Scene - 1);
       }
-      else if ( MousePosx > Screen.width - 100 && Scene + 1 < SceneManager.sceneCount )
+      else if ( MousePosx > Screen.width - ClickRangeDoors && Scene + 1 < SceneManager.sceneCount )
       {
         SceneManager.LoadScene(Scene + 1);
       }
