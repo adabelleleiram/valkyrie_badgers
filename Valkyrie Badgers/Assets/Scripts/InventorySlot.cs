@@ -24,5 +24,15 @@ public class InventorySlot : MonoBehaviour {
     if (item != null)
       item.Use();
     active.enabled = !active.enabled;
+    if ( active.enabled )
+    {
+      Debug.Log("Player pick up");
+      Player.instance.SetItem(item);
+    }
+    else
+    {
+      Debug.Log("Player drops");
+      Player.instance.SetItem(null);
+    }
   }
 }
