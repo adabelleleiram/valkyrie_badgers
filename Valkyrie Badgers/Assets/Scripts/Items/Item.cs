@@ -11,4 +11,9 @@ public class Item : ScriptableObject {
   {
     Debug.Log("Using Item");
   }
+
+  public void SetPosition( Vector2 position )
+  {
+    SetPosition(position);
+  }
 }

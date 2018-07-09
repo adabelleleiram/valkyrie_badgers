@@ -9,13 +9,13 @@ public class ItemCombine : MonoBehaviour {
 
     public Item itemToCombineWith;
     public OnCombine onCombine;
+    public bool deleteItem;
 
     bool itemEnteredCollider = false;
 
     private void OnMouseEnter()
     {
-        //Kolla zoomed item osv här kanske?
-
+    //Kolla zoomed item osv här kanske?
         if(MouseCursor.instance.currentDraggedItem == itemToCombineWith)
             itemEnteredCollider = true;
     }
@@ -32,7 +32,8 @@ public class ItemCombine : MonoBehaviour {
             onCombine.Invoke();
 
             GameHandler.inventory.Remove(itemToCombineWith);
-            Destroy(gameObject);
+            if ( deleteItem )
+                Destroy(gameObject);
         }
     }
 }
