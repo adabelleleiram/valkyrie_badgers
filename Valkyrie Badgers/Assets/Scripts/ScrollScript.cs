@@ -20,6 +20,5 @@ public class ScrollScript : MonoBehaviour
   {
     newPos = Mathf.Repeat(Time.time * -scrollSpeed, scrollOffset);
     transform.position = startPos + Vector2.right * newPos;
-    Debug.Log(message: gameObject.name + ": " + transform.position);
   }
 }
