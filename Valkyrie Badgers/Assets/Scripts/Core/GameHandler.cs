@@ -9,16 +9,14 @@ public class GameHandler : MonoBehaviour
 
     #endregion
     #region Singleton
-    public static GameHandler instance;
+    public static GameHandler gameHandler;
 
     void Awake()
     {
-        if (instance == null)
+        if (gameHandler == null)
         {
-            instance = this;
-
+            gameHandler = this;
             inventory = GetComponent<Inventory>();
-
             DontDestroyOnLoad(gameObject);
         }
         else
