@@ -1049,7 +1049,6 @@ MonoBehaviour:
   icon: {fileID: 114869414781160354}
   active: {fileID: 114113625275451160}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114103859825168034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1316,7 +1315,6 @@ MonoBehaviour:
   icon: {fileID: 114127950852709916}
   active: {fileID: 114826639072917734}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114291670899098576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1553,7 +1551,6 @@ MonoBehaviour:
   icon: {fileID: 114882611119338212}
   active: {fileID: 114598897775465248}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114365845881107116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1853,7 +1850,6 @@ MonoBehaviour:
   icon: {fileID: 114312757563616276}
   active: {fileID: 114037097820847614}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114463515298264284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2492,7 +2488,6 @@ MonoBehaviour:
   icon: {fileID: 114107140020406146}
   active: {fileID: 114734821871323606}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114639471041053502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2518,6 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 1303413700714770}
   itemCursor: {fileID: 1785056557952066}
+  currentDraggedItem: {fileID: 0}
 --- !u!114 &114666874399482584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2533,7 +2529,6 @@ MonoBehaviour:
   icon: {fileID: 114496193146981136}
   active: {fileID: 114436618043182370}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114702312447231596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2549,7 +2544,6 @@ MonoBehaviour:
   icon: {fileID: 114355738168314588}
   active: {fileID: 114051506009190266}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114734821871323606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2735,7 +2729,6 @@ MonoBehaviour:
   icon: {fileID: 114516008579661046}
   active: {fileID: 114867692412308346}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114867692412308346
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2965,7 +2958,6 @@ MonoBehaviour:
   icon: {fileID: 114073116302064380}
   active: {fileID: 114930220071065164}
   description: {fileID: 114302553100532322}
-  mouseCursor: {fileID: 114642233984216710}
 --- !u!114 &114959708528905326
 MonoBehaviour:
   m_ObjectHideFlags: 1
