@@ -327,6 +327,23 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 1837103554}
+    - target: {fileID: 114274195952872056, guid: c077106aa85e24d428b6618085231bf7,
+        type: 2}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e94cc234bd32fcf4596d74a6589d253b,
+        type: 3}
+    - target: {fileID: 212258486909491696, guid: c077106aa85e24d428b6618085231bf7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e94cc234bd32fcf4596d74a6589d253b,
+        type: 3}
+    - target: {fileID: 212258486909491696, guid: c077106aa85e24d428b6618085231bf7,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c077106aa85e24d428b6618085231bf7, type: 2}
   m_IsPrefabParent: 0
@@ -836,23 +853,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1393943390 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
-    type: 2}
-  m_PrefabInternal: {fileID: 1393943389}
---- !u!114 &1393943391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1393943390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf04f21db80f09144896bcc065b84e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 0}
 --- !u!114 &1393943394 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
