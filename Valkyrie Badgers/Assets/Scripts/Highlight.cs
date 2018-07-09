@@ -12,7 +12,7 @@ public class Highlight : MonoBehaviour {
     spriteR = gameObject.GetComponent<SpriteRenderer>();
   }
 
-  void OnMouseOver()
+  void OnMouseEnter()
   {
     if ( spriteR.sprite != highlight )
       spriteR.sprite = highlight;

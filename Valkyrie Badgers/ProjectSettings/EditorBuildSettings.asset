@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2afb0bc556ac5f3498875c363ca71f60
+  - enabled: 1
     path: Assets/Scenes/Room 1.unity
     guid: fd989c33c1a0ab344a7950fc69f3fd84
   - enabled: 1
     path: Assets/Scenes/Room 2.unity
     guid: 249af06d2dd8766479f143d6626fcd0c
+  - enabled: 1
+    path: Assets/Scenes/Credtis.unity
+    guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae
   m_configObjects: {}
