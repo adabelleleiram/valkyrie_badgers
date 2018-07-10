@@ -3,37 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ItemCombine : MonoBehaviour {
-    [System.Serializable]
-    public class OnCombine : UnityEvent { }
+public class ItemCombine : MonoBehaviour
+{
+  [System.Serializable]
+  public class OnCombine : UnityEvent { }
 
-    public Item itemToCombineWith;
-    public OnCombine onCombine;
-    public bool deleteItem;
+  public Item itemToCombineWith;
+  public OnCombine onCombine;
+  public bool deleteItem;
 
-    bool itemEnteredCollider = false;
+  bool itemEnteredCollider = false;
 
-    private void OnMouseEnter()
-    {
+  private void OnMouseEnter()
+  {
     //Kolla zoomed item osv här kanske?
-        if(MouseCursor.instance.currentDraggedItem == itemToCombineWith)
-            itemEnteredCollider = true;
-    }
+    if (MouseCursor.instance.currentDraggedItem == itemToCombineWith)
+      itemEnteredCollider = true;
+  }
 
-    private void OnMouseExit()
+  private void OnMouseExit()
+  {
+    itemEnteredCollider = false;
+  }
+
+  private void Update()
+  {
+    if (itemEnteredCollider && Input.GetMouseButtonUp(0))
     {
-        itemEnteredCollider = false;
-    }
+      onCombine.Invoke();
 
-    private void Update()
-    {
-        if (itemEnteredCollider && Input.GetMouseButtonUp(0))
-        {
-            onCombine.Invoke();
-
-            GameHandler.inventory.Remove(itemToCombineWith);
-            if ( deleteItem )
-                Destroy(gameObject);
-        }
+      GameHandler.inventory.Remove(itemToCombineWith);
+      if (deleteItem)
+      {
+        GameHandler.changeables.ChangeActive(gameObject, false);
+        Destroy(gameObject);
+      }
     }
+  }
 }

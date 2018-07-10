@@ -7,6 +7,7 @@ public class DropItem : MonoBehaviour {
   public GameObject obj;
 
 	public void Drop () {
+    GameHandler.changeables.ChangeActive(obj, true);
     obj.SetActive( true );
     MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
   }

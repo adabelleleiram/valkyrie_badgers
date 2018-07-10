@@ -1,28 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
-    #region Public Variables
-    public static Inventory inventory;
+  #region Public Variables
+  public static Inventory inventory;
+  public static Changeable changeables;
 
-    #endregion
-    #region Singleton
-    public static GameHandler gameHandler;
+  #endregion
+  #region Singleton
+  public static GameHandler gameHandler;
 
-    void Awake()
+  void Awake()
+  {
+    if (gameHandler == null)
     {
-        if (gameHandler == null)
-        {
-            gameHandler = this;
-            inventory = GetComponent<Inventory>();
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+      gameHandler = this;
+      inventory = GetComponent<Inventory>();
+      changeables = GetComponent<Changeable>();
+      DontDestroyOnLoad(gameObject);
     }
-    #endregion
+    else
+    {
+      Destroy(gameObject);
+    }
+  }
+  #endregion
 }

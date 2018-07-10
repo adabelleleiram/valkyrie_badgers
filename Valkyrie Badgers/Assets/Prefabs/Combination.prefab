@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212623294849083482}
   - component: {fileID: 61480843956256966}
   - component: {fileID: 114228842595783998}
+  - component: {fileID: 114177298742593732}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -104,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4277668623216826}
   - component: {fileID: 212453615551237922}
+  - component: {fileID: 114317851877651104}
   m_Layer: 0
   m_Name: WoodInBasket
   m_TagString: Untagged
@@ -264,6 +266,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 0.33}
   m_EdgeRadius: 0
+--- !u!114 &114177298742593732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031702248797892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4885616a8fa5d6439eeaf7437a35014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114228842595783998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,6 +289,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 07604b03d0d00b84b919e27c592cb2e7, type: 2}
+--- !u!114 &114317851877651104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996128864434024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4885616a8fa5d6439eeaf7437a35014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114662252857690318
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -8,7 +8,8 @@ public class DragItem : MonoBehaviour {
   public void OnMouseDown()
   {
     MouseCursor.instance.DragItem(item);
+    GameHandler.changeables.ChangeActive(gameObject, false);
     Destroy(gameObject);
-    Debug.Log(MouseCursor.instance.currentDraggedItem.name);
+    Debug.Log(gameObject.name);
   }
 }

@@ -9,6 +9,7 @@ public class ZoomController : MonoBehaviour
   public Sprite sprite;
   public void OnMouseDown()
   {
+    GameHandler.changeables.ChangeActive(zoomObject, true);
     zoomObject.SetActive(true);
     image.sprite = sprite;
   }
