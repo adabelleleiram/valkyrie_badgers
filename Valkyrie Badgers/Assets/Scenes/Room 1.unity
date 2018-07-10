@@ -143,7 +143,7 @@ RectTransform:
   m_Children:
   - {fileID: 1071705100}
   m_Father: {fileID: 1070675492}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -188,7 +188,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95363416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876045588}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &95363416
@@ -254,7 +265,7 @@ RectTransform:
   m_Children:
   - {fileID: 1234838960}
   m_Father: {fileID: 1070675492}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -299,7 +310,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 120688962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876045588}
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &120688962
@@ -1043,6 +1065,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  deleteItem: 0
 --- !u!4 &696872090
 Transform:
   m_ObjectHideFlags: 0
@@ -1420,6 +1443,12 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 858308346}
+--- !u!114 &876045588 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114376410932842014, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+    type: 2}
+  m_PrefabInternal: {fileID: 1071667097}
+  m_Script: {fileID: 11500000, guid: 99271616dce035549a3add63118a7f70, type: 3}
 --- !u!1 &905108784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,9 +2067,9 @@ RectTransform:
   m_Children:
   - {fileID: 1229398009}
   - {fileID: 947473683}
-  - {fileID: 1380746462}
   - {fileID: 120688960}
   - {fileID: 95363414}
+  - {fileID: 1380746462}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3376,7 +3405,7 @@ Prefab:
     - target: {fileID: 224914898404537366, guid: e1c7002089e031e448ab4e4a61bc2e08,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224914898404537366, guid: e1c7002089e031e448ab4e4a61bc2e08,
         type: 2}
@@ -3478,7 +3507,7 @@ Prefab:
     - target: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
         type: 2}
       propertyPath: locked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
