@@ -3,38 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemDescription : MonoBehaviour {
+public class ItemDescription : MonoBehaviour
+{
+  Item currentItem;
+  Text text;
 
-    InventorySlot currentInventorySlot;
+  private void Start()
+  {
+    text = GetComponentInChildren<Text>();
+    text.enabled = false;
+  }
 
-    Text text;
+  public bool SetDescription(Item item)
+  {
+    if (item == currentItem)
+      return true;
 
-    private void Start()
+    if (currentItem)
     {
-        text = GetComponentInChildren<Text>();
-        text.enabled = false;
+      ClearDescription();
+      return false;
     }
 
-    public void SetDescription(InventorySlot inventorySlot)
-    {
-        if (inventorySlot == currentInventorySlot)
-            return;
+    currentItem = item;
+    text.text = currentItem.description;
+    text.enabled = true;
+    return true;
+  }
 
-        if (currentInventorySlot)
-            ClearDescription();
-
-        currentInventorySlot = inventorySlot;
-        text.text = inventorySlot.item.description;
-        text.enabled = true;
-    }
-
-    public void ClearDescription()
-    {
-        if (!currentInventorySlot)
-            return;
-
-        text.enabled = false;
-        currentInventorySlot.Deactivate();
-        currentInventorySlot = null;
-    }
+  public void ClearDescription()
+  {
+    text.enabled = false;
+    if ( currentItem != null )
+      currentItem = null;
+  }
 }
