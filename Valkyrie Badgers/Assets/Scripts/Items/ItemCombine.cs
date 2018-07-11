@@ -10,6 +10,7 @@ public class ItemCombine : MonoBehaviour
 
   public Item itemToCombineWith;
   public OnCombine onCombine;
+  public ItemDescription description;
   public bool deleteItem;
 
   bool itemEnteredCollider = false;
@@ -33,11 +34,13 @@ public class ItemCombine : MonoBehaviour
       onCombine.Invoke();
 
       GameHandler.inventory.Remove(itemToCombineWith);
-      if (deleteItem)
+      GameHandler.changeables.ChangeActive(gameObject, false);
+      if ( deleteItem )
       {
-        GameHandler.changeables.ChangeActive(gameObject, false);
         Destroy(gameObject);
       }
+
+      description.ClearDescription();
     }
   }
 }
