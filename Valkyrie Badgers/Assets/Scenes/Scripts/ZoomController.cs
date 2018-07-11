@@ -4,18 +4,13 @@ using UnityEngine.UI;
 
 public class ZoomController : MonoBehaviour
 {
-  public GameObject zoomObject;
-  public Image image;
-  public Sprite sprite;
-  public void OnMouseDown()
-  {
-    GameHandler.changeables.ChangeActive(zoomObject, true);
-    zoomObject.SetActive(true);
-    image.sprite = sprite;
-  }
+    public ZoomOverlay zoomOverlay;
+    public GameObject zoomedObject;
 
-  public void OnClose()
-  {
-    zoomObject.SetActive(false);
-  }
+    public void OnMouseDown()
+    {
+        zoomOverlay.ZoomInOnObject(zoomedObject);
+    }
+
+    
 }
