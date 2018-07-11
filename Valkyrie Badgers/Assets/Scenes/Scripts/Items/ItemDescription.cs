@@ -14,6 +14,11 @@ public class ItemDescription : MonoBehaviour
     text.enabled = false;
   }
 
+  public void SetDescription(string desc)
+  {
+    text.text = desc;
+  }
+
   public bool SetDescription(Item item)
   {
     if (item == currentItem)

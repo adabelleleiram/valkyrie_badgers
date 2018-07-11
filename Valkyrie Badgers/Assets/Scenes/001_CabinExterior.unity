@@ -940,7 +940,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.8, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &630965373
 Transform:
@@ -1219,6 +1219,8 @@ GameObject:
   m_Component:
   - component: {fileID: 825885817}
   - component: {fileID: 825885816}
+  - component: {fileID: 825885819}
+  - component: {fileID: 825885818}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1251,6 +1253,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &825885818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825885815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 825885819}
+          m_MethodName: ShowDesc
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &825885819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825885815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: Can't continue
+  desc: {fileID: 1048147666}
 --- !u!1 &858308346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,6 +2869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301786828}
   - component: {fileID: 1301786827}
+  - component: {fileID: 1301786829}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -2889,6 +2935,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1301786829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301786826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: 
+  desc: {fileID: 0}
 --- !u!1 &1313396823
 GameObject:
   m_ObjectHideFlags: 0
