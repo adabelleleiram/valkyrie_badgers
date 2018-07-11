@@ -4368,7 +4368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe6314cdf73240c5a34c0f9c243b849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerName: 
+  triggerName: Flying_Room1
 --- !u!95 &1747159746
 Animator:
   serializedVersion: 3
