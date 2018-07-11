@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class AnimationOnClick : MonoBehaviour {
 
-  public string animObj;
+  public string trigger;
 	// Update is called once per frame
 
-  void Start()
-  {
-    Animator anim = GetComponent<Animator>();
-    anim.StopPlayback();
-  }
 	void OnMouseDown () {
-    Animator anim = GetComponent<Animator>();
-    anim.Play(animObj);
+        Animator anim = GetComponent<Animator>();
+        anim.SetTrigger(trigger);
   }
 }
