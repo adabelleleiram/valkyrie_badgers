@@ -10,7 +10,7 @@ public class LockedObj : MonoBehaviour
 
   private void Start()
   {
-    GameHandler.changeables.UpdateUnlocked(this);
+   // GameHandler.changeables.UpdateUnlocked(this);
   }
 
   private void OnMouseEnter()

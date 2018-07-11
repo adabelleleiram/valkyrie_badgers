@@ -9,6 +9,6 @@ public class UnlockObj : MonoBehaviour
   public void Unlock()
   {
     obj.locked = false;
-    GameHandler.changeables.Unlock(obj.gameObject);
+    //GameHandler.changeables.Unlock(obj.gameObject);
   }
 }

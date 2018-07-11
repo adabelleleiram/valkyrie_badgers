@@ -36,7 +36,7 @@ public class ItemCombine : MonoBehaviour
       if ( deleteItem )
       {
         GameHandler.inventory.Remove(itemToCombineWith);
-        GameHandler.changeables.ChangeActive(gameObject, false);
+       // GameHandler.changeables.ChangeActive(gameObject, false);
         description.ClearDescription();
       }
       if ( deleteObject )

@@ -12,7 +12,7 @@ public class ItemPickup : MonoBehaviour
   public void PickUp()
   {
     GameHandler.inventory.Add(item);
-    GameHandler.changeables.ChangeActive(gameObject, false);
+    //GameHandler.changeables.ChangeActive(gameObject, false);
     Destroy(gameObject);
   }
 }
