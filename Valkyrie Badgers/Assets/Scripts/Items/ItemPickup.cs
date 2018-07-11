@@ -5,6 +5,7 @@ public class ItemPickup : MonoBehaviour
   public Item item;
   public void OnMouseDown()
   {
+    Debug.Log("Pick up shovel");
     PickUp();
   }
 
