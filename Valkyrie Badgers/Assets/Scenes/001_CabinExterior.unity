@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6a7b9410d4d004eaba6709e0333259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObj: MoveLeft
+  trigger: MoveRock
 --- !u!61 &577140779
 BoxCollider2D:
   m_ObjectHideFlags: 0
