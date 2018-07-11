@@ -51,8 +51,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 7.2, z: 1}
-  m_Center: {x: -5.7, y: 0, z: 0}
+  m_Size: {x: 0.6, y: 7.2, z: 1}
+  m_Center: {x: -6.1, y: 0, z: 0}
 --- !u!114 &114664074163959120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,5 +64,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819890c1a6789d946ae74130a8e5b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 0
+  nextSceneIndex: 1
   locked: 0
