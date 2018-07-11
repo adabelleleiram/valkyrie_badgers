@@ -2,24 +2,13 @@
 using System.Collections;
 
 public class ClickPlayAnimation : MonoBehaviour 
-
 {
-		
-	void OnMouseOver()
-	{
-		if(Input.GetMouseButtonDown(0))
-		{	
-				
-			// play the attached sound
-			//GetComponent<AudioSource>().Play();
+  public string triggerName;
 
-			//trigger animation
-                        {
-                            Animator anim = GetComponent<Animator>();
-                            anim.SetTrigger("Flying_Room1");
-                        
-                        }
-
-		}
-	}
+  void OnMouseDown()
+  {
+    Debug.Log("Here");
+    Animator anim = GetComponent<Animator>();
+    anim.SetTrigger(triggerName);
+  }
 }
