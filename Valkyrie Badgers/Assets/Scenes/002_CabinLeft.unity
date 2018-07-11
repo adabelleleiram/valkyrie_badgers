@@ -254,7 +254,9 @@ GameObject:
   m_Component:
   - component: {fileID: 225153814}
   - component: {fileID: 225153813}
+  - component: {fileID: 225153816}
   - component: {fileID: 225153815}
+  - component: {fileID: 225153817}
   m_Layer: 0
   m_Name: AshesGlowing
   m_TagString: Untagged
@@ -334,11 +336,60 @@ MonoBehaviour:
   itemToCombineWith: {fileID: 11400000, guid: 83121c29dcc4d0c4ab4e5a7b92b1bcc8, type: 2}
   onCombine:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 702689351}
+        m_MethodName: SetActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1048147666}
-  deleteItem: 1
+  deleteObject: 1
+  deleteItem: 0
+--- !u!114 &225153816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225153812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 0
+--- !u!61 &225153817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225153812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.26, y: 0.45}
+    newSize: {x: 1.26, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.26, y: 0.45}
+  m_EdgeRadius: 0
 --- !u!1 &241984892
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1041,8 @@ GameObject:
   m_Component:
   - component: {fileID: 702689350}
   - component: {fileID: 702689349}
+  - component: {fileID: 702689351}
+  - component: {fileID: 702689352}
   m_Layer: 0
   m_Name: Ashes
   m_TagString: Untagged
@@ -1055,6 +1108,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &702689351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702689348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setActive: 1
+--- !u!61 &702689352
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702689348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.26, y: 0.45}
+    newSize: {x: 1.26, y: 0.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.26, y: 0.45}
+  m_EdgeRadius: 0
 --- !u!1 &721362342
 GameObject:
   m_ObjectHideFlags: 0
