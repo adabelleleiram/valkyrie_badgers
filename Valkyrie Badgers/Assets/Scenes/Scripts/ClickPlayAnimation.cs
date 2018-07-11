@@ -7,7 +7,6 @@ public class ClickPlayAnimation : MonoBehaviour
 
   void OnMouseDown()
   {
-    Debug.Log("Here");
     Animator anim = GetComponent<Animator>();
     anim.SetTrigger(triggerName);
   }
