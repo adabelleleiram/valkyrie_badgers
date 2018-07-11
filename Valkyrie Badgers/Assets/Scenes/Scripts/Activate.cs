@@ -2,9 +2,15 @@
 
 public class Activate : MonoBehaviour {
 
+  public bool setActive;
   public void OnMouseDown()
   {
-    GameHandler.changeables.ChangeActive(gameObject, true);
-    gameObject.SetActive(true);
+    SetActive();
+  }
+
+  public void SetActive()
+  {
+    GameHandler.changeables.ChangeActive(gameObject, setActive);
+    gameObject.SetActive(setActive);
   }
 }

@@ -11,6 +11,7 @@ public class ItemCombine : MonoBehaviour
   public Item itemToCombineWith;
   public OnCombine onCombine;
   public ItemDescription description;
+  public bool deleteObject;
   public bool deleteItem;
 
   bool itemEnteredCollider = false;
@@ -32,15 +33,16 @@ public class ItemCombine : MonoBehaviour
     if (itemEnteredCollider && Input.GetMouseButtonUp(0))
     {
       onCombine.Invoke();
-
-      GameHandler.inventory.Remove(itemToCombineWith);
-      GameHandler.changeables.ChangeActive(gameObject, false);
       if ( deleteItem )
+      {
+        GameHandler.inventory.Remove(itemToCombineWith);
+        GameHandler.changeables.ChangeActive(gameObject, false);
+        description.ClearDescription();
+      }
+      if ( deleteObject )
       {
         Destroy(gameObject);
       }
-
-      description.ClearDescription();
     }
   }
 }
