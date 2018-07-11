@@ -6,9 +6,13 @@ public class DropItem : MonoBehaviour {
   public Item item;
   public GameObject obj;
 
-	public void Drop () {
-    GameHandler.changeables.ChangeActive(obj, true);
-    obj.SetActive( true );
-    MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+	void Update () {
+
+    if ( Input.GetMouseButtonUp(0))
+    {
+      GameHandler.changeables.ChangeActive(obj, true);
+      obj.SetActive(true);
+      MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+    }
   }
 }

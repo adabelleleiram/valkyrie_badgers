@@ -9,6 +9,6 @@ public class DragItem : MonoBehaviour {
   {
     MouseCursor.instance.DragItem(item);
     GameHandler.changeables.ChangeActive(gameObject, false);
-    Destroy(gameObject);
+    gameObject.SetActive(false);
   }
 }
