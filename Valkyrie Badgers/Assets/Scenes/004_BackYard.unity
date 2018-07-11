@@ -2893,6 +2893,11 @@ Prefab:
       propertyPath: locked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextSceneIndex
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabParent: 0
