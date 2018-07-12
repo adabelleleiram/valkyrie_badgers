@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 182978358}
   - component: {fileID: 182978357}
   m_Layer: 0
-  m_Name: 011_GraveEntrance_EntranceFront
+  m_Name: EntranceFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 598774513}
   - component: {fileID: 598774512}
   m_Layer: 0
-  m_Name: 011_GraveEntrance_EntranceDoor
+  m_Name: EntranceDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3034,7 +3034,7 @@ GameObject:
   - component: {fileID: 1385639619}
   - component: {fileID: 1385639618}
   m_Layer: 0
-  m_Name: GraveEntranceRunes
+  m_Name: EntranceRunes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
