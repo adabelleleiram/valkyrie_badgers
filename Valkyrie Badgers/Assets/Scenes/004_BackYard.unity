@@ -3496,6 +3496,17 @@ Prefab:
       propertyPath: nextSceneIndex
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae,
+        type: 3}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: Credits
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
@@ -4184,6 +4195,17 @@ Prefab:
         type: 2}
       propertyPath: nextSceneIndex
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 09e2b941618bf2d449284252f4fb2c70,
+        type: 3}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 003_CabinRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
@@ -5465,7 +5487,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2004219885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c6cd080f236142af54ee9e6716946, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2045981334

@@ -21,6 +21,33 @@ EditorBuildSettings:
     path: Assets/Scenes/004_BackYard.unity
     guid: b52de7d3258310148af8e892ee9a849b
   - enabled: 1
+    path: Assets/Scenes/005_BehindFence.unity
+    guid: d9dae7f8a1628aa44ac6759a913d5baf
+  - enabled: 1
+    path: Assets/Scenes/006_Forest1.unity
+    guid: 8dabb5583cfcb284381d91738bab544b
+  - enabled: 1
+    path: Assets/Scenes/007_Forest2.unity
+    guid: 898c17ad7c9a771428f6e36522da27d7
+  - enabled: 1
+    path: Assets/Scenes/008_Forest3.unity
+    guid: a4c611e8596fdd54fbcc7a3820363114
+  - enabled: 1
+    path: Assets/Scenes/009_Forest4.unity
+    guid: 9c826853dd049bb41b6e58cd03f78560
+  - enabled: 1
+    path: Assets/Scenes/010_Forest5.unity
+    guid: 0b74ca1219e1b94439e8a8aae17443da
+  - enabled: 1
+    path: Assets/Scenes/011_GraveEntrance.unity
+    guid: cdf6d7643fbd6334c933521621610932
+  - enabled: 1
+    path: Assets/Scenes/012_GraveTunnel.unity
+    guid: 22dec0d92b5299543a48d3de18ee430a
+  - enabled: 1
+    path: Assets/Scenes/013_BurialChamber.unity
+    guid: 34ea4228931737e49b9fe03be8991046
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae
   m_configObjects: {}
