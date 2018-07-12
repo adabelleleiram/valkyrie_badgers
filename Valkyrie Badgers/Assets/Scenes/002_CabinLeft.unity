@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 225153816}
   - component: {fileID: 225153815}
   - component: {fileID: 225153817}
+  - component: {fileID: 225153818}
   m_Layer: 0
   m_Name: AshesGlowing
   m_TagString: Untagged
@@ -356,6 +357,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.26, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &225153818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225153812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &241984892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1026,7 @@ GameObject:
   - component: {fileID: 702689349}
   - component: {fileID: 702689351}
   - component: {fileID: 702689352}
+  - component: {fileID: 702689353}
   m_Layer: 0
   m_Name: Ashes
   m_TagString: Untagged
@@ -1115,6 +1130,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.26, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &702689353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702689348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &721362342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,8 +3873,8 @@ GameObject:
   - component: {fileID: 1615233640}
   - component: {fileID: 1615233639}
   - component: {fileID: 1615233643}
-  - component: {fileID: 1615233642}
   - component: {fileID: 1615233641}
+  - component: {fileID: 1615233642}
   m_Layer: 0
   m_Name: DeadFly
   m_TagString: Untagged
@@ -3933,9 +3961,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1615233638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c6cd080f236142af54ee9e6716946, type: 3}
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!61 &1615233643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4377,6 +4407,7 @@ GameObject:
   - component: {fileID: 1747159745}
   - component: {fileID: 1747159749}
   - component: {fileID: 1747159744}
+  - component: {fileID: 1747159750}
   m_Layer: 0
   m_Name: Wisp
   m_TagString: Untagged
@@ -4514,6 +4545,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setActive: 1
+--- !u!114 &1747159750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747159743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &1770896723
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,23 +5255,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895884978}
   m_CullTransparentMesh: 0
---- !u!1 &1956407641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1113681483772774, guid: e0344c2efc8e6634c857ac2c23d2ae46,
-    type: 2}
-  m_PrefabInternal: {fileID: 1071667097}
---- !u!114 &1956407644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1956407641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add16cb15d4e39d4bbab04334b01e0a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numUnlocked: 0
 --- !u!1 &1978080186
 GameObject:
   m_ObjectHideFlags: 0
@@ -5536,8 +5563,8 @@ GameObject:
   - component: {fileID: 2134342737}
   - component: {fileID: 2134342736}
   - component: {fileID: 2134342735}
-  - component: {fileID: 2134342738}
   - component: {fileID: 2134342734}
+  - component: {fileID: 2134342738}
   m_Layer: 0
   m_Name: Dustpan
   m_TagString: Untagged
@@ -5649,9 +5676,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2134342733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c6cd080f236142af54ee9e6716946, type: 3}
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &2140190977
 GameObject:
   m_ObjectHideFlags: 0
