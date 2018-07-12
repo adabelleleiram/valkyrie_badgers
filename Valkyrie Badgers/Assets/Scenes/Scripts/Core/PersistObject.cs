@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class PersistObject : MonoBehaviour
 {
-    public bool persistActive = true;
-    public bool activeOnStart = true;
+  public bool persistActive = true;
+  public bool activeOnStart = true;
 
-    private void Awake()
-    {
-        GameHandler.sceneLoader.onNewSceneLoading += OnNewSceneLoading;
-    }
+  private void Awake()
+  {
+    GameHandler.sceneLoader.onNewSceneLoading += OnNewSceneLoading;
+  }
 
-    private void Start()
-    {
-        if(persistActive)
-            gameObject.SetActive(GameHandler.persistencyManager.GetActiveState(gameObject, activeOnStart));
-    }
+  private void Start()
+  {
+    if (persistActive)
+      gameObject.SetActive(GameHandler.persistencyManager.GetActiveState(gameObject, activeOnStart));
+  }
 
-    private void OnDestroy()
-    {
-        GameHandler.sceneLoader.onNewSceneLoading -= OnNewSceneLoading;
-    }
+  private void OnDestroy()
+  {
+    GameHandler.sceneLoader.onNewSceneLoading -= OnNewSceneLoading;
+  }
 
-    void OnNewSceneLoading()
-    {
-        if (persistActive)
-            GameHandler.persistencyManager.SetActiveState(gameObject);
-    }
+  void OnNewSceneLoading()
+  {
+    if (persistActive)
+      GameHandler.persistencyManager.SetActiveState(gameObject);
+  }
 }
