@@ -11,10 +11,11 @@ public class PersistObject : MonoBehaviour
     {
         GameHandler.sceneLoader.onNewSceneLoading += OnNewSceneLoading;
     }
+
     private void Start()
     {
-        Debug.Log("Scene loaded for object " + gameObject.name);
-        gameObject.SetActive(GameHandler.persistencyManager.GetActiveState(gameObject, activeOnStart));
+        if(persistActive)
+            gameObject.SetActive(GameHandler.persistencyManager.GetActiveState(gameObject, activeOnStart));
     }
 
     private void OnDestroy()
@@ -24,8 +25,7 @@ public class PersistObject : MonoBehaviour
 
     void OnNewSceneLoading()
     {
-        Debug.Log("Switching scene for object " + gameObject.name);
-        GameHandler.persistencyManager.SetActiveState(gameObject);
+        if (persistActive)
+            GameHandler.persistencyManager.SetActiveState(gameObject);
     }
-
 }
