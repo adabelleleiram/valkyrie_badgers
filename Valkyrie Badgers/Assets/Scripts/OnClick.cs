@@ -12,6 +12,7 @@ public class OnClick : MonoBehaviour {
 
     private void OnMouseUpAsButton()
     {
+    Debug.Log("Clicking");
         onClick.Invoke();
     }
 }
