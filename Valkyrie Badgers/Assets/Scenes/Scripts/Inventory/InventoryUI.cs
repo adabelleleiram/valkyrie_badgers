@@ -6,14 +6,12 @@ public class InventoryUI : MonoBehaviour
   public Transform itemsParent;
   InventorySlot[] slots;
   Inventory inventory;
-  ItemDescription description;
   int slotsFilled = 0;
 
   void Start()
   {
     inventory = GameHandler.inventory;
     slots = itemsParent.GetComponentsInChildren<InventorySlot>();
-    description = GetComponentInChildren<ItemDescription>();
   }
 
   void Update()

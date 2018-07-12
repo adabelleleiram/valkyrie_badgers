@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class PersistencyManager : MonoBehaviour
 {
     Dictionary<string, bool> activeStates = new Dictionary<string, bool>();
-    Dictionary<string, bool> lockedStates = new Dictionary<string, bool>();
-    Dictionary<string, Vector3> positionStates = new Dictionary<string, Vector3>();
 
     public void SetActiveState(GameObject anObject)
     {

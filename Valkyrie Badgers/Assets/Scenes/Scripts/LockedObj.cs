@@ -9,7 +9,6 @@ public class LockedObj : MonoBehaviour
 
   private void Start()
   {
-   // GameHandler.changeables.UpdateUnlocked(this);
   }
 
 }
