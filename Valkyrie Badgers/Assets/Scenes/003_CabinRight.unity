@@ -996,6 +996,7 @@ GameObject:
   - component: {fileID: 1299257617}
   - component: {fileID: 1299257616}
   - component: {fileID: 1299257615}
+  - component: {fileID: 1299257619}
   - component: {fileID: 1299257618}
   m_Layer: 0
   m_Name: DiaryBed
@@ -1101,6 +1102,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 0
+--- !u!114 &1299257619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299257614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomOverlay: {fileID: 1781157363}
+  zoomedObject: {fileID: 1470376833}
 --- !u!1 &1301786826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,7 +1528,7 @@ GameObject:
   - component: {fileID: 1470376836}
   - component: {fileID: 1470376835}
   m_Layer: 0
-  m_Name: ValkyrieBook
+  m_Name: DIary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,7 +1573,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b5f1f274255650d478a73301332f2e3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a01475e8638234e4088aaaf28c057d8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1807,6 +1821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781157362}
   - component: {fileID: 1781157363}
+  - component: {fileID: 1781157364}
   m_Layer: 5
   m_Name: ZoomOverlay_Diary
   m_TagString: Untagged
@@ -1848,6 +1863,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentZoomedObject: {fileID: 0}
+--- !u!114 &1781157364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781157361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomOverlay: {fileID: 0}
+  zoomedObject: {fileID: 0}
 --- !u!1 &1785584704
 GameObject:
   m_ObjectHideFlags: 0
