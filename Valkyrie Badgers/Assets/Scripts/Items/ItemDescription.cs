@@ -17,6 +17,7 @@ public class ItemDescription : MonoBehaviour
   public void SetDescription(string desc)
   {
     text.text = desc;
+    text.enabled = true;
   }
 
   public bool SetDescription(Item item)
