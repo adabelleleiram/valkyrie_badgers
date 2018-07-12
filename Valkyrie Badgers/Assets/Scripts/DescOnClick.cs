@@ -6,9 +6,8 @@ public class DescOnClick : MonoBehaviour {
   public string descIn;
   public ItemDescription desc;
 
-  public void ShowDesc()
+  private void OnMouseUpAsButton()
   {
-    Debug.Log("here");
     desc.SetDescription(descIn);
   }
 }
