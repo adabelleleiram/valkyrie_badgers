@@ -392,6 +392,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1895884981}
   active: {fileID: 186777705}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &256043975
 MonoBehaviour:
@@ -604,6 +605,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 858308349}
   active: {fileID: 1539637519}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &277937910
 MonoBehaviour:
@@ -2246,6 +2248,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 905108787}
   active: {fileID: 784910786}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1136780872
 MonoBehaviour:
@@ -2458,6 +2461,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1606227618}
   active: {fileID: 1472198242}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1154033181
 MonoBehaviour:
@@ -2756,6 +2760,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1812917304}
   active: {fileID: 1313396826}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1221540356
 MonoBehaviour:
@@ -3496,6 +3501,17 @@ Prefab:
       propertyPath: nextSceneIndex
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046,
+        type: 3}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 013_BurialChamber
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
@@ -3707,6 +3723,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 798060173}
   active: {fileID: 1546639717}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1496894192
 MonoBehaviour:
@@ -4185,6 +4202,17 @@ Prefab:
       propertyPath: nextSceneIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: cdf6d7643fbd6334c933521621610932,
+        type: 3}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 011_GraveEntrance
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
   m_IsPrefabAsset: 0
@@ -4458,6 +4486,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 721362345}
   active: {fileID: 1728639033}
+  inactive: {fileID: 0}
   description: {fileID: 1048147666}
 --- !u!114 &1740822036
 MonoBehaviour:
@@ -4902,6 +4931,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1564608090}
   active: {fileID: 1978080189}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1786571410
 MonoBehaviour:
@@ -5452,22 +5482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: A sad looking eagle.
   desc: {fileID: 1048147666}
---- !u!1 &2004219885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
-    type: 2}
-  m_PrefabInternal: {fileID: 1393943389}
---- !u!114 &2004219888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2004219885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c6cd080f236142af54ee9e6716946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2045981334
 GameObject:
   m_ObjectHideFlags: 0
@@ -5665,6 +5679,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1203188067}
   active: {fileID: 2140190980}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &2062247968
 MonoBehaviour:
