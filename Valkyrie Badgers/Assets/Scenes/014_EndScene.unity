@@ -846,15 +846,15 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411994628}
   m_CullTransparentMesh: 0
---- !u!1 &454666322
+--- !u!1 &513882461
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 454666325}
-  - component: {fileID: 454666323}
+  - component: {fileID: 513882463}
+  - component: {fileID: 513882462}
   m_Layer: 0
   m_Name: Video
   m_TagString: Untagged
@@ -862,12 +862,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!328 &454666323
+--- !u!328 &513882462
 VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 454666322}
+  m_GameObject: {fileID: 513882461}
   m_Enabled: 1
   m_VideoClip: {fileID: 32900000, guid: f984eaa40264e4341a9c37234d4e14b6, type: 3}
   m_TargetCameraAlpha: 1
@@ -895,18 +895,18 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!4 &454666325
+--- !u!4 &513882463
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 454666322}
+  m_GameObject: {fileID: 513882461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26637658, y: 0.116844326, z: -0.92}
+  m_LocalPosition: {x: -0.612961, y: -0.425033, z: -3.5216918}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &586517913 stripped
 Camera:
@@ -1762,7 +1762,7 @@ RectTransform:
   - {fileID: 947473683}
   - {fileID: 1380746462}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2748,7 +2748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313396823
 GameObject:
@@ -2978,7 +2978,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
         type: 2}
@@ -3673,7 +3673,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4144377374016466, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114664074163959120, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
@@ -3744,7 +3744,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!328 &1687580856
 VideoPlayer:
