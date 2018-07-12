@@ -1732,7 +1732,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1048147666}
-  deleteObject: 1
+  deleteObject: 0
   deleteItem: 1
 --- !u!1 &858308346
 GameObject:
