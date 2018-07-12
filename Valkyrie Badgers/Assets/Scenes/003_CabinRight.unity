@@ -1745,11 +1745,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4467063250239018, guid: 5b653aa9b6f4bba498c2e02ba98ae01b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.14
+      value: -4.12
       objectReference: {fileID: 0}
     - target: {fileID: 4467063250239018, guid: 5b653aa9b6f4bba498c2e02ba98ae01b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.77
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 4467063250239018, guid: 5b653aa9b6f4bba498c2e02ba98ae01b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1775,7 +1775,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114452228084749548, guid: 5b653aa9b6f4bba498c2e02ba98ae01b,
+        type: 2}
+      propertyPath: triggerName
+      value: Flying_Room2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 95594520282254360, guid: 5b653aa9b6f4bba498c2e02ba98ae01b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5b653aa9b6f4bba498c2e02ba98ae01b, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1018822494
@@ -2559,6 +2565,29 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1154033177}
   m_CullTransparentMesh: 0
+--- !u!1 &1174174704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1511829015804894, guid: 5b653aa9b6f4bba498c2e02ba98ae01b,
+    type: 2}
+  m_PrefabInternal: {fileID: 999374827}
+--- !u!95 &1174174705
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174174704}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a5225c0c40605d4b86c46c58d83d0cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1203188064
 GameObject:
   m_ObjectHideFlags: 0
