@@ -1038,9 +1038,9 @@ MonoBehaviour:
           m_StringArgument: Flying_Room1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2090469154}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2090469157}
+        m_MethodName: SetClicked
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1056,6 +1056,33 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 95933750525654476, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
     type: 2}
   m_PrefabInternal: {fileID: 961644517}
+--- !u!114 &2090469157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825952ed3c2adab49a59d0d90f85acf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2090469154}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!58 &2090469158
 CircleCollider2D:
   m_ObjectHideFlags: 0
