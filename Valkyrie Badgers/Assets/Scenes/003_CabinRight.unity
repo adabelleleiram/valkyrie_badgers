@@ -978,9 +978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomObject: {fileID: 624683349}
-  image: {fileID: 0}
-  sprite: {fileID: 0}
+  zoomOverlay: {fileID: 0}
+  zoomedObject: {fileID: 0}
 --- !u!1 &721362342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,6 +2998,17 @@ Prefab:
       propertyPath: nextSceneIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 61f975d747b63174b849e05e0828b028,
+        type: 3}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 002_CabinLeft
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
   m_IsPrefabAsset: 0
@@ -3417,6 +3427,17 @@ Prefab:
         type: 2}
       propertyPath: nextSceneIndex
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: b52de7d3258310148af8e892ee9a849b,
+        type: 3}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 004_BackYard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}

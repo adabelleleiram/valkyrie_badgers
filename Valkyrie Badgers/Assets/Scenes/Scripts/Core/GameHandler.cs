@@ -5,27 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
-  #region Public Variables
-  public static Inventory inventory;
-  public static Changeable changeables;
+    #region Public Variables
+    public static Inventory inventory;
+    public static PersistencyManager persistencyManager;
+    public static SceneLoader sceneLoader;
 
-  #endregion
-  #region Singleton
-  public static GameHandler gameHandler;
+    #endregion
+    #region Singleton
+    public static GameHandler gameHandler;
 
-  void Awake()
-  {
-    if (gameHandler == null)
+    void Awake()
     {
-      gameHandler = this;
-      inventory = GetComponent<Inventory>();
-      changeables = GetComponent<Changeable>();
-      DontDestroyOnLoad(gameObject);
+        if (gameHandler == null)
+        {
+            gameHandler = this;
+            inventory = GetComponent<Inventory>();
+            persistencyManager = GetComponent<PersistencyManager>();
+            sceneLoader = GetComponent<SceneLoader>();
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-    else
-    {
-      Destroy(gameObject);
-    }
-  }
-  #endregion
+    #endregion
 }

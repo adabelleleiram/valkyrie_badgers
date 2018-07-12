@@ -8,19 +8,19 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1531081886148522}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1531081886148522
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4144377374016466}
   - component: {fileID: 65322490899329710}
-  - component: {fileID: 114664074163959120}
+  - component: {fileID: 114864271593606500}
   m_Layer: 0
   m_Name: LeftDoor
   m_TagString: Untagged
@@ -31,7 +31,7 @@ GameObject:
 --- !u!4 &4144377374016466
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531081886148522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -44,7 +44,7 @@ Transform:
 --- !u!65 &65322490899329710
 BoxCollider:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531081886148522}
   m_Material: {fileID: 0}
@@ -53,16 +53,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 7.2, z: 1}
   m_Center: {x: -6.1, y: 0, z: 0}
---- !u!114 &114664074163959120
+--- !u!114 &114864271593606500
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531081886148522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 819890c1a6789d946ae74130a8e5b190, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a93883f9af03f846b8ec0fdbb71457a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneIndex: 1
-  locked: 0
+  nextScene:
+    m_SceneAsset: {fileID: 0}
+    m_SceneName: 
