@@ -3131,6 +3131,17 @@ Prefab:
       propertyPath: nextSceneIndex
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 22dec0d92b5299543a48d3de18ee430a,
+        type: 3}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 012_GraveTunnel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
@@ -3820,6 +3831,17 @@ Prefab:
         type: 2}
       propertyPath: nextSceneIndex
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 0b74ca1219e1b94439e8a8aae17443da,
+        type: 3}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 010_Forest5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
@@ -4974,22 +4996,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978080186}
   m_CullTransparentMesh: 0
---- !u!1 &2004219885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
-    type: 2}
-  m_PrefabInternal: {fileID: 1393943389}
---- !u!114 &2004219888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2004219885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01c6cd080f236142af54ee9e6716946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2062247964
 GameObject:
   m_ObjectHideFlags: 0
