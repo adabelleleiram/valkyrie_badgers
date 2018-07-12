@@ -3487,6 +3487,64 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1313396823}
   m_CullTransparentMesh: 0
+--- !u!1001 &1320445061
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.925308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+        type: 2}
+      propertyPath: activeOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+        type: 2}
+      propertyPath: triggerName
+      value: Flying_Room2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+        type: 2}
+      propertyPath: persistActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 95933750525654476, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1380746461
 Prefab:
   m_ObjectHideFlags: 0
@@ -5709,6 +5767,29 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062247964}
   m_CullTransparentMesh: 0
+--- !u!1 &2078875012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479347660962642, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+    type: 2}
+  m_PrefabInternal: {fileID: 1320445061}
+--- !u!95 &2078875013
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078875012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b40247975f474441bca21c7b09bba55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2140190977
 GameObject:
   m_ObjectHideFlags: 0
