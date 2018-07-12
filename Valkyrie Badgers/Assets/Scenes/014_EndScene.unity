@@ -392,6 +392,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1895884981}
   active: {fileID: 186777705}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &256043975
 MonoBehaviour:
@@ -604,6 +605,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 858308349}
   active: {fileID: 1539637519}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &277937910
 MonoBehaviour:
@@ -875,7 +877,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
@@ -891,7 +893,7 @@ VideoPlayer:
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
-  m_WaitForFirstFrame: 0
+  m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!4 &454666325
 Transform:
@@ -1931,6 +1933,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 905108787}
   active: {fileID: 784910786}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1136780872
 MonoBehaviour:
@@ -2143,6 +2146,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1606227618}
   active: {fileID: 1472198242}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1154033181
 MonoBehaviour:
@@ -2441,6 +2445,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1812917304}
   active: {fileID: 1313396826}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1221540356
 MonoBehaviour:
@@ -3196,6 +3201,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 798060173}
   active: {fileID: 1546639717}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1496894192
 MonoBehaviour:
@@ -3981,6 +3987,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 721362345}
   active: {fileID: 1728639033}
+  inactive: {fileID: 0}
   description: {fileID: 1048147666}
 --- !u!114 &1740822036
 MonoBehaviour:
@@ -4425,6 +4432,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1564608090}
   active: {fileID: 1978080189}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &1786571410
 MonoBehaviour:
@@ -4997,6 +5005,7 @@ MonoBehaviour:
   item: {fileID: 0}
   icon: {fileID: 1203188067}
   active: {fileID: 2140190980}
+  inactive: {fileID: 0}
   description: {fileID: 0}
 --- !u!114 &2062247968
 MonoBehaviour:
