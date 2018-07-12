@@ -10,7 +10,6 @@ public class Activate : MonoBehaviour {
 
   public void SetActive()
   {
-    GameHandler.changeables.ChangeActive(gameObject, setActive);
     gameObject.SetActive(setActive);
   }
 }

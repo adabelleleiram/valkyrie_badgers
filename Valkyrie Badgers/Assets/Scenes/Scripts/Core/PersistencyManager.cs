@@ -5,20 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class PersistencyManager : MonoBehaviour
 {
-    class GameObjectID
-    {
-        public GameObjectID(GameObject aGameObject)
-        {
-            id = SceneManager.GetActiveScene().buildIndex.ToString() + aGameObject.name;
-        }
-        string id;
-    }
-    class SaveGame
-    {
-        public Dictionary<GameObjectID, bool> activeState; 
-        public Dictionary<GameObjectID, bool> lockedState; 
-        public Dictionary<GameObjectID, Vector3> positionState;
-    }
-	
+    Dictionary<string, bool> activeStates = new Dictionary<string, bool>();
+    Dictionary<string, bool> lockedStates = new Dictionary<string, bool>();
+    Dictionary<string, Vector3> positionStates = new Dictionary<string, Vector3>();
 
+    public void SetActiveState(GameObject anObject)
+    {
+        activeStates[GetObjectID(anObject)] = anObject.activeInHierarchy;
+    }
+
+    public bool GetActiveState(GameObject anObject, bool aDefault)
+    {
+        string id = GetObjectID(anObject);
+        if (!activeStates.ContainsKey(id))
+            activeStates.Add(id, aDefault);
+
+        return activeStates[id];
+    }
+
+    string GetObjectID(GameObject anObject)
+    {
+        return SceneManager.GetActiveScene().name.ToString() + "_" + anObject.name;
+    }
 }
