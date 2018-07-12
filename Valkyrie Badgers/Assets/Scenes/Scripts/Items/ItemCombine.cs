@@ -26,17 +26,18 @@ public class ItemCombine : MonoBehaviour
   private void OnMouseExit()
   {
     itemEnteredCollider = false;
+    MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
   }
 
   private void Update()
   {
     if (itemEnteredCollider && Input.GetMouseButtonUp(0))
     {
+      MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
       onCombine.Invoke();
+
       if ( deleteItem )
       {
-        GameHandler.inventory.Remove(itemToCombineWith);
-       // GameHandler.changeables.ChangeActive(gameObject, false);
         description.ClearDescription();
       }
       if ( deleteObject )

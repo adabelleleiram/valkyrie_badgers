@@ -1148,7 +1148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 0
   activeOnStart: 1
-  persistPosition: 1
 --- !u!1 &630965371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1611,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 1
-  persistPosition: 0
 --- !u!114 &825885819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,7 +2294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 0
-  persistPosition: 0
 --- !u!212 &1108446350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2487,7 +2484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 0
-  persistPosition: 0
 --- !u!1 &1136780868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,7 +4077,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 1
-  persistPosition: 0
 --- !u!1 &1539637516
 GameObject:
   m_ObjectHideFlags: 0
