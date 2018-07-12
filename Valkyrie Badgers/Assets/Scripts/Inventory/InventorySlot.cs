@@ -3,60 +3,63 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour
 {
-    [HideInInspector]
-    public Item item;
+  [HideInInspector]
+  public Item item;
 
-    public Image icon;
-    public Image active;
-    public ItemDescription description;
+  public Image icon;
+  public Image active;
+  public Image inactive;
+  public ItemDescription description;
 
-    public void AddItem(Item newItem)
+  public void AddItem(Item newItem)
+  {
+    item = newItem;
+    icon.sprite = item.icon;
+    icon.enabled = true;
+  }
+
+  public void ClearSlot()
+  {
+    item = null;
+    icon.sprite = null;
+    icon.enabled = false;
+    active.enabled = false;
+    inactive.enabled = true;
+  }
+
+  public void OnMouseDown()
+  {
+    if (item)
     {
-        item = newItem;
-        icon.sprite = item.icon;
-        icon.enabled = true;
+      MouseCursor.instance.DragItem(item);
+      icon.enabled = false;
+      ShowItemDescription();
     }
+  }
 
-    public void ClearSlot()
+  public void OnMouseUp()
+  {
+    if (item)
     {
-        item = null;
-        icon.sprite = null;
-        icon.enabled = false;
-        active.enabled = false;
+      MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+      icon.enabled = true;
     }
+  }
 
-    public void OnMouseDown()
+  public void OnClick()
+  {
+    if (item)
     {
-        if (item)
-        {
-            MouseCursor.instance.DragItem(item);
-            icon.enabled = false;
-            ShowItemDescription();
-        }
+      ShowItemDescription();
     }
+  }
 
-    public void OnMouseUp()
-    {
-        if(item)
-        {
-            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
-            icon.enabled = true;
-        }
-    }
+  public void ShowItemDescription()
+  {
+    if (!item)
+      return;
 
-    public void OnClick()
-    {
-        if (item)
-        {
-            ShowItemDescription();
-        }
-    }
-
-    public void ShowItemDescription()
-    {
-        if (!item)
-            return;
-
-        active.enabled = description.SetDescription(this.item);
-    }
+    active.enabled = description.SetDescription(this.item);
+    inactive.enabled = !active.enabled;
+  }
 }

@@ -4272,6 +4272,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1716898357
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.925308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4500458556996310, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+        type: 2}
+      propertyPath: activeOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+        type: 2}
+      propertyPath: triggerName
+      value: Flying_Room3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1728639030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5369,6 +5421,7 @@ GameObject:
   - component: {fileID: 1992966574}
   - component: {fileID: 1992966573}
   - component: {fileID: 1992966576}
+  - component: {fileID: 1992966577}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Untagged
@@ -5473,6 +5526,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: A sad looking eagle.
   desc: {fileID: 1048147666}
+--- !u!95 &1992966577
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992966572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b488033b6e7c4fe6b49dcb9143cc515, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2004219885 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
