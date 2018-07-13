@@ -1365,6 +1365,7 @@ GameObject:
   - component: {fileID: 825885820}
   - component: {fileID: 825885821}
   - component: {fileID: 825885816}
+  - component: {fileID: 825885822}
   - component: {fileID: 825885818}
   m_Layer: 0
   m_Name: DoorClosed
@@ -1552,6 +1553,19 @@ MonoBehaviour:
   description: {fileID: 0}
   deleteObject: 0
   deleteItem: 1
+--- !u!114 &825885822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825885815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: A solid, wooden door. It's locked.
+  desc: {fileID: 330285765}
 --- !u!1 &839087918
 GameObject:
   m_ObjectHideFlags: 0
