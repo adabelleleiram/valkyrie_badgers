@@ -906,6 +906,8 @@ GameObject:
   - component: {fileID: 1877885528}
   - component: {fileID: 1877885527}
   - component: {fileID: 1877885529}
+  - component: {fileID: 1877885531}
+  - component: {fileID: 1877885530}
   m_Layer: 0
   m_Name: SpiderWeb
   m_TagString: Untagged
@@ -968,3 +970,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomOverlay: {fileID: 0}
   zoomedObject: {fileID: 0}
+--- !u!114 &1877885530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877885526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: 5c3a01de485395043a7ab77b3494f761, type: 3}
+    m_SceneName: SpiderWeb
+--- !u!114 &1877885531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877885526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1877885530}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

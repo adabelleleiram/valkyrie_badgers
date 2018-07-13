@@ -198,6 +198,8 @@ GameObject:
   - component: {fileID: 776499523}
   - component: {fileID: 776499522}
   - component: {fileID: 776499521}
+  - component: {fileID: 776499525}
+  - component: {fileID: 776499524}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -216,8 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOverlay: {fileID: 0}
-  zoomedObject: {fileID: 0}
 --- !u!60 &776499522
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -260,6 +260,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &776499524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776499520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: ca88fe1d3cc91e24296f9386972fcabc, type: 3}
+    m_SceneName: Skeleton
+--- !u!114 &776499525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776499520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 776499524}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0
@@ -479,6 +520,30 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114618742192627964, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 297665f61db9c40838803e83b39a8788,
+        type: 3}
+    - target: {fileID: 114396379066397876, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1455349031}
+    - target: {fileID: 114396379066397876, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284034786843822, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
+      propertyPath: m_Name
+      value: ZoomOverlay_skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731053895788170, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
+      propertyPath: m_Name
+      value: Skeleton_closeup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
   m_IsPrefabAsset: 0
@@ -620,6 +685,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1455349031 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114500680758263010, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 1225269278}
+  m_Script: {fileID: 11500000, guid: ab11f04c031b9f14db325ba2e7a5e518, type: 3}
 --- !u!1 &1456785827
 GameObject:
   m_ObjectHideFlags: 0
