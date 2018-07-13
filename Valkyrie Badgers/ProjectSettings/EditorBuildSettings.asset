@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/013_BurialChamber.unity
     guid: 34ea4228931737e49b9fe03be8991046
   - enabled: 1
+    path: Assets/Scenes/014_EndScene.unity
+    guid: b67619d94056e4b789f328c7bec544d3
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae
   m_configObjects: {}
