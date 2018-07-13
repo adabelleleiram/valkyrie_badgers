@@ -10,6 +10,7 @@ public class SceneLoader : MonoBehaviour {
 
     public void LoadScene(SceneField aScene)
     {
+    Debug.Log("here changing");
         SceneManager.LoadScene(aScene);
         if(onNewSceneLoading != null)
             onNewSceneLoading.Invoke();

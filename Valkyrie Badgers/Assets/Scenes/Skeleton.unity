@@ -160,7 +160,7 @@ MonoBehaviour:
       PublicKeyToken=null
   description: {fileID: 0}
   deleteObject: 0
-  deleteItem: 0
+  deleteItem: 1
 --- !u!60 &70523203
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4257,13 +4257,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1764336129}
   - component: {fileID: 1764336128}
+  - component: {fileID: 1764336130}
   m_Layer: 0
   m_Name: GemBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1764336128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4323,6 +4324,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1764336130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764336127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &1845579271
 GameObject:
   m_ObjectHideFlags: 0
