@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public delegate void OnItemChanged();
+  public delegate void OnItemChanged();
 
-    public List<Item> items = new List<Item>();
+  public List<Item> items = new List<Item>();
+  public List<Item> hiddenItems = new List<Item>();
 
-    public void Add(Item item)
+  public void Add(Item item)
+  {
+    if (!item.isDefaultItem)
     {
-        if (!item.isDefaultItem)
-        {
-            items.Add(item);
-        }
+      items.Add(item);
     }
-
-    public void Remove(Item item)
+    else
     {
-        items.Remove(item);
+      hiddenItems.Add(item);
     }
+  }
+
+  public void Remove(Item item)
+  {
+    items.Remove(item);
+  }
 }
