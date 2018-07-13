@@ -12,6 +12,7 @@ public class Door : MonoBehaviour
   {
     if (!locked)
       GameHandler.sceneLoader.LoadScene(nextScene);
+    Debug.Log("test");
   }
 
   public void Unlock()
