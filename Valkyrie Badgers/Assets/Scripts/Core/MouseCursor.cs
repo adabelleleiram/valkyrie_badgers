@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MouseCursor : MonoBehaviour
 {
-
   public static MouseCursor instance;
 
   private void Awake()

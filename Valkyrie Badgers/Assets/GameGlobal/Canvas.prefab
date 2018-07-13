@@ -1976,7 +1976,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 89156f801ac7f487c82bcb048d4325a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fb684c9e11f24b0ea9edcf0e12dfb26, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2683,11 +2683,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 1120261557255570}
-  leftDoorCursor: {fileID: 0}
-  rightDoorCursor: {fileID: 0}
+  leftDoorCursor: {fileID: 1208915577371736}
+  rightDoorCursor: {fileID: 1142863187191114}
   itemCursor: {fileID: 1215623653080762}
-  zoomCursor: {fileID: 0}
-  combineCursor: {fileID: 0}
+  zoomCursor: {fileID: 1039255925384630}
+  combineCursor: {fileID: 1777535880953356}
   currentDraggedItem: {fileID: 0}
 --- !u!222 &222034905898850182
 CanvasRenderer:

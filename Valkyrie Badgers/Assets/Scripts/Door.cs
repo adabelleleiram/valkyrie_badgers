@@ -13,7 +13,6 @@ public class Door : MonoBehaviour
   {
     if (!locked)
       GameHandler.sceneLoader.LoadScene(nextScene);
-    Debug.Log("test");
   }
   private void OnMouseEnter()
   {
@@ -53,6 +52,7 @@ public class Door : MonoBehaviour
 
   void OnNewSceneLoading()
   {
-     GameHandler.persistencyManager.SetUnlockedState(this);
+    MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+    GameHandler.persistencyManager.SetUnlockedState(this);
   }
 }
