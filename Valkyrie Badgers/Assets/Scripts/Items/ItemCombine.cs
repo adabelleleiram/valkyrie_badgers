@@ -18,19 +18,20 @@ public class ItemCombine : MonoBehaviour
 
   private void OnMouseEnter()
   {
-    //Kolla zoomed item osv här kanske?
     if (MouseCursor.instance.currentDraggedItem == itemToCombineWith)
+    {
+      MouseCursor.instance.SetCursor(MouseCursor.instance.combineCursor);
       itemEnteredCollider = true;
+    }
   }
 
   private void OnMouseExit()
   {
     if (gameObject == deleteObject)
     {
-            itemEnteredCollider = false;
-    MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
-
-        }  
+      itemEnteredCollider = false;
+      MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+    }
   }
 
   private void Update()
@@ -40,12 +41,12 @@ public class ItemCombine : MonoBehaviour
       MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
       onCombine.Invoke();
 
-      if ( deleteItem )
+      if (deleteItem)
       {
         GameHandler.inventory.Remove(itemToCombineWith);
         description.ClearDescription();
       }
-      if ( deleteObject )
+      if (deleteObject)
       {
         Destroy(gameObject);
       }
