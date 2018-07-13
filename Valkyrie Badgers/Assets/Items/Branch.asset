@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Branch
   m_EditorClassIdentifier: 
   name: Branch
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 950dd49d53eba4a7892b11442de430d8, type: 3}
   isDefaultItem: 0
   description: A long wooden branch.
