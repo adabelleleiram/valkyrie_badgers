@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 105140933}
   - component: {fileID: 105140932}
   - component: {fileID: 105140934}
+  - component: {fileID: 105140935}
   m_Layer: 0
   m_Name: TreeStump
   m_TagString: Untagged
@@ -221,6 +222,19 @@ MonoBehaviour:
   description: {fileID: 0}
   deleteObject: 0
   deleteItem: 0
+--- !u!114 &105140935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105140931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: A tree stump.
+  desc: {fileID: 1011218624}
 --- !u!1 &138773671
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +885,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1011218624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 1011218623}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0

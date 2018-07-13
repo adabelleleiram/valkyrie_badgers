@@ -18,6 +18,11 @@ public class PersistencyManager : MonoBehaviour
     unlockedDoors[GetObjectID(door.gameObject)] = door.locked;
   }
 
+  public void SetUnlockedState(LockedObj anObject)
+  {
+    unlockedDoors[GetObjectID(anObject.gameObject)] = anObject.locked;
+  }
+
   public bool GetActiveState(GameObject anObject, bool aDefault)
   {
     string id = GetObjectID(anObject);

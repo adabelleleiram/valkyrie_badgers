@@ -5,22 +5,25 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
- 
-    public List<Item> items = new List<Item>();
-    public event UnityAction OnItemPickUp;
+  public event UnityAction OnItemPickUp;
+  public List<Item> items = new List<Item>();
+  public List<Item> hiddenItems = new List<Item>();
 
-
-    public void Add(Item item)
+  public void Add(Item item)
+  {
+    if (!item.isDefaultItem)
     {
-        if (!item.isDefaultItem)
-        {
-            items.Add(item);
-        }
-        OnItemPickUp.Invoke();
+      items.Add(item);
     }
-
-    public void Remove(Item item)
+    else
     {
-        items.Remove(item);
+      hiddenItems.Add(item);
     }
+    OnItemPickUp.Invoke();
+  }
+
+  public void Remove(Item item)
+  {
+    items.Remove(item);
+  }
 }
