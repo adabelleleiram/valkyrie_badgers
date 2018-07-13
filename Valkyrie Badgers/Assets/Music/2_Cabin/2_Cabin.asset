@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e142dfa92ea42a049a96265c8ed0cdc8, type: 3}
+  m_Name: 2_Cabin
+  m_EditorClassIdentifier: 
+  loopTracks:
+  - loopTrack: {fileID: 11400000, guid: cf8b072ef2d006845a8c0b06ce6ae26f, type: 2}
+    weight: 0.9
+  - loopTrack: {fileID: 11400000, guid: aab2cac3ce4d3b64f813bf209837b267, type: 2}
+    weight: 1
+  - loopTrack: {fileID: 11400000, guid: b3b411f2b81f07148938bcc81e829251, type: 2}
+    weight: 0.3
+  - loopTrack: {fileID: 11400000, guid: 47277e67e35c106468c47a6961dea89b, type: 2}
+    weight: 1
+  - loopTrack: {fileID: 11400000, guid: b97e87fce68699a48bc66b47c8a97f01, type: 2}
+    weight: 0.5
+  loopBase: {fileID: 11400000, guid: 47277e67e35c106468c47a6961dea89b, type: 2}
