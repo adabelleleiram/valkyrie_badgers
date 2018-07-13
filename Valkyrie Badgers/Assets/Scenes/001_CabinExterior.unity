@@ -5050,8 +5050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOverlay: {fileID: 963551467}
-  zoomedObject: {fileID: 714356039}
 --- !u!114 &1431837039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,8 +5436,9 @@ GameObject:
   - component: {fileID: 1536987339}
   - component: {fileID: 1536987338}
   - component: {fileID: 1536987337}
-  - component: {fileID: 1536987340}
   - component: {fileID: 1536987341}
+  - component: {fileID: 1536987342}
+  - component: {fileID: 1536987340}
   m_Layer: 0
   m_Name: NoteSmall
   m_TagString: Untagged
@@ -5549,11 +5548,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536987336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOverlay: {fileID: 499076802}
-  zoomedObject: {fileID: 85420722}
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1536987342}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &1536987341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5567,6 +5580,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   persistActive: 1
   activeOnStart: 1
+--- !u!114 &1536987342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536987336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: da6589c7245c9b34aa2e741ce1d12c48, type: 3}
+    m_SceneName: Note
 --- !u!1 &1573621317
 GameObject:
   m_ObjectHideFlags: 0
