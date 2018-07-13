@@ -9868,7 +9868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: A stressed out squirrel. What are you looking for my friend?
+  descIn: A stressed squirrel. What are you looking for my friend?
   desc: {fileID: 1811342516}
 --- !u!114 &783336124
 MonoBehaviour:

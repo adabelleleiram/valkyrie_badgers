@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
-    public delegate void OnItemChanged();
-
+ 
     public List<Item> items = new List<Item>();
+    public event UnityAction OnItemPickUp;
+
 
     public void Add(Item item)
     {
@@ -14,6 +16,7 @@ public class Inventory : MonoBehaviour
         {
             items.Add(item);
         }
+        OnItemPickUp.Invoke();
     }
 
     public void Remove(Item item)
