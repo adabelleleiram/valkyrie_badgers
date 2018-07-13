@@ -63,14 +63,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Entrance.unity
     guid: 4a72bafb5050a6f41800347c2d0d257d
   - enabled: 1
-    path: Assets/Scenes/Letter.unity
-    guid: 607b034c69f38804494f95fa16705895
-  - enabled: 1
     path: Assets/Scenes/Note.unity
     guid: da6589c7245c9b34aa2e741ce1d12c48
-  - enabled: 1
-    path: Assets/Scenes/Runestone.unity
-    guid: 90dd214dbd81a604f85c7d27f9e21c09
   - enabled: 1
     path: Assets/Scenes/Skeleton.unity
     guid: ca88fe1d3cc91e24296f9386972fcabc
@@ -83,4 +77,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ValkyrieBook 8.unity
     guid: d1aae1b8e7eb3bc47805a4282d2cdf90
+  - enabled: 1
+    path: Assets/Scenes/GreenBook.unity
+    guid: b0531826a038048b98154781a68a71d1
+  - enabled: 1
+    path: Assets/Scenes/PinkBook.unity
+    guid: f6b598c9c25e24211b28f9f14405e24c
+  - enabled: 1
+    path: Assets/Scenes/PurpleBook.unity
+    guid: 0db5cc7ad94db481a95b0bda240827bc
   m_configObjects: {}

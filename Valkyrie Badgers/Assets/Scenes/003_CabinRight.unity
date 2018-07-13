@@ -778,6 +778,7 @@ GameObject:
   - component: {fileID: 840831728}
   - component: {fileID: 840831727}
   - component: {fileID: 840831730}
+  - component: {fileID: 840831732}
   - component: {fileID: 840831731}
   m_Layer: 0
   m_Name: DiaryShelf
@@ -914,6 +915,26 @@ MonoBehaviour:
           m_StringArgument: DiaryFall
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  description: {fileID: 0}
+  deleteObject: 0
+  deleteItem: 0
+--- !u!114 &840831732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840831726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b76ad787832d42188d81a6ec3203684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWaitAfter: 1
+  waitAfter:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1299257614}
         m_MethodName: SetActive
         m_Mode: 6
@@ -936,11 +957,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    m_TypeName: AnimationWait+ActionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
-  deleteObject: 0
-  deleteItem: 0
 --- !u!114 &872750778 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
@@ -1418,8 +1436,9 @@ GameObject:
   - component: {fileID: 1299257617}
   - component: {fileID: 1299257616}
   - component: {fileID: 1299257615}
-  - component: {fileID: 1299257619}
+  - component: {fileID: 1299257620}
   - component: {fileID: 1299257618}
+  - component: {fileID: 1299257619}
   m_Layer: 0
   m_Name: DiaryBed
   m_TagString: Untagged
@@ -1532,9 +1551,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1299257614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1299257620}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &1299257620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299257614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: a4e5af0eba4e7c7438cb05e3882e7018, type: 3}
+    m_SceneName: Diary
 --- !u!1 &1301786826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1906,36 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClose
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 487
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 243.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224685728812092532, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
