@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 468909042}
   - component: {fileID: 468909044}
   m_Layer: 0
-  m_Name: RuneStone
+  m_Name: Runes_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,9 +231,18 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.19652696, y: 2.052823}
       - {x: -0.7826049, y: 0.35113}
-      - {x: -0.79835004, y: -1.5389742}
-      - {x: 1.4440813, y: -1.496861}
-      - {x: 1.0633571, y: 2.0917969}
+      - {x: -0.79835004, y: -1.0123734}
+      - {x: -0.33890614, y: -1.0184195}
+      - {x: -0.32648668, y: -0.141765}
+      - {x: -0.07920109, y: 0.7505094}
+      - {x: 0.054405466, y: 1.4357681}
+      - {x: 0.40237433, y: 1.4733036}
+      - {x: 0.6218993, y: 0.98545724}
+      - {x: 0.8759734, y: 0.39656332}
+      - {x: 0.895865, y: -0.980435}
+      - {x: 1.3166779, y: -0.995741}
+      - {x: 1.2358867, y: 0.643317}
+      - {x: 0.5707304, y: 2.0408359}
 --- !u!4 &468909043
 Transform:
   m_ObjectHideFlags: 0
@@ -258,9 +267,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Viking letters? Eeh.. runes? Maybe I should have paid attention in history
-    class...
+  descIn: Viking letters! I wonder what they say.
   desc: {fileID: 1622751545}
+--- !u!1 &890082845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 890082848}
+  - component: {fileID: 890082847}
+  - component: {fileID: 890082846}
+  m_Layer: 0
+  m_Name: ValkyrieCarvings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &890082846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890082845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: What is he doing with those birds? Is he chasing them?
+  desc: {fileID: 1622751545}
+--- !u!60 &890082847
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890082845}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.4014926, y: -0.17935564}
+      - {x: -0.34882617, y: 0.10177927}
+      - {x: -0.69647235, y: 1.0339745}
+      - {x: -0.91722155, y: 0.7393651}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.8935534, y: -1.4545276}
+      - {x: -0.20211637, y: -1.4545275}
+      - {x: -0.15310651, y: -0.5573261}
+--- !u!4 &890082848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890082845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.95025796, y: -0.007636173, z: 0.16717482}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0
@@ -377,6 +460,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1344241617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344241620}
+  - component: {fileID: 1344241619}
+  - component: {fileID: 1344241618}
+  m_Layer: 0
+  m_Name: Runes_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1344241618
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344241617}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.22507933, y: -1.295268}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9767594, y: 0.41394424}
+  m_EdgeRadius: 0
+--- !u!114 &1344241619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344241617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: Viking letters! I wonder what they say.
+  desc: {fileID: 1622751545}
+--- !u!4 &1344241620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344241617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.005561157, y: -0.49588883, z: 0.22933732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1393943389
 Prefab:
