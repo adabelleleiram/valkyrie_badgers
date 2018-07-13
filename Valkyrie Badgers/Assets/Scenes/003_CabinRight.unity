@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descIn: Oh a photo of my great grandparents!
-  desc: {fileID: 0}
+  desc: {fileID: 2093943437}
 --- !u!65 &139217868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -443,8 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: That must be gran as a little girl
-  desc: {fileID: 0}
+  descIn: That must be mom as a little girl.
+  desc: {fileID: 2093943437}
 --- !u!65 &515095866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2702,3 +2702,9 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &2093943437 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 1745417156}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
