@@ -2,15 +2,15 @@
 
 public class ItemPickup : MonoBehaviour
 {
-    public Item item;
-    public void OnMouseDown()
-    {
-        PickUp();
-    }
+  public Item item;
+  public void OnMouseDown()
+  {
+    PickUp();
+  }
 
-    public void PickUp()
-    {
-        GameHandler.inventory.Add(item);
-        gameObject.SetActive(false);
-    }
+  public void PickUp()
+  {
+    GameHandler.inventory.Add(item);
+    gameObject.SetActive(false);
+  }
 }
