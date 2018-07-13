@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e142dfa92ea42a049a96265c8ed0cdc8, type: 3}
+  m_Name: 3_Forest
+  m_EditorClassIdentifier: 
+  loopTracks:
+  - loopTrack: {fileID: 11400000, guid: 140fb2b6b3f14f64f8438d3cc40f1eac, type: 2}
+    weight: 0.5
+  - loopTrack: {fileID: 11400000, guid: 3d81662725397284bb8a5683508391ce, type: 2}
+    weight: 0.8
+  - loopTrack: {fileID: 11400000, guid: 49508de569dc52e48bb25e222ea57a73, type: 2}
+    weight: 0.5
+  - loopTrack: {fileID: 11400000, guid: 3b7ce949bd8153a46b45b5aa65b3c8f5, type: 2}
+    weight: 1
+  - loopTrack: {fileID: 11400000, guid: 2d2fd3dc481619147a75803cb30c3929, type: 2}
+    weight: 0.5
+  loopBase: {fileID: 11400000, guid: 3b7ce949bd8153a46b45b5aa65b3c8f5, type: 2}
