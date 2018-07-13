@@ -51,8 +51,6 @@ public class GameMusicHandler : MonoBehaviour
 
     #endregion
 
-    public List<LoopCollection> loops;
-
     MusicLooper musicLooper;
 
     LoopCollection currentLoopCollection = null;
@@ -66,8 +64,6 @@ public class GameMusicHandler : MonoBehaviour
         musicLooper = GetComponent<MusicLooper>();
         musicLooper.onLoopStarted += OnLoopStarted;
         musicLooper.onLoopStopped += OnLoopStopped;
-
-        SetLoopCollection(loops[0]);
     }
 
     public void SetLoopCollection(LoopCollection aLoopCollection)
