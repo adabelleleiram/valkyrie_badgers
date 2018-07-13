@@ -687,6 +687,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 840831726}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
@@ -1274,7 +1285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistActive: 1
-  activeOnStart: 0
+  activeOnStart: 1
 --- !u!114 &1299257619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,6 +1636,7 @@ GameObject:
   - component: {fileID: 1470376834}
   - component: {fileID: 1470376836}
   - component: {fileID: 1470376835}
+  - component: {fileID: 1470376837}
   m_Layer: 0
   m_Name: DIary
   m_TagString: Untagged
@@ -1687,6 +1699,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1470376833}
   m_CullTransparentMesh: 0
+--- !u!114 &1470376837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1470376833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab11f04c031b9f14db325ba2e7a5e518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentZoomedObject: {fileID: 0}
 --- !u!224 &1488086490 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224640723853729940, guid: 68d4cf6819ae68d449a51ea1af1f1680,
