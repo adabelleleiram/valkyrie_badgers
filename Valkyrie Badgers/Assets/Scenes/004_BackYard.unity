@@ -4790,8 +4790,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26adb0ca59e89a34081450261c2b000e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   particleObject: {fileID: 0}
 --- !u!4 &205111548
 Transform:
@@ -9484,8 +9484,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26adb0ca59e89a34081450261c2b000e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   particleObject: {fileID: 0}
 --- !u!4 &211257351
 Transform:
@@ -9529,8 +9529,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   setActive: 0
 --- !u!212 &591715577
 SpriteRenderer:
@@ -9600,8 +9600,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca9ddbace19e3ef4080ea77938f94879, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 820338837be73462d85e86fbd9b90738, type: 2}
 --- !u!61 &591715580
 BoxCollider2D:
@@ -9835,8 +9835,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   descIn: A stressed out squirrel. What are you looking for my friend?
   desc: {fileID: 0}
 --- !u!114 &783336124
@@ -9848,9 +9848,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  itemToCombineWith: {fileID: 11400000, guid: 6a51dd614f30c456fa30857e2f2f266f, type: 2}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -9862,7 +9862,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1433576061}
@@ -9873,7 +9873,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 783336119}
@@ -9884,7 +9884,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -9994,8 +9994,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   descIn: A snake biting the roots of the tree. Hungry much?
   desc: {fileID: 0}
 --- !u!114 &814468742
@@ -10007,9 +10007,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  itemToCombineWith: {fileID: 11400000, guid: 6a51dd614f30c456fa30857e2f2f266f, type: 2}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: 144cde46eb03c4afe90e08fb350223ab, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10021,7 +10021,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 834548702}
@@ -10032,7 +10032,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 814468737}
@@ -10043,7 +10043,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -10138,8 +10138,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca9ddbace19e3ef4080ea77938f94879, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 324be1c04807944c581fb0b05a620f5b, type: 2}
 --- !u!58 &834548706
 CircleCollider2D:
@@ -10165,8 +10165,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   setActive: 0
 --- !u!1 &989753937
 GameObject:
@@ -10279,8 +10279,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca9ddbace19e3ef4080ea77938f94879, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6a51dd614f30c456fa30857e2f2f266f, type: 2}
 --- !u!1 &1064290782
 GameObject:
@@ -10336,8 +10336,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   descIn: I see a shape on the other side...
   desc: {fileID: 0}
 --- !u!1001 &1071667097
@@ -10521,8 +10521,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   descIn: I remember playing here as a child... I was so fearless and happy in those
     days...
   desc: {fileID: 0}
@@ -10642,8 +10642,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 0}
   onCombine:
     m_PersistentCalls:
@@ -10705,13 +10705,13 @@ Prefab:
     - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
         type: 2}
       propertyPath: nextScene.m_SceneAsset
-      value:
-      objectReference: {fileID: 102900000, guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae,
+      value: 
+      objectReference: {fileID: 102900000, guid: d9dae7f8a1628aa44ac6759a913d5baf,
         type: 3}
     - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: Credits
+      value: 005_BehindFence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
@@ -10759,8 +10759,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   setActive: 0
 --- !u!212 &1433576064
 SpriteRenderer:
@@ -10830,8 +10830,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca9ddbace19e3ef4080ea77938f94879, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d6118c9c14431430c86fff24bc67a17c, type: 2}
 --- !u!1 &1516134867
 GameObject:
@@ -15524,80 +15524,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26adb0ca59e89a34081450261c2b000e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  itemToCombineWith: {fileID: 0}
-  onCombine:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  description: {fileID: 0}
-  deleteObject: 0
-  deleteItem: 0
---- !u!1001 &1393943389
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228048968359626, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
-        type: 2}
-      propertyPath: locked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114279865670733368, guid: 72da9719a8b171d408c571e3fd96fb52,
-        type: 2}
-      propertyPath: nextSceneIndex
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
-        type: 2}
-      propertyPath: nextScene.m_SceneAsset
-      value:
-      objectReference: {fileID: 102900000, guid: d9dae7f8a1628aa44ac6759a913d5baf,
-        type: 3}
-    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
-        type: 2}
-      propertyPath: nextScene.m_SceneName
-      value: 005_BehindFence
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
-  m_IsPrefabAsset: 0
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleObject: {fileID: 0}
 --- !u!1001 &1626775431
 Prefab:
   m_ObjectHideFlags: 0
@@ -15645,7 +15574,7 @@ Prefab:
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
       propertyPath: nextScene.m_SceneAsset
-      value:
+      value: 
       objectReference: {fileID: 102900000, guid: 09e2b941618bf2d449284252f4fb2c70,
         type: 3}
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
@@ -15682,8 +15611,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -15700,8 +15629,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -15930,8 +15859,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   descIn: A sad looking eagle.
   desc: {fileID: 0}
 --- !u!114 &1992966577
@@ -15943,9 +15872,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  itemToCombineWith: {fileID: 11400000, guid: 6a51dd614f30c456fa30857e2f2f266f, type: 2}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: f963d54c65b134118b1c9440b64cd5df, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -15957,7 +15886,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 591715575}
@@ -15968,7 +15897,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1992966572}
@@ -15979,7 +15908,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
