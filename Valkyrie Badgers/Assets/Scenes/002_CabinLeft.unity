@@ -2043,7 +2043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -43.5}
+  m_AnchoredPosition: {x: 250, y: -44.5}
   m_SizeDelta: {x: 500, y: 68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767951100
@@ -2327,7 +2327,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -300, y: 16}
-  m_SizeDelta: {x: 500, y: 87}
+  m_SizeDelta: {x: 500, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &928588977
 MonoBehaviour:
@@ -2417,6 +2417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 400830676}
+  moveSceneCursorLeft: {fileID: 0}
+  moveSceneCursorRight: {fileID: 0}
   itemCursor: {fileID: 162050721}
   currentDraggedItem: {fileID: 0}
 --- !u!1001 &961644517
@@ -2952,8 +2954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -43.5}
-  m_SizeDelta: {x: 500, y: 87}
+  m_AnchoredPosition: {x: 250, y: -44.5}
+  m_SizeDelta: {x: 500, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175803468
 MonoBehaviour:
@@ -4254,17 +4256,6 @@ Prefab:
     - target: {fileID: 4144377374016466, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
-        type: 2}
-      propertyPath: nextScene.m_SceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 04ccae890c8717045b0fa2b90e98c24d,
-        type: 3}
-    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
-        type: 2}
-      propertyPath: nextScene.m_SceneName
-      value: 001_CabinExterior
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}

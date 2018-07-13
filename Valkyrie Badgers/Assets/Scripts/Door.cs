@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
   public SceneField nextScene;
   public bool locked = false;
+  public bool left = false;
 
   private void OnMouseUpAsButton()
   {
@@ -14,15 +15,25 @@ public class Door : MonoBehaviour
       GameHandler.sceneLoader.LoadScene(nextScene);
     Debug.Log("test");
   }
+  private void OnMouseEnter()
+  {
+    if (!locked)
+    {
+      if (left)
+        MouseCursor.instance.SetCursor(MouseCursor.instance.leftDoorCursor);
+      else
+        MouseCursor.instance.SetCursor(MouseCursor.instance.rightDoorCursor);
+    }
+  }
+
+  void OnMouseExit()
+  {
+    MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+  }
 
   public void Unlock()
   {
     locked = false;
-  }
-
-  private void OnMouseEnter()
-  {
-    //ändra mus-ikon (kolla locked)
   }
 
   private void Awake()

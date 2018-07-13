@@ -3,59 +3,64 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MouseCursor : MonoBehaviour {
+public class MouseCursor : MonoBehaviour
+{
 
-    public static MouseCursor instance;
+  public static MouseCursor instance;
 
-    private void Awake()
+  private void Awake()
+  {
+    instance = this;
+  }
+
+  private void OnDestroy()
+  {
+    instance = null;
+  }
+
+  public GameObject defaultCursor;
+  public GameObject leftDoorCursor;
+  public GameObject rightDoorCursor;
+  public GameObject itemCursor;
+  public GameObject zoomCursor;
+  public GameObject combineCursor;
+
+  [HideInInspector]
+  public Item currentDraggedItem;
+
+  GameObject currentCursor;
+
+  private void Start()
+  {
+    Cursor.visible = false;
+    SetCursor(defaultCursor);
+  }
+
+  public void DragItem(Item item)
+  {
+    SetCursor(itemCursor, item.icon);
+
+    currentDraggedItem = item;
+  }
+
+  public void SetCursor(GameObject cursorObject, Sprite sprite = null)
+  {
+    if (currentCursor)
     {
-        instance = this;
+      currentCursor.SetActive(false);
+      if (currentDraggedItem)
+        currentDraggedItem = null;
     }
 
-    private void OnDestroy()
-    {
-        instance = null;
-    }
+    currentCursor = cursorObject;
+    currentCursor.SetActive(true);
 
-    public GameObject defaultCursor;
-    public GameObject itemCursor;
+    if (sprite)
+      currentCursor.GetComponent<Image>().sprite = sprite;
+  }
 
-    [HideInInspector]
-    public Item currentDraggedItem;
-
-    GameObject currentCursor;
-
-    private void Start()
-    {
-        Cursor.visible = false;
-        SetCursor(defaultCursor);
-    }
-
-    public void DragItem(Item item)
-    {
-        SetCursor(itemCursor, item.icon);
-
-        currentDraggedItem = item;
-    }
-
-    public void SetCursor(GameObject cursorObject, Sprite sprite = null)
-    {
-        if (currentCursor)
-        {
-            currentCursor.SetActive(false);
-            if (currentDraggedItem)
-                currentDraggedItem = null;
-        }
-
-        currentCursor = cursorObject;
-        currentCursor.SetActive(true);
-
-        if (sprite)
-            currentCursor.GetComponent<Image>().sprite = sprite;
-    }
-
-    private void Update()
-    {
-        transform.position = Input.mousePosition;
-    }
+  private void Update()
+  {
+    transform.position = Input.mousePosition;
+  }
 }
