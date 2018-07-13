@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Here he rests - the mighty warrior.
+  descIn: A skeleton of a mighty warrior.
   desc: {fileID: 1329853306}
 --- !u!114 &1438947812
 MonoBehaviour:

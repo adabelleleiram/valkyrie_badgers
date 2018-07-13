@@ -217,20 +217,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 105140935}
-        m_MethodName: PickUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 175038164}
+  description: {fileID: 0}
   deleteObject: 0
   deleteItem: 0
 --- !u!114 &105140935
@@ -241,10 +230,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 105140931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca9ddbace19e3ef4080ea77938f94879, type: 3}
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 3bc8e30926ed5a14db9fbb640693f94c, type: 2}
+  descIn: A tree stump.
+  desc: {fileID: 1011218624}
 --- !u!1 &138773671
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,12 +310,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &175038164 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
-    type: 2}
-  m_PrefabInternal: {fileID: 1011218623}
-  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
 --- !u!1 &256932445
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +885,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1011218624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 1011218623}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0
@@ -953,8 +943,8 @@ GameObject:
   - component: {fileID: 1097214904}
   - component: {fileID: 1097214903}
   - component: {fileID: 1097214902}
-  - component: {fileID: 1097214900}
   - component: {fileID: 1097214901}
+  - component: {fileID: 1097214900}
   m_Layer: 0
   m_Name: BehindFence_Wisp_In_ Jar
   m_TagString: Untagged
