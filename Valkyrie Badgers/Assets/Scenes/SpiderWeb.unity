@@ -223,6 +223,8 @@ GameObject:
   - component: {fileID: 266850126}
   - component: {fileID: 266850125}
   - component: {fileID: 266850124}
+  - component: {fileID: 266850127}
+  - component: {fileID: 266850128}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -373,6 +375,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &266850127
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266850123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ca97ebf5285b435283f1d9bf21b53ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &266850128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266850123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &403326262
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +458,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 266850127}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SpiderMove
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
@@ -657,6 +701,12 @@ Prefab:
     - {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1248927292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 1338033673}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
 --- !u!1 &1257876611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1257,7 @@ GameObject:
   - component: {fileID: 1800937464}
   - component: {fileID: 1800937467}
   - component: {fileID: 1800937465}
+  - component: {fileID: 1800937466}
   m_Layer: 0
   m_Name: Wisp_Clickable
   m_TagString: Untagged
@@ -1269,6 +1320,19 @@ MonoBehaviour:
   description: {fileID: 0}
   deleteObject: 0
   deleteItem: 1
+--- !u!114 &1800937466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800937463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: It's too hot to touch!
+  desc: {fileID: 1248927292}
 --- !u!61 &1800937467
 BoxCollider2D:
   m_ObjectHideFlags: 0
