@@ -65,5 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene:
-    m_SceneAsset: {fileID: 0}
-    m_SceneName: 
+    m_SceneAsset: {fileID: 102900000, guid: 04ccae890c8717045b0fa2b90e98c24d, type: 3}
+    m_SceneName: 001_CabinExterior
+  locked: 0
+  left: 1
