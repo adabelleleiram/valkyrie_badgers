@@ -2,25 +2,25 @@
 using UnityEngine.Events;
 using System.Collections;
 
-public class AnimationWait : MonoBehaviour 
+public class AnimationWait : MonoBehaviour
 {
-    public float timeToWaitAfter = 10.0f;
-    
-    [System.Serializable]
-    public class ActionEvent : UnityEvent { }
+  public float timeToWaitAfter = 10.0f;
 
-    public ActionEvent waitAfter;
+  [System.Serializable]
+  public class ActionEvent : UnityEvent { }
+
+  public ActionEvent waitAfter;
 
 
-    public void Play()
-    {
-        StartCoroutine(WaitForPlay());
-    }
-  
-    IEnumerator WaitForPlay()
-    {
+  public void Play()
+  {
+    StartCoroutine(WaitForPlay());
+  }
 
-        yield return new WaitForSeconds(timeToWaitAfter);
-        waitAfter.Invoke();
-    }
+  IEnumerator WaitForPlay()
+  {
+
+    yield return new WaitForSeconds(timeToWaitAfter);
+    waitAfter.Invoke();
+  }
 }

@@ -9,7 +9,6 @@ public class LoadScene : MonoBehaviour
 
   public void Load()
   {
-    Debug.Log("Loading scene");
     GameHandler.sceneLoader.LoadScene(scene);
   }
 }

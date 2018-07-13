@@ -9510,28 +9510,16 @@ GameObject:
   m_Component:
   - component: {fileID: 591715578}
   - component: {fileID: 591715577}
-  - component: {fileID: 591715576}
   - component: {fileID: 591715579}
   - component: {fileID: 591715580}
+  - component: {fileID: 591715581}
   m_Layer: 0
   m_Name: GemBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &591715576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 591715575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setActive: 0
+  m_IsActive: 1
 --- !u!212 &591715577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9628,6 +9616,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.52, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &591715581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591715575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1001 &644496212
 Prefab:
   m_ObjectHideFlags: 0
@@ -9729,6 +9730,36 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 243.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224685728812092532, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 487
+      objectReference: {fileID: 0}
+    - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
@@ -10060,16 +10091,16 @@ GameObject:
   m_Component:
   - component: {fileID: 834548704}
   - component: {fileID: 834548703}
-  - component: {fileID: 834548707}
   - component: {fileID: 834548706}
   - component: {fileID: 834548705}
+  - component: {fileID: 834548708}
   m_Layer: 0
   m_Name: GemYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &834548703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10156,7 +10187,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.315
---- !u!114 &834548707
+--- !u!114 &834548708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10164,10 +10195,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 834548702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setActive: 0
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &989753937
 GameObject:
   m_ObjectHideFlags: 0
@@ -10725,16 +10757,16 @@ GameObject:
   m_Component:
   - component: {fileID: 1433576065}
   - component: {fileID: 1433576064}
-  - component: {fileID: 1433576063}
   - component: {fileID: 1433576066}
   - component: {fileID: 1433576062}
+  - component: {fileID: 1433576067}
   m_Layer: 0
   m_Name: GemPink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &1433576062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10750,18 +10782,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.315
---- !u!114 &1433576063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1433576061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ef9d7ababd48c43a653479f361ea3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setActive: 0
 --- !u!212 &1433576064
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10833,6 +10853,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: d6118c9c14431430c86fff24bc67a17c, type: 2}
+--- !u!114 &1433576067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433576061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &1516134867
 GameObject:
   m_ObjectHideFlags: 0
@@ -15862,7 +15895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descIn: A sad looking eagle.
-  desc: {fileID: 0}
+  desc: {fileID: 1811342516}
 --- !u!114 &1992966577
 MonoBehaviour:
   m_ObjectHideFlags: 0
