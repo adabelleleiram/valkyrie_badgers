@@ -402,13 +402,14 @@ GameObject:
   m_Component:
   - component: {fileID: 598865963}
   - component: {fileID: 598865962}
+  - component: {fileID: 598865964}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &598865962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -468,6 +469,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598865964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598865961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &653565787
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,18 +855,7 @@ MonoBehaviour:
   itemToCombineWith: {fileID: 11400000, guid: 324be1c04807944c581fb0b05a620f5b, type: 2}
   onCombine:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 598865961}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
