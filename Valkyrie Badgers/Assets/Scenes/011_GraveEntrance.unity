@@ -441,6 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 598774513}
   - component: {fileID: 598774512}
+  - component: {fileID: 598774514}
   m_Layer: 0
   m_Name: EntranceDoor
   m_TagString: Untagged
@@ -507,6 +508,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598774514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598774511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: This must be the old burial site. The entrance is blocked.
+  desc: {fileID: 1983267537}
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0
@@ -897,3 +911,9 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2713d3c0d0a2249a7aef80a0df4728, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1983267537 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 386016105}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}

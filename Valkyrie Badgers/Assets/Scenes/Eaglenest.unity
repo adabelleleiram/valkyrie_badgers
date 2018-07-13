@@ -218,6 +218,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &319734015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
+    type: 2}
+  m_PrefabInternal: {fileID: 319734014}
+  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
 --- !u!1 &912842754
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,8 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: 
-  desc: {fileID: 0}
+  descIn: Their nest must have blown down from one of the trees nearby. These two
+    didn't survive the fall.
+  desc: {fileID: 319734015}
 --- !u!60 &912842756
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -605,8 +612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: 
-  desc: {fileID: 0}
+  descIn: How sad.
+  desc: {fileID: 319734015}
 --- !u!60 &1828301424
 PolygonCollider2D:
   m_ObjectHideFlags: 0
