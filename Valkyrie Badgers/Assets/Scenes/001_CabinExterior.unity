@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 205480171}
   - component: {fileID: 205480170}
   - component: {fileID: 205480169}
+  - component: {fileID: 205480174}
   m_Layer: 0
   m_Name: TrunkClosed
   m_TagString: Untagged
@@ -648,6 +649,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205480174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205480168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da3864779e067d4a9271061d1591a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225007150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2519,7 @@ GameObject:
   - component: {fileID: 651548467}
   - component: {fileID: 651548470}
   - component: {fileID: 651548471}
+  - component: {fileID: 651548472}
   m_Layer: 0
   m_Name: TrunkOpen
   m_TagString: Untagged
@@ -2636,6 +2649,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &651548472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651548466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da3864779e067d4a9271061d1591a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &667789824
 GameObject:
   m_ObjectHideFlags: 0
@@ -5530,7 +5554,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1431837037}
   - component: {fileID: 1431837036}
-  - component: {fileID: 1431837038}
   - component: {fileID: 1431837039}
   - component: {fileID: 1431837041}
   - component: {fileID: 1431837040}
@@ -5566,17 +5589,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1431837038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1431837035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10320d4aa50c40a42b8f5f6b8b5c587b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1431837039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5733,6 +5745,9 @@ GameObject:
   - component: {fileID: 1459417573}
   - component: {fileID: 1459417572}
   - component: {fileID: 1459417571}
+  - component: {fileID: 1459417574}
+  - component: {fileID: 1459417575}
+  - component: {fileID: 1459417576}
   m_Layer: 0
   m_Name: Mosquitos
   m_TagString: Untagged
@@ -5841,6 +5856,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459417574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459417570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: I can't get near my car, the mosquitos will eat me alive.
+  desc: {fileID: 1048147666}
+--- !u!114 &1459417575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459417570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: 6a51dd614f30c456fa30857e2f2f266f, type: 2}
+  onCombine:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  description: {fileID: 0}
+  deleteObject: 0
+  deleteItem: 0
+--- !u!114 &1459417576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459417570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: f4e71c0b39cf34f978c7d90019e718cd, type: 2}
+  onCombine:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  description: {fileID: 0}
+  deleteObject: 0
+  deleteItem: 0
 --- !u!1 &1474911971
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,7 +5965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 242.5, y: -43.5}
+  m_AnchoredPosition: {x: 243.5, y: -44.5}
   m_SizeDelta: {x: 439, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1474911973
@@ -7513,7 +7603,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -300, y: 16}
-  m_SizeDelta: {x: 500, y: 87}
+  m_SizeDelta: {x: 500, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845579273
 MonoBehaviour:
@@ -7812,8 +7902,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -43.5}
-  m_SizeDelta: {x: 485, y: 87}
+  m_AnchoredPosition: {x: 250, y: -44.5}
+  m_SizeDelta: {x: 487, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046274842
 MonoBehaviour:
