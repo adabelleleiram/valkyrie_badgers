@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  itemToCombineWith: {fileID: 11400000, guid: 820338837be73462d85e86fbd9b90738, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -313,13 +313,14 @@ GameObject:
   m_Component:
   - component: {fileID: 136469747}
   - component: {fileID: 136469746}
+  - component: {fileID: 136469748}
   m_Layer: 0
   m_Name: GemPink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &136469746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -379,6 +380,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &136469748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136469745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &203913180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  itemToCombineWith: {fileID: 11400000, guid: d6118c9c14431430c86fff24bc67a17c, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -1965,7 +1979,7 @@ MonoBehaviour:
       PublicKeyToken=null
   description: {fileID: 0}
   deleteObject: 0
-  deleteItem: 0
+  deleteItem: 1
 --- !u!60 &653565789
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2741,6 +2755,11 @@ Prefab:
       propertyPath: scene.m_SceneName
       value: 013_BurialChamber
       objectReference: {fileID: 0}
+    - target: {fileID: 61617305409831092, guid: 16d330f3b5d534c46b0e2739837d2dd6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
   m_IsPrefabAsset: 0
@@ -3065,13 +3084,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1195124483}
   - component: {fileID: 1195124482}
+  - component: {fileID: 1195124484}
   m_Layer: 0
   m_Name: GemYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1195124482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3131,6 +3151,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195124484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1195124481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &1264855946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,11 +3254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  itemToCombineWith: {fileID: 11400000, guid: 324be1c04807944c581fb0b05a620f5b, type: 2}
   onCombine:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1195124481}
+      - m_Target: {fileID: 598865961}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3234,13 +3267,13 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
   deleteObject: 0
-  deleteItem: 0
+  deleteItem: 1
 --- !u!60 &1278289155
 PolygonCollider2D:
   m_ObjectHideFlags: 0
