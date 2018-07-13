@@ -1460,6 +1460,7 @@ GameObject:
   - component: {fileID: 1299257620}
   - component: {fileID: 1299257618}
   - component: {fileID: 1299257619}
+  - component: {fileID: 1299257621}
   m_Layer: 0
   m_Name: DiaryBed
   m_TagString: Untagged
@@ -1605,6 +1606,17 @@ MonoBehaviour:
   scene:
     m_SceneAsset: {fileID: 102900000, guid: a4e5af0eba4e7c7438cb05e3882e7018, type: 3}
     m_SceneName: Diary
+--- !u!114 &1299257621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299257614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045fb9b9e47000e448817fb2d3aebc35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1301786826
 GameObject:
   m_ObjectHideFlags: 0
