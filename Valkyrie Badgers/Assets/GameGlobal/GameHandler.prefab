@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 4288532511322112}
   - component: {fileID: 114699514389036982}
   - component: {fileID: 114008992810722704}
+  - component: {fileID: 114795325556627946}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -85,10 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8c9b8abcd47d3489fbf5f9a6fcb608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loops:
-  - {fileID: 11400000, guid: cc97f75b42e14284a860b3c9c0848914, type: 2}
-  - {fileID: 11400000, guid: e83d4c86b02e4d6469575dae63504dbe, type: 2}
-  - {fileID: 11400000, guid: f2e9520c7a0c47a4abdff7ffa968502c, type: 2}
 --- !u!114 &114131315976907368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,3 +143,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 243640162332684820, guid: cdafd034953823e4d87586cc9e8a4df4, type: 2}
+--- !u!114 &114795325556627946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1520850932516240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f5c236be5b95d438b3c0cf47d04cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenesForLoops:
+  - loopCollection: {fileID: 11400000, guid: e83d4c86b02e4d6469575dae63504dbe, type: 2}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: 04ccae890c8717045b0fa2b90e98c24d, type: 3}
+      m_SceneName: 001_CabinExterior
+    - m_SceneAsset: {fileID: 102900000, guid: 61f975d747b63174b849e05e0828b028, type: 3}
+      m_SceneName: 002_CabinLeft
+    - m_SceneAsset: {fileID: 102900000, guid: 09e2b941618bf2d449284252f4fb2c70, type: 3}
+      m_SceneName: 003_CabinRight
+    - m_SceneAsset: {fileID: 102900000, guid: b52de7d3258310148af8e892ee9a849b, type: 3}
+      m_SceneName: 004_BackYard
+  - loopCollection: {fileID: 11400000, guid: f2e9520c7a0c47a4abdff7ffa968502c, type: 2}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: d9dae7f8a1628aa44ac6759a913d5baf, type: 3}
+      m_SceneName: 005_BehindFence
+    - m_SceneAsset: {fileID: 102900000, guid: 8dabb5583cfcb284381d91738bab544b, type: 3}
+      m_SceneName: 006_Forest1
+    - m_SceneAsset: {fileID: 102900000, guid: 898c17ad7c9a771428f6e36522da27d7, type: 3}
+      m_SceneName: 007_Forest2
+    - m_SceneAsset: {fileID: 102900000, guid: a4c611e8596fdd54fbcc7a3820363114, type: 3}
+      m_SceneName: 008_Forest3
+    - m_SceneAsset: {fileID: 102900000, guid: 9c826853dd049bb41b6e58cd03f78560, type: 3}
+      m_SceneName: 009_Forest4
+    - m_SceneAsset: {fileID: 102900000, guid: 0b74ca1219e1b94439e8a8aae17443da, type: 3}
+      m_SceneName: 010_Forest5
+    - m_SceneAsset: {fileID: 102900000, guid: cdf6d7643fbd6334c933521621610932, type: 3}
+      m_SceneName: 011_GraveEntrance
+    - m_SceneAsset: {fileID: 102900000, guid: 22dec0d92b5299543a48d3de18ee430a, type: 3}
+      m_SceneName: 012_GraveTunnel
+    - m_SceneAsset: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046, type: 3}
+      m_SceneName: 013_BurialChamber

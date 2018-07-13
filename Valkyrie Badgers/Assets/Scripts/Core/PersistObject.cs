@@ -23,7 +23,7 @@ public class PersistObject : MonoBehaviour
     GameHandler.sceneLoader.onNewSceneLoading -= OnNewSceneLoading;
   }
 
-  void OnNewSceneLoading()
+  void OnNewSceneLoading(SceneField aScene)
   {
     if (persistActive)
       GameHandler.persistencyManager.SetActiveState(gameObject);

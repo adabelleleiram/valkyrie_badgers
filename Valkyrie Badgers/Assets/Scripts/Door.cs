@@ -50,7 +50,7 @@ public class Door : MonoBehaviour
     GameHandler.sceneLoader.onNewSceneLoading -= OnNewSceneLoading;
   }
 
-  void OnNewSceneLoading()
+  void OnNewSceneLoading(SceneField aScene)
   {
     MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
     GameHandler.persistencyManager.SetUnlockedState(this);

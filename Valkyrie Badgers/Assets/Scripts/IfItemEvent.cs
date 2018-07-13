@@ -12,7 +12,6 @@ public class IfItemEvent : MonoBehaviour
 
   void Update()
   {
-    Debug.Log("Checking");
     if (GameHandler.inventory.items.Contains(item1) && GameHandler.inventory.items.Contains(item2) )
     {
       ifEvent.Invoke();

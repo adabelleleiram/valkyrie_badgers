@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour {
-
-    public event UnityAction onNewSceneLoading;
+public class SceneLoader : MonoBehaviour
+{
+    public event UnityAction<SceneField> onNewSceneLoading;
 
     public void LoadScene(SceneField aScene)
     {
-    Debug.Log("here changing");
+        Debug.Log("here changing");
         SceneManager.LoadScene(aScene);
-        if(onNewSceneLoading != null)
-            onNewSceneLoading.Invoke();
+        if (onNewSceneLoading != null)
+            onNewSceneLoading.Invoke(aScene);
     }
 }
