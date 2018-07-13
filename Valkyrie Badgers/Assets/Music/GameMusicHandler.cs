@@ -6,27 +6,15 @@ public class GameMusicHandler : MonoBehaviour
 {
     #region Subclasses
 
-    class LoopState
-    {
-        public LoopState(LoopCollection.Track aTrack)
-        {
-            track = aTrack;
-        }
-
-        public LoopCollection.Track track;
-        public bool isPlaying = false;
-        public bool isChanging = false;
-    }
-
     class LoopChange
     {
-        public LoopChange(LoopCollection.Track aTrack, bool aStart)
+        public LoopChange(LoopTrack aTrack, bool aStart)
         {
             track = aTrack;
             play = aStart;
         }
 
-        public LoopCollection.Track track;
+        public LoopTrack track;
         public bool play = true;
     }
 
@@ -45,7 +33,7 @@ public class GameMusicHandler : MonoBehaviour
 
         public LoopTrack transitionBaseTrack;
 
-        public List<LoopState> tracksToRemove = new List<LoopState>();
+        public List<LoopTrack> tracksToRemove = new List<LoopTrack>();
     }
 
     #endregion
@@ -53,7 +41,6 @@ public class GameMusicHandler : MonoBehaviour
     MusicLooper musicLooper;
 
     LoopCollection currentLoopCollection = null;
-    List<LoopState> loopStates = new List<LoopState>();
 
     LoopChange currentChange;
     Transition currentTransition = new Transition();
@@ -84,7 +71,7 @@ public class GameMusicHandler : MonoBehaviour
 
             foreach (LoopCollection.Track track in aLoopCollection.loopTracks)
             {
-                AddTrack(track);
+                AddTrack(track.loopTrack);
                 if (track.weight == 1)
                     musicLooper.PlayTrack(track.loopTrack);
             }
@@ -104,14 +91,16 @@ public class GameMusicHandler : MonoBehaviour
 
             bool hasTransitionTrack = false;
 
+            List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+
             foreach (LoopCollection.Track track in aLoopCollection.loopTracks)
             {
-                LoopState state = loopStates.Find(x => x.track.loopTrack == track.loopTrack);
-                if (state == null)
+                MusicLooper.PlayingTrack playingTrack = playingTracks.Find(x => x.loopTrack == track.loopTrack);
+                if (playingTrack == null)
                 {
-                    AddTrack(track);
+                    AddTrack(track.loopTrack);
                 }
-                else if (!state.isPlaying)
+                else if (!playingTrack.isPlaying)
                 {
                     musicLooper.PlayTrack(track.loopTrack);
                     hasTransitionTrack = true;
@@ -136,15 +125,7 @@ public class GameMusicHandler : MonoBehaviour
 
     void OnLoopStarted(LoopTrack aTrack)
     {
-        LoopState state = loopStates.Find(x => x.track.loopTrack == aTrack);
-
-        if (state != null)
-        {
-            state.isPlaying = true;
-            state.isChanging = false;
-        }
-
-        if (currentChange != null && aTrack == currentChange.track.loopTrack)
+        if (currentChange != null && aTrack == currentChange.track)
             currentChange = null;
 
         if (currentTransition.state == Transition.State.StartingTransitionTracks)
@@ -160,19 +141,12 @@ public class GameMusicHandler : MonoBehaviour
 
     void OnLoopStopped(LoopTrack aTrack)
     {
-        LoopState state = loopStates.Find(x => x.track.loopTrack == aTrack);
-        if (state != null)
-        {
-            state.isPlaying = false;
-            state.isChanging = false;
-        }
-
-        if (currentChange != null && aTrack == currentChange.track.loopTrack)
+        if (currentChange != null && aTrack == currentChange.track)
             currentChange = null;
 
         if (currentTransition.state == Transition.State.StoppingPrevious)
         {
-            if (currentTransition.tracksToRemove.Exists(x => x.track.loopTrack == aTrack))
+            if (currentTransition.tracksToRemove.Exists(x => x == aTrack))
                 PlayNextCollectionTracks();
         }
     }
@@ -190,19 +164,22 @@ public class GameMusicHandler : MonoBehaviour
         float highestChangeWeight = 0;
         int highestChangeIndex = -1;
 
-        for (int i = 0; i < loopStates.Count; ++i)
+        List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+        for(int i = 0; i < playingTracks.Count; ++i)
         {
-            LoopState state = loopStates[i];
+            MusicLooper.PlayingTrack playingTrack = playingTracks[i];
 
             float random = Random.Range(0.0f, 1.0f);
-            bool shouldPlay = random <= state.track.weight;
-            if (state.isPlaying != shouldPlay)
+            float weight = currentLoopCollection.loopTracks.Find(x => x.loopTrack == playingTrack.loopTrack).weight;
+
+            bool shouldPlay = random <= weight;
+            if (playingTrack.isPlaying != shouldPlay)
             {
-                potentialChanges.Add(new LoopChange(state.track, shouldPlay));
+                potentialChanges.Add(new LoopChange(playingTrack.loopTrack, shouldPlay));
             }
             else //Guarantee a change
             {
-                float weightToChange = state.isPlaying ? 1 - state.track.weight : state.track.weight;
+                float weightToChange = playingTrack.isPlaying ? 1 - weight : weight;
                 if (weightToChange > highestChangeWeight)
                 {
                     highestChangeWeight = weightToChange;
@@ -221,16 +198,15 @@ public class GameMusicHandler : MonoBehaviour
         }
         else if (highestChangeIndex != -1)
         {
-            LoopState state = loopStates[highestChangeIndex];
-
-            AddTrackChange(state.track, !state.isPlaying);
+            MusicLooper.PlayingTrack track = playingTracks[highestChangeIndex];
+            AddTrackChange(track.loopTrack, !track.isPlaying);
         }
     }
 
     #endregion
 
     #region Helpers
-    void AddTrackChange(LoopCollection.Track aTrack, bool aShouldPlay)
+    void AddTrackChange(LoopTrack aTrack, bool aShouldPlay)
     {
         AddTrackChange(new LoopChange(aTrack, aShouldPlay));
     }
@@ -238,36 +214,36 @@ public class GameMusicHandler : MonoBehaviour
     void AddTrackChange(LoopChange aChange)
     {
         if (aChange.play)
-            musicLooper.PlayTrack(aChange.track.loopTrack);
+            musicLooper.PlayTrack(aChange.track);
         else
-            musicLooper.StopTrack(aChange.track.loopTrack);
+            musicLooper.StopTrack(aChange.track);
 
         currentChange = aChange;
-        loopStates.Find(x => x.track == aChange.track).isChanging = true;
     }
 
-    void AddTrack(LoopCollection.Track aTrack)
+    void AddTrack(LoopTrack aTrack)
     {
-        musicLooper.AddTrack(aTrack.loopTrack);
-        loopStates.Add(new LoopState(aTrack));
+        musicLooper.AddTrack(aTrack);
     }
 
-    void RemoveTrack(LoopCollection.Track aTrack)
+    void RemoveTrack(LoopTrack aTrack)
     {
-        musicLooper.RemoveTrack(aTrack.loopTrack);
-        loopStates.RemoveAt(loopStates.FindIndex(x => x.track == aTrack));
+        musicLooper.RemoveTrack(aTrack);
     }
 
     void PlayNextCollectionTracks()
     {
         Debug.Log("GameMusicHandler: PlayNextCollectionTracks");
 
-        foreach (LoopState state in loopStates)
+        List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+        foreach (MusicLooper.PlayingTrack playingTrack in playingTracks)
         {
-            if(currentTransition.nextCollection.loopTracks.Exists(x => x == state.track))
+            LoopCollection.Track track = currentTransition.nextCollection.loopTracks.Find(
+                x => x.loopTrack == playingTrack.loopTrack);
+            if (track != null)
             {
-                if (state.track.weight == 1 && !state.isPlaying)
-                    musicLooper.PlayTrack(state.track.loopTrack);
+                if (track.weight == 1 && !playingTrack.isPlaying)
+                    musicLooper.PlayTrack(playingTrack.loopTrack);
             }   
         }
 
@@ -283,16 +259,17 @@ public class GameMusicHandler : MonoBehaviour
         musicLooper.SetBaseTrack(currentTransition.transitionBaseTrack);
 
         bool tracksToStop = false;
-        foreach (LoopState state in loopStates)
+        List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+        foreach (MusicLooper.PlayingTrack playingTrack in playingTracks)
         {
-            if (!currentTransition.nextCollection.loopTracks.Exists(x => x.loopTrack == state.track.loopTrack))
+            if (!currentTransition.nextCollection.loopTracks.Exists(x => x.loopTrack == playingTrack.loopTrack))
             {
-                currentTransition.tracksToRemove.Add(state);
+                currentTransition.tracksToRemove.Add(playingTrack.loopTrack);
 
-                if (state.isPlaying || state.isChanging)
+                if (playingTrack.isPlaying || playingTrack.isChanging)
                 {
                     tracksToStop = true;
-                    musicLooper.StopTrack(state.track.loopTrack);
+                    musicLooper.StopTrack(playingTrack.loopTrack);
                 }
             }
         }
@@ -314,7 +291,7 @@ public class GameMusicHandler : MonoBehaviour
 
         for (int i = currentTransition.tracksToRemove.Count - 1; i >= 0; --i)
         {
-            RemoveTrack(currentTransition.tracksToRemove[i].track);
+            RemoveTrack(currentTransition.tracksToRemove[i]);
         }
         currentTransition.tracksToRemove.Clear();
     }

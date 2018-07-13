@@ -13,13 +13,17 @@ public class MusicHandler : MonoBehaviour
 
     public List<ScenesForLoop> scenesForLoops = new List<ScenesForLoop>();
 
-    GameMusicHandler gameMusicHandler;
+    public LoopSequenceTrigger startSequence;
 
-    bool sceneBasedMusic = true;
+    GameMusicHandler gameMusicHandler;
+    SequenceMusicPlayer sequenceMusicPlayer;
+
+    bool sequencedMusic = false;
 
     void Start()
     {
         gameMusicHandler = GetComponent<GameMusicHandler>();
+        sequenceMusicPlayer = GetComponent<SequenceMusicPlayer>();
 
         GameHandler.sceneLoader.onNewSceneLoading += OnSceneChange;
 
@@ -33,7 +37,7 @@ public class MusicHandler : MonoBehaviour
 
     void OnSceneChange(SceneField aScene)
     {
-        if (sceneBasedMusic)
+        if (!sequencedMusic)
         {
             ScenesForLoop loop = scenesForLoops.Find(x => x.scenes.Exists(y => y.SceneName == aScene.SceneName));
             if(loop != null)
@@ -48,7 +52,7 @@ public class MusicHandler : MonoBehaviour
 
     void TriggerMusicVariation()
     {
-        if(sceneBasedMusic)
+        if(!sequencedMusic)
         {
             gameMusicHandler.TriggerMusicVariation();
         }
