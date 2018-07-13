@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DeactivateBoxCollider : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+  // Use this for initialization
+  void Start () {
     gameObject.GetComponent<Collider>().enabled = false;
   }
 
