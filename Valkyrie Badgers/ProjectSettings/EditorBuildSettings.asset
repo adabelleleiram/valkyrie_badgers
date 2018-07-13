@@ -63,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Entrance.unity
     guid: 4a72bafb5050a6f41800347c2d0d257d
   - enabled: 1
+    path: Assets/Scenes/Letter.unity
+    guid: 158158572d9b94a39a75b3fd5473df68
+  - enabled: 1
     path: Assets/Scenes/Note.unity
     guid: da6589c7245c9b34aa2e741ce1d12c48
   - enabled: 1
