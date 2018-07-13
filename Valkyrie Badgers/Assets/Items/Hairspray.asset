@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Hairspray
   m_EditorClassIdentifier: 
   name: Hairspray
-  icon: {fileID: 21300000, guid: 14c1b3cce95a0bd4baa6edb1df2ba1f5, type: 3}
+  icon: {fileID: 21300000, guid: 2896ba4b7a96f497392bdda20ffd6735, type: 3}
   isDefaultItem: 0
-  description: Grandma's old super poisonous hairspray
+  description: A very old can of Grandma's hairspray. It's almost empty.
