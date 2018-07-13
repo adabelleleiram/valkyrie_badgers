@@ -123,13 +123,14 @@ GameObject:
   - component: {fileID: 133717531}
   - component: {fileID: 133717530}
   - component: {fileID: 133717529}
+  - component: {fileID: 133717532}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &133717529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +200,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &133717532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133717528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 0
 --- !u!1 &136469745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,11 +2518,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4334720124593344, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.15
+      value: 5.692
       objectReference: {fileID: 0}
     - target: {fileID: 4334720124593344, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.39
+      value: 2.911
       objectReference: {fileID: 0}
     - target: {fileID: 4334720124593344, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3364,7 +3378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 242.5, y: -43.5}
+  m_AnchoredPosition: {x: 243.5, y: -44.5}
   m_SizeDelta: {x: 439, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1474911973
@@ -4072,7 +4086,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -300, y: 16}
-  m_SizeDelta: {x: 500, y: 87}
+  m_SizeDelta: {x: 500, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845579273
 MonoBehaviour:
@@ -4277,8 +4291,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -43.5}
-  m_SizeDelta: {x: 485, y: 87}
+  m_AnchoredPosition: {x: 250, y: -44.5}
+  m_SizeDelta: {x: 487, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046274842
 MonoBehaviour:
