@@ -9997,6 +9997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10156,6 +10157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 144cde46eb03c4afe90e08fb350223ab, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10518,6 +10520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 83121c29dcc4d0c4ab4e5a7b92b1bcc8, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10623,6 +10626,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11016,6 +11030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 2691aee621c30467280f0b78ddb49e03, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -16584,6 +16599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: f963d54c65b134118b1c9440b64cd5df, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:

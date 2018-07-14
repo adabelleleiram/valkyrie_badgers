@@ -476,12 +476,12 @@ Prefab:
         type: 2}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 9c826853dd049bb41b6e58cd03f78560,
+      objectReference: {fileID: 102900000, guid: 25dc6e37668de4c71b4468c711f6e7ad,
         type: 3}
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: 009_Forest4
+      value: 018_Forest4_Bright
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
