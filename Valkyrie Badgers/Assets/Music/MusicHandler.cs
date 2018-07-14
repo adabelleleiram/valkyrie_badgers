@@ -18,6 +18,7 @@ public class MusicHandler : MonoBehaviour
 
     GameMusicHandler gameMusicHandler;
     SequenceMusicPlayer sequenceMusicPlayer;
+    MusicLooper musicLooper;
 
     bool sequencedMusic;
 
@@ -27,6 +28,7 @@ public class MusicHandler : MonoBehaviour
     {
         gameMusicHandler = GetComponent<GameMusicHandler>();
         sequenceMusicPlayer = GetComponent<SequenceMusicPlayer>();
+        musicLooper = GetComponent<MusicLooper>();
 
         GameHandler.sceneLoader.onNewSceneLoading += OnSceneChange;
 
@@ -46,6 +48,27 @@ public class MusicHandler : MonoBehaviour
     {
         sequencedMusic = false;
         PlaySceneMusic(SceneManager.GetActiveScene().name);
+    }
+
+    public float GetCurrentSequenceLength()
+    {
+        if (!sequencedMusic)
+            return 0;
+
+        return sequenceMusicPlayer.GetCurrentSequenceLength();
+    }
+
+    public float GetCurrentSequenceTime()
+    {
+        if (!sequencedMusic)
+            return 0;
+
+        return sequenceMusicPlayer.GetCurrentSequenceTime();
+    }
+
+    public float GetLoopFadeTime()
+    {
+        return musicLooper.loopFadeTime;
     }
 
     void OnSceneChange(SceneField aScene)

@@ -28,6 +28,8 @@ public class MusicLooper : MonoBehaviour
 
     public List<PlayingTrack> activeTracks { get { return playingTracks; } }
 
+    public float loopFadeTime { get { return fadeTime; } }
+
     List<PlayingTrack> playingTracks = new List<PlayingTrack>();
     PlayingTrack baseTrack;
 

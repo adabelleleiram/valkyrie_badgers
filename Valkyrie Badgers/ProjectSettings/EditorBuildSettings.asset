@@ -48,9 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/013_BurialChamber.unity
     guid: 34ea4228931737e49b9fe03be8991046
   - enabled: 1
-    path: Assets/Scenes/014_EndScene.unity
-    guid: b67619d94056e4b789f328c7bec544d3
-  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 15e4a48b99a68ce4cb43c83d3bbbd9ae
   - enabled: 1
@@ -104,4 +101,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/015_Forest1_Bright.unity
     guid: a1babbe7ab4ed475b9ad70fe70a4170c
+  - enabled: 1
+    path: Assets/Scenes/EndScenes/EndScene_Skeleton.unity
+    guid: 82c318823aa91cf4ba73f606276531f7
+  - enabled: 1
+    path: Assets/Scenes/EndScenes/EndScene_Valkyrie.unity
+    guid: d0415226d3854094398035597c7c84ca
   m_configObjects: {}
