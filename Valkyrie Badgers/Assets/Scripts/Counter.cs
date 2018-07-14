@@ -12,6 +12,18 @@ public class Counter : MonoBehaviour {
     public CountReachedEvent onReachedCount;
 
     int count = 0;
+
+
+    private void Start()
+    {
+        count = GameHandler.persistencyManager.GetCounterState(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        GameHandler.persistencyManager.SetCounterState(gameObject, count);
+    }
+
     public void AddToCount()
     {
         ++count;
