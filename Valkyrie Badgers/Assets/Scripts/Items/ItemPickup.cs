@@ -18,5 +18,6 @@ public class ItemPickup : MonoBehaviour
         GameHandler.inventory.Add(item);
         gameObject.SetActive(false);
         onPickUp.Invoke();
+        GameHandler.soundHandler.pickup.Play();
     }
 }
