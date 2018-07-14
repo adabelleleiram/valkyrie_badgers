@@ -306,8 +306,8 @@ GameObject:
   m_Component:
   - component: {fileID: 297157264}
   - component: {fileID: 297157263}
-  - component: {fileID: 297157261}
   - component: {fileID: 297157260}
+  - component: {fileID: 297157261}
   m_Layer: 0
   m_Name: UnderCar
   m_TagString: Untagged
@@ -356,8 +356,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
-  deleteObject: 0
+  description: {fileID: 330285765}
+  deleteObject: 1
   deleteItem: 0
 --- !u!61 &297157263
 BoxCollider2D:
@@ -720,6 +720,48 @@ Transform:
   m_Father: {fileID: 205480173}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &564043949
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689224375162962, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e13d6b7161eb2c64d989b5565558a1eb, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &577140774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1473,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1982633783}
+        m_MethodName: SetClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
@@ -1746,7 +1799,6 @@ GameObject:
   - component: {fileID: 1055863554}
   - component: {fileID: 1055863553}
   - component: {fileID: 1055863552}
-  - component: {fileID: 1055863551}
   - component: {fileID: 1055863550}
   m_Layer: 0
   m_Name: DeadVole
@@ -1767,37 +1819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 144cde46eb03c4afe90e08fb350223ab, type: 2}
---- !u!114 &1055863551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1055863549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: 1e965c42b0b57764db686924317d1d5e, type: 2}
-  onCombine:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1055863549}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  description: {fileID: 330285765}
-  deleteObject: 1
-  deleteItem: 0
 --- !u!114 &1055863552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2261,7 +2282,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1301786828}
   - component: {fileID: 1301786827}
-  - component: {fileID: 1301786829}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -2328,19 +2348,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1301786829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1301786826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descIn: 
-  desc: {fileID: 0}
 --- !u!1 &1344888853
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,6 +4111,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982633783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114593164744013878, guid: e13d6b7161eb2c64d989b5565558a1eb,
+    type: 2}
+  m_PrefabInternal: {fileID: 564043949}
+  m_Script: {fileID: 11500000, guid: 825952ed3c2adab49a59d0d90f85acf9, type: 3}
 --- !u!1 &1997562647
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Feather
   m_EditorClassIdentifier: 
   name: Feather
-  icon: {fileID: 21300000, guid: 8bc4381b236214ec3951f19f7413803c, type: 3}
+  icon: {fileID: 21300000, guid: 94cbe141b0688419dac3696429bdcd6a, type: 3}
   isDefaultItem: 0
   description: A long, magnificent feather.
+  counter: 0

@@ -20,7 +20,8 @@ public class InventorySlot : MonoBehaviour
 
   public void ChangeFeatherOnCount()
   {
-    icon.sprite = GameHandler.inventory.featherSprites[item.counter - 1];
+    Debug.Log(item.counter);
+    icon.sprite = GameHandler.inventory.featherSprites[item.counter - 2];
   }
 
   public void ClearSlot()

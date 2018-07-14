@@ -632,6 +632,7 @@ Prefab:
     - {fileID: 114868848139714774, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 61248698802407882, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+    - {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1071667097
@@ -1857,7 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistActive: 1
-  activeOnStart: 1
+  activeOnStart: 0
 --- !u!1 &2134342733
 GameObject:
   m_ObjectHideFlags: 0
