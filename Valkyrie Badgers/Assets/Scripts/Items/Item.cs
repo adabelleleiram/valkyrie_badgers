@@ -6,11 +6,8 @@ public class Item : ScriptableObject {
   public Sprite icon = null;
   public bool isDefaultItem = false;
   public string description = "Desc";
-
-  public void Use()
-  {
-    Debug.Log("Using Item");
-  }
+  [HideInInspector]
+  public int counter = 0;
 
   public void SetPosition( Vector2 position )
   {

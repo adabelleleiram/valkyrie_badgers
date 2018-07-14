@@ -16,13 +16,17 @@ public class InventoryUI : MonoBehaviour
 
   void Update()
   {
-    //On reload screen
     for (int i = 0; i < slots.Length; ++i)
     {
       if (i < inventory.items.Count)
       {
-        slots[i].AddItem(inventory.items[i]);
+        Item currentItem = inventory.items[i];
+        slots[i].AddItem(currentItem);
         slotsFilled++;
+
+        //Feathers
+        if (currentItem.counter > 1 && currentItem)
+          slots[i].ChangeFeatherOnCount();
       }
       else
       {
