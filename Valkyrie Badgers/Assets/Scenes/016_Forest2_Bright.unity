@@ -398,12 +398,12 @@ Prefab:
         type: 2}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: a4c611e8596fdd54fbcc7a3820363114,
+      objectReference: {fileID: 102900000, guid: 4947c253d5f844d55a9a9b9b0a922d85,
         type: 3}
     - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: 008_Forest3
+      value: 017_Forest3_Bright
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
@@ -637,12 +637,12 @@ Prefab:
         type: 2}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 8dabb5583cfcb284381d91738bab544b,
+      objectReference: {fileID: 102900000, guid: a1babbe7ab4ed475b9ad70fe70a4170c,
         type: 3}
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: 006_Forest1
+      value: 015_Forest1_Bright
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}

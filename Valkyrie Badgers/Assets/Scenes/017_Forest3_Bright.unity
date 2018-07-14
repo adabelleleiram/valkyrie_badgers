@@ -859,6 +859,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114703503274283784, guid: 1b32486c1b7dede4fa24bf761834414f,
+        type: 2}
+      propertyPath: nextScene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 25dc6e37668de4c71b4468c711f6e7ad,
+        type: 3}
+    - target: {fileID: 114703503274283784, guid: 1b32486c1b7dede4fa24bf761834414f,
+        type: 2}
+      propertyPath: nextScene.m_SceneName
+      value: 018_Forest4_Bright
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b32486c1b7dede4fa24bf761834414f, type: 2}
   m_IsPrefabAsset: 0
@@ -910,12 +921,12 @@ Prefab:
         type: 2}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 898c17ad7c9a771428f6e36522da27d7,
+      objectReference: {fileID: 102900000, guid: 6c57c91d92c71440c9419011e80b84dc,
         type: 3}
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: 007_Forest2
+      value: 016_Forest2_Bright
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
