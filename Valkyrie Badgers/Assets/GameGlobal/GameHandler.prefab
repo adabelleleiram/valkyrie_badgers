@@ -100,6 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loopSequences:
   - {fileID: 11400000, guid: 11b89a83be34d8e41b545fbb4aa21900, type: 2}
+  - {fileID: 11400000, guid: 6366ac7e379ed2c4f8a318826ae2e720, type: 2}
+  - {fileID: 11400000, guid: f9822bee144eec14ba1b52c2239807f1, type: 2}
 --- !u!114 &114131315976907368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items: []
   hiddenItems: []
+  featherSprites: []
 --- !u!114 &114699514389036982
 MonoBehaviour:
   m_ObjectHideFlags: 1

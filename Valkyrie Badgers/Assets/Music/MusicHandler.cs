@@ -30,7 +30,7 @@ public class MusicHandler : MonoBehaviour
 
         GameHandler.sceneLoader.onNewSceneLoading += OnSceneChange;
 
-        GameHandler.inventory.OnItemPickUp += TriggerMusicVariation;
+        GameHandler.inventory.OnItemPickUp += (item => TriggerMusicVariation());
         ItemCombine.GlobalOnCombine += TriggerMusicVariation;
 
         TriggerLoopSequence(startSequence);

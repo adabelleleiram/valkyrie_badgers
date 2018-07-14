@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: 4_Choir
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: e9654dc877778364f949acc0fd437dbb, type: 3}
-  volume: 1
+  volume: 0.5
