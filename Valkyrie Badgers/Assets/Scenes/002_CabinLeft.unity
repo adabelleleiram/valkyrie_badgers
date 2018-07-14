@@ -629,8 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Oh, there's my great grandma! She's my role model... I wish I was brave
-    like her!
+  descIn: Oh, there's my Grandma! She's my role model... I wish I was brave like her!
   desc: {fileID: 1817923392}
 --- !u!1001 &606783924
 Prefab:
@@ -805,6 +804,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &1006909801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,6 +1530,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: dec9b6e994f22fe498e4105056494a41, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &1615233642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,6 +2038,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 83121c29dcc4d0c4ab4e5a7b92b1bcc8, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!61 &2134342735
 BoxCollider2D:
   m_ObjectHideFlags: 0

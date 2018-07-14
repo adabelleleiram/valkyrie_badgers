@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 96920853}
   - component: {fileID: 96920852}
   - component: {fileID: 96920854}
+  - component: {fileID: 96920855}
   m_Layer: 0
   m_Name: RightUpDrawer
   m_TagString: Untagged
@@ -204,6 +205,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &96920855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96920851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a320aaeb0a71b240b0e81d856550f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 277325462}
         m_MethodName: SetActive
         m_Mode: 6
@@ -215,7 +232,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    m_TypeName: OnClickOnce+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!1 &139217864
 GameObject:
@@ -469,6 +486,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &277325465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,6 +931,7 @@ GameObject:
   - component: {fileID: 840831731}
   - component: {fileID: 840831733}
   - component: {fileID: 840831732}
+  - component: {fileID: 840831734}
   m_Layer: 0
   m_Name: DiaryShelf
   m_TagString: Untagged
@@ -1113,6 +1136,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: Whatever that is, it's too high up for me to reach.
   desc: {fileID: 2093943437}
+--- !u!114 &840831734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840831726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &930754549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,6 +1264,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 52df61a00e3d44c2fb85f928b9481f01, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &930754554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,6 +1367,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &1104362295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,6 +2062,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 95933750525654476, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+    - {fileID: 114868848139714774, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1393943389
