@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descIn: A plate made of delicate chinese porecelain.
-  desc: {fileID: 0}
+  desc: {fileID: 1248927292}
 --- !u!1 &403480510
 GameObject:
   m_ObjectHideFlags: 0
