@@ -454,7 +454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: 1e965c42b0b57764db686924317d1d5e, type: 2}
+  itemToCombineWith: {fileID: 11400000, guid: 8823208b6fa064b83866af0fb1848e25, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -1541,6 +1542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 1e965c42b0b57764db686924317d1d5e, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -1932,7 +1934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1055863550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,7 +2958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1459417571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3083,6 +3085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: f4e71c0b39cf34f978c7d90019e718cd, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
