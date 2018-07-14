@@ -572,7 +572,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1248927292}
   deleteObject: 0
   deleteItem: 1
 --- !u!60 &403326264
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   descIn: 
-  desc: {fileID: 0}
+  desc: {fileID: 1248927292}
 --- !u!1001 &1338033673
 Prefab:
   m_ObjectHideFlags: 0

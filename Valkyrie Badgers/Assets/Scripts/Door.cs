@@ -12,7 +12,9 @@ public class Door : MonoBehaviour
   private void OnMouseUpAsButton()
   {
     if (!locked)
+    {
       GameHandler.sceneLoader.LoadScene(nextScene);
+    }
   }
   private void OnMouseEnter()
   {
