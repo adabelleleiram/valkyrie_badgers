@@ -294,10 +294,10 @@ GameObject:
   m_Component:
   - component: {fileID: 266850126}
   - component: {fileID: 266850125}
-  - component: {fileID: 266850124}
   - component: {fileID: 266850127}
   - component: {fileID: 266850128}
   - component: {fileID: 266850129}
+  - component: {fileID: 266850124}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Untagged
@@ -329,66 +329,74 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.355, y: -0.16}
-      - {x: 0.42499998, y: -0.07}
-      - {x: 0.685, y: -0.04}
-      - {x: 0.835, y: 0.06}
-      - {x: 0.835, y: 0.17999999}
-      - {x: 0.825, y: 0.21}
-      - {x: 0.53499997, y: 0.089999996}
-      - {x: 0.405, y: 0.07}
-      - {x: 0.355, y: 0.14999999}
-      - {x: 0.685, y: 0.37}
-      - {x: 0.715, y: 0.45999998}
-      - {x: 0.585, y: 0.5}
-      - {x: 0.36499998, y: 0.32999998}
-      - {x: 0.235, y: 0.31}
-      - {x: 0.45499998, y: 0.62}
-      - {x: 0.405, y: 0.71999997}
-      - {x: 0.325, y: 0.72999996}
-      - {x: 0.105, y: 0.38}
-      - {x: 0.024999999, y: 0.45}
-      - {x: 0.035, y: 0.64}
-      - {x: 0.125, y: 0.76}
-      - {x: 0.085, y: 0.84999996}
-      - {x: -0.024999999, y: 0.84999996}
-      - {x: -0.125, y: 0.68}
-      - {x: -0.105, y: 0.62}
-      - {x: -0.105, y: 0.45999998}
-      - {x: -0.095, y: 0.45}
-      - {x: -0.095, y: 0.42999998}
-      - {x: -0.105, y: 0.47}
-      - {x: -0.205, y: 0.59}
-      - {x: -0.385, y: 0.62}
-      - {x: -0.515, y: 0.62}
-      - {x: -0.625, y: 0.5}
-      - {x: -0.59499997, y: 0.19999999}
-      - {x: -0.415, y: 0.06}
-      - {x: -0.585, y: 0.06}
-      - {x: -0.815, y: -0.02}
-      - {x: -0.835, y: -0.07}
-      - {x: -0.835, y: -0.17999999}
-      - {x: -0.775, y: -0.19999999}
-      - {x: -0.575, y: -0.099999994}
-      - {x: -0.325, y: -0.13}
-      - {x: -0.655, y: -0.35999998}
-      - {x: -0.685, y: -0.48}
-      - {x: -0.645, y: -0.5}
-      - {x: -0.555, y: -0.5}
-      - {x: -0.235, y: -0.22999999}
-      - {x: -0.265, y: -0.35999998}
-      - {x: -0.435, y: -0.64}
-      - {x: -0.385, y: -0.75}
-      - {x: -0.315, y: -0.74}
-      - {x: -0.185, y: -0.53}
-      - {x: -0.095, y: -0.34}
-      - {x: -0.024999999, y: -0.57}
-      - {x: -0.114999995, y: -0.78999996}
-      - {x: -0.095, y: -0.84999996}
-      - {x: 0.044999998, y: -0.84999996}
-      - {x: 0.114999995, y: -0.61}
-      - {x: 0.105, y: -0.39}
-      - {x: 0.225, y: -0.32}
+    - - {x: -0.24, y: -0.015}
+      - {x: 0.01, y: -0.105}
+      - {x: 0.19999999, y: -0.055}
+      - {x: 0.22999999, y: 0.005}
+      - {x: 0.45999998, y: 0.044999998}
+      - {x: 0.53999996, y: -0.114999995}
+      - {x: 0.59, y: -0.375}
+      - {x: 0.63, y: -0.645}
+      - {x: 0.69, y: -0.675}
+      - {x: 0.72999996, y: -0.635}
+      - {x: 0.71, y: -0.21499999}
+      - {x: 0.68, y: -0.105}
+      - {x: 0.66999996, y: -0.105}
+      - {x: 0.65999997, y: -0.044999998}
+      - {x: 0.65999997, y: -0.065}
+      - {x: 0.7, y: -0.114999995}
+      - {x: 0.75, y: -0.155}
+      - {x: 0.81, y: -0.145}
+      - {x: 0.82, y: -0.125}
+      - {x: 0.82, y: -0.055}
+      - {x: 0.62, y: 0.21499999}
+      - {x: 0.55, y: 0.36499998}
+      - {x: 0.29, y: 0.575}
+      - {x: 0.17999999, y: 0.625}
+      - {x: 0.04, y: 0.645}
+      - {x: -0.049999997, y: 0.685}
+      - {x: -0.34, y: 0.685}
+      - {x: -0.38, y: 0.675}
+      - {x: -0.53999996, y: 0.445}
+      - {x: -0.61, y: 0.405}
+      - {x: -0.68, y: 0.385}
+      - {x: -0.74, y: 0.345}
+      - {x: -0.82, y: 0.095}
+      - {x: -0.82, y: -0.044999998}
+      - {x: -0.78, y: -0.044999998}
+      - {x: -0.78999996, y: -0.325}
+      - {x: -0.74, y: -0.355}
+      - {x: -0.72999996, y: -0.355}
+      - {x: -0.69, y: -0.305}
+      - {x: -0.65, y: -0.114999995}
+      - {x: -0.62, y: -0.285}
+      - {x: -0.48999998, y: -0.45499998}
+      - {x: -0.44, y: -0.555}
+      - {x: -0.35999998, y: -0.60499996}
+      - {x: -0.32999998, y: -0.545}
+      - {x: -0.32999998, y: -0.49499997}
+      - {x: -0.39, y: -0.385}
+      - {x: -0.51, y: -0.145}
+      - {x: -0.42999998, y: 0.024999999}
+      - {x: -0.32, y: -0.285}
+      - {x: -0.29999998, y: -0.33499998}
+      - {x: 0.01, y: -0.635}
+      - {x: 0.03, y: -0.685}
+      - {x: 0.12, y: -0.685}
+      - {x: 0.099999994, y: -0.585}
+      - {x: -0.099999994, y: -0.345}
+      - {x: -0.22, y: -0.145}
+    - - {x: -0.48999998, y: 0.195}
+      - {x: -0.48, y: 0.16499999}
+      - {x: -0.53, y: 0.155}
+      - {x: -0.52, y: 0.155}
+    - - {x: -0.59, y: 0.285}
+      - {x: -0.62, y: 0.255}
+      - {x: -0.66999996, y: 0.175}
+      - {x: -0.64, y: 0.185}
+    - - {x: 0.32999998, y: 0.21499999}
+      - {x: 0.34, y: 0.205}
+      - {x: 0.31, y: 0.205}
 --- !u!212 &266850125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -573,7 +581,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1248927292}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!60 &403326264
 PolygonCollider2D:
@@ -831,7 +839,6 @@ GameObject:
   - component: {fileID: 1257876615}
   - component: {fileID: 1257876614}
   - component: {fileID: 1257876613}
-  - component: {fileID: 1257876612}
   m_Layer: 0
   m_Name: WispInJar
   m_TagString: Untagged
@@ -839,33 +846,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1257876612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1257876611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 117478084}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &1257876613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,6 +896,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 006b5ed8e88814ab98845d3c2eb1a2cd, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 117478084}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!212 &1257876616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1178,7 +1174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1477946645}
   - component: {fileID: 1477946648}
-  - component: {fileID: 1477946647}
   - component: {fileID: 1477946646}
   - component: {fileID: 1477946649}
   m_Layer: 0
@@ -1214,49 +1209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: Is that... a wisp? The spider might attack me if I reach for it.
   desc: {fileID: 1248927292}
---- !u!114 &1477946647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1477946644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemToCombineWith: {fileID: 11400000, guid: 52df61a00e3d44c2fb85f928b9481f01, type: 2}
-  minRequiredCount: 1
-  onCombine:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 117478084}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1257876611}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  description: {fileID: 0}
-  deleteObject: 0
-  deleteItem: 1
 --- !u!61 &1477946648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1405,17 +1357,6 @@ MonoBehaviour:
   onCombine:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 117478084}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1257876611}
         m_MethodName: SetActive
         m_Mode: 6
@@ -1430,7 +1371,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
-  deleteObject: 0
+  deactivateObject: 1
   deleteItem: 1
 --- !u!114 &1800937466
 MonoBehaviour:

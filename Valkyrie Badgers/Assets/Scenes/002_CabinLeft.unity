@@ -510,7 +510,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1817923392}
-  deleteObject: 1
+  deactivateObject: 0
   deleteItem: 0
 --- !u!114 &225153816
 MonoBehaviour:
@@ -1513,7 +1513,7 @@ Transform:
   m_GameObject: {fileID: 1615233638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.41, y: -0.38, z: 0.14272478}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8

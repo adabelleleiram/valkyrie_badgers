@@ -11,13 +11,12 @@ public class ItemDescription : MonoBehaviour
   private void Start()
   {
     text = GetComponentInChildren<Text>();
-    text.enabled = false;
+    text.text = "";
   }
 
   public void SetDescription(string desc)
   {
     text.text = desc;
-    text.enabled = true;
   }
 
   public bool SetDescription(Item item)
@@ -33,13 +32,12 @@ public class ItemDescription : MonoBehaviour
 
     currentItem = item;
     text.text = currentItem.description;
-    text.enabled = true;
     return true;
   }
 
   public void ClearDescription()
   {
-    text.enabled = false;
+    text.text = "";
     if ( currentItem != null )
       currentItem = null;
   }
