@@ -89,4 +89,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PurpleBook.unity
     guid: 0db5cc7ad94db481a95b0bda240827bc
+  - enabled: 1
+    path: Assets/Scenes/019_Forest5_Bright.unity
+    guid: dfc3f62d476a54fb1a940094b60ff3ff
+  - enabled: 1
+    path: Assets/Scenes/018_Forest4_Bright.unity
+    guid: 25dc6e37668de4c71b4468c711f6e7ad
+  - enabled: 1
+    path: Assets/Scenes/017_Forest3_Bright.unity
+    guid: 4947c253d5f844d55a9a9b9b0a922d85
+  - enabled: 1
+    path: Assets/Scenes/016_Forest2_Bright.unity
+    guid: 6c57c91d92c71440c9419011e80b84dc
+  - enabled: 1
+    path: Assets/Scenes/015_Forest1_Bright.unity
+    guid: a1babbe7ab4ed475b9ad70fe70a4170c
   m_configObjects: {}

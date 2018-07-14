@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
-  public event UnityAction OnItemPickUp;
+  public event UnityAction<Item> OnItemPickUp;
   public List<Item> items = new List<Item>();
   public List<Item> hiddenItems = new List<Item>();
 
@@ -34,7 +34,7 @@ public class Inventory : MonoBehaviour
       hiddenItems.Add(item);
       item.counter = 1;
     }
-    OnItemPickUp.Invoke();
+    OnItemPickUp.Invoke(item);
   }
 
   public void Remove(Item item)

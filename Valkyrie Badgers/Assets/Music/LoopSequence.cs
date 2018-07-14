@@ -9,7 +9,7 @@ public class LoopSequence : ScriptableObject
     public class Sequence
     {
         public LoopSequenceTrigger trigger;
-        public List<LoopTrack> loops; 
+        public List<LoopTrack> loops = new List<LoopTrack>(); 
     }
 
     public List<Sequence> sequences;
