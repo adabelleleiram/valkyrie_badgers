@@ -14,8 +14,12 @@ public class Highlight : MonoBehaviour {
 
   void OnMouseEnter()
   {
-    if ( spriteR.sprite != highlight )
+    Debug.Log("wtf");
+    Debug.Log(spriteR.sprite + " " + highlight.name);
+    if (spriteR.sprite != highlight)
+    {
       spriteR.sprite = highlight;
+    }
   }
 
   void OnMouseExit()
