@@ -1944,6 +1944,7 @@ GameObject:
   - component: {fileID: 1055863554}
   - component: {fileID: 1055863553}
   - component: {fileID: 1055863552}
+  - component: {fileID: 1055863551}
   - component: {fileID: 1055863550}
   m_Layer: 0
   m_Name: DeadVole
@@ -1964,6 +1965,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 144cde46eb03c4afe90e08fb350223ab, type: 2}
+--- !u!114 &1055863551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055863549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d51a8efd0519954783a3c781e1e1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToCombineWith: {fileID: 11400000, guid: 83121c29dcc4d0c4ab4e5a7b92b1bcc8, type: 2}
+  minRequiredCount: 1
+  onCombine:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1055863549}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  description: {fileID: 0}
+  deleteObject: 1
+  deleteItem: 0
 --- !u!114 &1055863552
 MonoBehaviour:
   m_ObjectHideFlags: 0
