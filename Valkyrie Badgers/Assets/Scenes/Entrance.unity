@@ -355,6 +355,8 @@ GameObject:
   - component: {fileID: 227980083}
   - component: {fileID: 623210404}
   - component: {fileID: 227980082}
+  - component: {fileID: 227980086}
+  - component: {fileID: 227980085}
   m_Layer: 0
   m_Name: StarEmitter
   m_TagString: Untagged
@@ -446,6 +448,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &227980085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227980081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: cdf6d7643fbd6334c933521621610932, type: 3}
+    m_SceneName: 011_GraveEntrance
+--- !u!114 &227980086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227980081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b76ad787832d42188d81a6ec3203684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWaitAfter: 1
+  waitAfter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 784774250}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 227980085}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: AnimationWait+ActionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1001 &256916139
 Prefab:
   m_ObjectHideFlags: 0
@@ -5463,8 +5518,7 @@ GameObject:
   - component: {fileID: 784774252}
   - component: {fileID: 784774251}
   - component: {fileID: 784774253}
-  - component: {fileID: 784774254}
-  - component: {fileID: 784774258}
+  - component: {fileID: 784774259}
   m_Layer: 0
   m_Name: N_Rune
   m_TagString: Untagged
@@ -5557,7 +5611,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 784774254}
+      - m_Target: {fileID: 227980086}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -5568,23 +5622,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: LockedObj+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!114 &784774254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 784774250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b76ad787832d42188d81a6ec3203684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToWaitAfter: 1
-  waitAfter:
-    m_PersistentCalls:
-      m_Calls:
+      - m_Target: {fileID: 784774259}
+        m_MethodName: Get
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 541609278}
         m_MethodName: SetActive
         m_Mode: 6
@@ -5596,18 +5644,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 784774258}
-        m_MethodName: Load
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: AnimationWait+ActionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    m_TypeName: LockedObj+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!114 &784774255
 MonoBehaviour:
@@ -5650,7 +5687,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &784774258
+--- !u!114 &784774259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5658,12 +5695,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 784774250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Script: {fileID: 11500000, guid: db0b57848a283d94a8c229f7f6ae9a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
-    m_SceneAsset: {fileID: 102900000, guid: cdf6d7643fbd6334c933521621610932, type: 3}
-    m_SceneName: 011_GraveEntrance
+  item: {fileID: 11400000, guid: 94b2748431dc34841b70683a011a93b0, type: 2}
 --- !u!1 &1064835654
 GameObject:
   m_ObjectHideFlags: 0

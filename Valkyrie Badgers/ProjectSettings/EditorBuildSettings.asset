@@ -30,8 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/007_Forest2.unity
     guid: 898c17ad7c9a771428f6e36522da27d7
   - enabled: 1
-    path: Assets/Scenes/008_Forest3.unity
-    guid: a4c611e8596fdd54fbcc7a3820363114
+    path: Assets/Scenes/008_Forest5.unity
+    guid: 7942406783b394f158873767c851b0a0
   - enabled: 1
     path: Assets/Scenes/009_Forest4.unity
     guid: 9c826853dd049bb41b6e58cd03f78560
