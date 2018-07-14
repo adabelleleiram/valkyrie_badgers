@@ -10430,7 +10430,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1811342516}
   deleteObject: 0
   deleteItem: 0
 --- !u!60 &1162460488
@@ -10842,7 +10842,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1811342516}
   deleteObject: 0
   deleteItem: 0
 --- !u!114 &1367275385

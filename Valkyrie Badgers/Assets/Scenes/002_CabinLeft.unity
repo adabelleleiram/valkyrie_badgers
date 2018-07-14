@@ -317,7 +317,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1817923392}
   deleteObject: 1
   deleteItem: 0
 --- !u!114 &225153816
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenesForLoops:
-  - loopCollection: {fileID: 11400000, guid: cc97f75b42e14284a860b3c9c0848914, type: 2}
+  - loopCollection: {fileID: 0}
     scenes:
     - m_SceneAsset: {fileID: 102900000, guid: 2afb0bc556ac5f3498875c363ca71f60, type: 3}
       m_SceneName: Menu
@@ -569,6 +569,7 @@ MonoBehaviour:
     scenes:
     - m_SceneAsset: {fileID: 102900000, guid: 61f975d747b63174b849e05e0828b028, type: 3}
       m_SceneName: 002_CabinLeft
+  startSequence: {fileID: 0}
 --- !u!1001 &961644517
 Prefab:
   m_ObjectHideFlags: 0
