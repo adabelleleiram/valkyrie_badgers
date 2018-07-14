@@ -459,7 +459,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 330285765}
-  deleteObject: 1
+  deactivateObject: 0
   deleteItem: 0
 --- !u!61 &297157263
 BoxCollider2D:
@@ -1565,7 +1565,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &825885822
 MonoBehaviour:
@@ -2037,6 +2037,16 @@ Prefab:
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82458649968304158, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82458649968304158, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: BypassReverbZones
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
@@ -3085,7 +3095,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &1459417576
 MonoBehaviour:
