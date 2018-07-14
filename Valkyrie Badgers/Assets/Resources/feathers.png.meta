@@ -1,11 +1,21 @@
 fileFormatVersion: 2
-guid: 9a2a62f3e3861b04a8631430d86d5875
+guid: cbdcd7e7c0b0240a79b3046930340d8e
 TextureImporter:
   fileIDToRecycleName:
     21300000: feathers_0
     21300002: feathers_1
     21300004: feathers_2
     21300006: feathers_3
+    21300008: feathers_3
+    21300010: feathers_4
+    21300012: feathers_6
+    21300014: feathers_5
+    21300016: feathers_6
+    21300018: feathers_7
+    21300020: feathers_8
+    21300022: feathers_11
+    21300024: feathers_12
+    21300026: feathers_13
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -91,18 +101,18 @@ TextureImporter:
       name: feathers_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 21
-        width: 11
-        height: 2
+        x: 0
+        y: 0
+        width: 62
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a772a2ef861bd594eb70c46f8626317f
+      spriteID: ce1e0a357b4ec6b4b89be2413b14ce7d
       vertices: []
       indices: 
       edges: []
@@ -111,18 +121,18 @@ TextureImporter:
       name: feathers_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 95
         y: 0
-        width: 60
-        height: 26
+        width: 62
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c8ac346e46bac34dad31bf3181a27eb
+      spriteID: c75f701f8967f4f478f083d0f565cca0
       vertices: []
       indices: 
       edges: []
@@ -131,18 +141,18 @@ TextureImporter:
       name: feathers_2
       rect:
         serializedVersion: 2
-        x: 60
+        x: 186
         y: 0
-        width: 59
-        height: 26
+        width: 74
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c00a3bda2e01e46a5906bf51034661
+      spriteID: a903499b86534324d920d8838e04a46d
       vertices: []
       indices: 
       edges: []
@@ -151,18 +161,118 @@ TextureImporter:
       name: feathers_3
       rect:
         serializedVersion: 2
-        x: 119
+        x: 279
         y: 0
-        width: 60
-        height: 26
+        width: 74
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d016208eb6c4fc14791db0c20649e3a4
+      spriteID: 6c7ea26f3f2b3874a9b9177a9f506279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feathers_4
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8c725524ec2e54ab23e75b0cfcbb68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feathers_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43f6f64bfcf3a642a90bfb78ca80961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feathers_6
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 0
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ffcbd333c8c0e4d816c0ed2d21d302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feathers_7
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c573be7b21e96374fa24c57651641dfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feathers_8
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 0
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a866e159b17445844acc1f2ae9cdfe37
       vertices: []
       indices: 
       edges: []
@@ -170,7 +280,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: da8de232f66039346ba51da0642d8895
+    spriteID: c08ff05e122f34c49b790f554f4c5165
     vertices: []
     indices: 
     edges: []
