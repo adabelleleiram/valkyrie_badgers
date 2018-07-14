@@ -18,6 +18,12 @@ public class InventorySlot : MonoBehaviour
     icon.enabled = true;
   }
 
+  public void ChangeFeatherOnCount()
+  {
+    Debug.Log(item.counter);
+    icon.sprite = GameHandler.inventory.featherSprites[item.counter - 2];
+  }
+
   public void ClearSlot()
   {
     item = null;

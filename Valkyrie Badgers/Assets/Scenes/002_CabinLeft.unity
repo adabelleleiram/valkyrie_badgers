@@ -317,7 +317,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1817923392}
   deleteObject: 1
   deleteItem: 0
 --- !u!114 &225153816
@@ -540,6 +540,36 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &687952409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1520850932516240, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+    type: 2}
+  m_PrefabInternal: {fileID: 1071667097}
+--- !u!114 &687952410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687952409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f5c236be5b95d438b3c0cf47d04cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenesForLoops:
+  - loopCollection: {fileID: 0}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: 2afb0bc556ac5f3498875c363ca71f60, type: 3}
+      m_SceneName: Menu
+  - loopCollection: {fileID: 11400000, guid: e83d4c86b02e4d6469575dae63504dbe, type: 2}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: 04ccae890c8717045b0fa2b90e98c24d, type: 3}
+      m_SceneName: 001_CabinExterior
+  - loopCollection: {fileID: 11400000, guid: f2e9520c7a0c47a4abdff7ffa968502c, type: 2}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: 61f975d747b63174b849e05e0828b028, type: 3}
+      m_SceneName: 002_CabinLeft
+  startSequence: {fileID: 0}
 --- !u!1001 &961644517
 Prefab:
   m_ObjectHideFlags: 0
@@ -602,6 +632,7 @@ Prefab:
     - {fileID: 114868848139714774, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 61248698802407882, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+    - {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1071667097
@@ -1827,7 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistActive: 1
-  activeOnStart: 1
+  activeOnStart: 0
 --- !u!1 &2134342733
 GameObject:
   m_ObjectHideFlags: 0

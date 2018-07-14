@@ -9734,32 +9734,32 @@ Prefab:
     - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 243.5
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -44.5
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 224685728812092532, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 89
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -44.5
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 487
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 89
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
@@ -9868,7 +9868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: A stressed out squirrel. What are you looking for my friend?
+  descIn: A stressed squirrel. What are you looking for my friend?
   desc: {fileID: 1811342516}
 --- !u!114 &783336124
 MonoBehaviour:
@@ -10430,7 +10430,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1811342516}
   deleteObject: 0
   deleteItem: 0
 --- !u!60 &1162460488
@@ -10842,7 +10842,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  description: {fileID: 0}
+  description: {fileID: 1811342516}
   deleteObject: 0
   deleteItem: 0
 --- !u!114 &1367275385

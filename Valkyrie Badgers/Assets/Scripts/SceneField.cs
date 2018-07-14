@@ -14,11 +14,20 @@ public class SceneField
     {
         get { return m_SceneName; }
     }
+
+    public SceneField(SceneField aScene)
+    {
+        m_SceneAsset = aScene.m_SceneAsset;
+        m_SceneName = aScene.m_SceneName;
+    }
+
     // makes it work with the existing Unity methods (LoadLevel/LoadScene)
     public static implicit operator string(SceneField sceneField)
     {
         return sceneField.SceneName;
     }
+
+
 }
 
 #if UNITY_EDITOR

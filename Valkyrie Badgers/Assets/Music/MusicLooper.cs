@@ -18,18 +18,21 @@ public class MusicLooper : MonoBehaviour
         public AudioSource audioSource;
         public LoopTrack loopTrack;
 
+        public bool isPlaying { get { return audioSource.volume == targetVolume && targetVolume > 0; } }
+        public bool isChanging { get { return fadeStarted || audioSource.volume != targetVolume; } }
+
         public float targetVolume = 0;
 
         public bool fadeStarted = false;
     }
 
+    public List<PlayingTrack> activeTracks { get { return playingTracks; } }
+
     List<PlayingTrack> playingTracks = new List<PlayingTrack>();
     PlayingTrack baseTrack;
 
     const float bpm = 120;
-    const float fadeTime = 60 / bpm * 2;
-
-    
+    const float fadeTime = 60 / bpm * 2;  
 
     #region Calls
 
@@ -167,6 +170,11 @@ public class MusicLooper : MonoBehaviour
         audioSource.Play();
 
         return audioSource;
+    }
+
+    public PlayingTrack GetPlayingTrackIfActive(LoopTrack aTrack)
+    {
+        return playingTracks.Find(x => x.loopTrack == aTrack);
     }
 
     #endregion
