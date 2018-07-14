@@ -157,6 +157,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 598865966}
+        m_MethodName: AddToCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
@@ -574,6 +585,7 @@ GameObject:
   - component: {fileID: 598865962}
   - component: {fileID: 598865964}
   - component: {fileID: 598865965}
+  - component: {fileID: 598865966}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -666,6 +678,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: His shield is beautiful but it looks incomplete.
   desc: {fileID: 1329853306}
+--- !u!114 &598865966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598865961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0010265500880a64cb21eec9e6d4c484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalCount: 3
+  onReachedCount:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Counter+CountReachedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &653565787
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +731,17 @@ MonoBehaviour:
       - m_Target: {fileID: 136469745}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 598865966}
+        m_MethodName: AddToCount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1332,7 +1372,29 @@ MonoBehaviour:
   itemToCombineWith: {fileID: 11400000, guid: 324be1c04807944c581fb0b05a620f5b, type: 2}
   onCombine:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598865966}
+        m_MethodName: AddToCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1195124481}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 0}
