@@ -145,7 +145,7 @@ MonoBehaviour:
   musicTrigger: {fileID: 11400000, guid: e0d348458c29be348a288ce5f5d1672d, type: 2}
   orionFadeTime: 3
   overlay: {fileID: 984318733}
-  creditsBg: {fileID: 21300000, guid: 41571891ef91d0b40b4cf17edc685371, type: 3}
+  creditsBg: {fileID: 21300000, guid: 567771ea63ed66044a5bc9de0b7c0458, type: 3}
   minCreditsTime: 8
   credits: {fileID: 1449889410}
   mainMenu:
