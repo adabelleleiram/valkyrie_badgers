@@ -21,7 +21,6 @@ public class InventorySlot : MonoBehaviour
 
   public void ChangeFeatherOnCount()
   {
-    Debug.Log(item.counter);
     if (item.counter >= GameHandler.inventory.featherSprites.Length)
       Debug.Log("Missing icon in feathers resources, no:" + item.counter);
     else
