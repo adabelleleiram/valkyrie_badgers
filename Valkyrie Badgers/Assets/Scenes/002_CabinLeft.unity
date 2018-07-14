@@ -629,8 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Oh, there's my great grandma! She's my role model... I wish I was brave
-    like her!
+  descIn: Oh, there's my grandma! She's my role model... I wish I was brave like her!
   desc: {fileID: 1817923392}
 --- !u!1001 &606783924
 Prefab:
