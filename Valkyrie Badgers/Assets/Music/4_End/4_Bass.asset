@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: 4_Bass
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: bfce4256a26d80e46b94f7329ef6dffb, type: 3}
-  volume: 0.7
+  volume: 0.5
