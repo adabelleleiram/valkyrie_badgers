@@ -61,11 +61,14 @@ public class SequenceMusicPlayer : MonoBehaviour
 
     void AddSequenceTracks(LoopSequence aSequence, LoopSequenceTrigger aTrigger)
     {
+        List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+
         foreach(LoopSequence.Sequence sequence in aSequence.sequences)
         {
             foreach(LoopTrack track in sequence.loops)
             {
-                musicLooper.AddTrack(track);
+                if(!playingTracks.Exists(x => x.loopTrack == track))
+                    musicLooper.AddTrack(track);
                 currentTracksForSequence.Add(track);
             }
 

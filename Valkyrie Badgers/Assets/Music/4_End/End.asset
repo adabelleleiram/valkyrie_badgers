@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4485af7b3a9214ea323153957189cf, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: 
+  sequences:
+  - trigger: {fileID: 11400000, guid: 1e4adf5ea8d628148b439044ebcef805, type: 2}
+    loops:
+    - {fileID: 11400000, guid: 16c48ddddc11ee8468b07c3aedfa5301, type: 2}
+    - {fileID: 11400000, guid: bc941500eef353c489b864865b7962c4, type: 2}
+    - {fileID: 11400000, guid: 273d375a0f0acbe4f83b15e6268b3f5b, type: 2}
+  - trigger: {fileID: 11400000, guid: c57a1e1e8c5f36a47af185ea9a6caeec, type: 2}
+    loops:
+    - {fileID: 11400000, guid: 3a72fe92bfc381c40bc4eec4ac90bca3, type: 2}
+    - {fileID: 11400000, guid: b2e052bfe092e234096fa33e374964f1, type: 2}
+  - trigger: {fileID: 11400000, guid: e0d348458c29be348a288ce5f5d1672d, type: 2}
+    loops:
+    - {fileID: 11400000, guid: 8d88477b7af7f624f92c58a0f6cdbf32, type: 2}
+    - {fileID: 11400000, guid: 189f7d82f15477c478cf7f42526c5604, type: 2}
+  baseLoop: {fileID: 11400000, guid: 16c48ddddc11ee8468b07c3aedfa5301, type: 2}
