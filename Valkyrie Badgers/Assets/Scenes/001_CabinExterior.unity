@@ -2008,11 +2008,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.653
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.9039998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2046,6 +2046,26 @@ Prefab:
     - target: {fileID: 82458649968304158, guid: e0344c2efc8e6634c857ac2c23d2ae46,
         type: 2}
       propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82239805609179954, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82239805609179954, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82239805609179954, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82239805609179954, guid: e0344c2efc8e6634c857ac2c23d2ae46,
+        type: 2}
+      propertyPath: BypassEffects
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
