@@ -12,50 +12,50 @@ public class ItemCombine : MonoBehaviour
     public int minRequiredCount = 1;
     public OnCombine onCombine;
     public ItemDescription description;
-    public bool deleteObject;
+    public bool deactivateObject;
     public bool deleteItem;
 
     public static event UnityAction GlobalOnCombine;
 
-
-    bool itemEnteredCollider = false;
+    Item itemInCollider = null;
 
     private void OnMouseEnter()
     {
-        if (MouseCursor.instance.currentDraggedItem == itemToCombineWith && minRequiredCount <= itemToCombineWith.counter)
-        {
-            MouseCursor.instance.SetCursor(MouseCursor.instance.combineCursor);
-            itemEnteredCollider = true;
-        }
+        itemInCollider = MouseCursor.instance.currentDraggedItem;
     }
 
     private void OnMouseExit()
     {
-        if (gameObject == deleteObject)
-        {
-            itemEnteredCollider = false;
-            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
-        }
+        itemInCollider = null;
     }
 
     private void Update()
     {
-        if (itemEnteredCollider && Input.GetMouseButtonUp(0))
+        if (itemInCollider == null || Input.GetMouseButtonUp(0) == false)
+            return;
+
+        if (itemInCollider == itemToCombineWith && minRequiredCount <= itemToCombineWith.counter)
         {
-            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
             onCombine.Invoke();
             GlobalOnCombine.Invoke();
+            GameHandler.soundHandler.combine.Play();
 
             if (deleteItem)
             {
                 GameHandler.inventory.Remove(itemToCombineWith);
-                if(description != null)
+                if (description != null)
                     description.ClearDescription();
             }
-            if (deleteObject)
+            if (deactivateObject)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
+        else
+        {
+            GameHandler.soundHandler.combineError.Play();
+        }
+
+        itemInCollider = null;
     }
 }

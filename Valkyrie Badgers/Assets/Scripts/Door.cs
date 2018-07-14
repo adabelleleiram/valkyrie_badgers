@@ -19,6 +19,7 @@ public class Door : MonoBehaviour
     {
         if (!locked)
         {
+            GameHandler.soundHandler.door.Play();
             GameHandler.sceneLoader.LoadScene(nextScene);
         }
     }

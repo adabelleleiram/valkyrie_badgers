@@ -10,6 +10,8 @@ public class PersistencyManager : MonoBehaviour
     Dictionary<string, int> counterStates = new Dictionary<string, int>();
     Dictionary<string, bool> clickedStates = new Dictionary<string, bool>();
 
+    public bool shownLogo = false;
+
     public void SetActiveState(GameObject anObject)
     {
         activeStates[GetObjectID(anObject)] = anObject.activeInHierarchy;

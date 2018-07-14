@@ -10,7 +10,7 @@ public class GameHandler : MonoBehaviour
     public static PersistencyManager persistencyManager;
     public static SceneLoader sceneLoader;
     public static MusicHandler musicHandler;
-
+    public static SoundHandler soundHandler;
 
     #endregion
     #region Singleton
@@ -25,6 +25,7 @@ public class GameHandler : MonoBehaviour
             persistencyManager = GetComponent<PersistencyManager>();
             sceneLoader = GetComponent<SceneLoader>();
             musicHandler = GetComponentInChildren<MusicHandler>();
+            soundHandler = GetComponentInChildren<SoundHandler>();
 
             DontDestroyOnLoad(gameObject);
         }
