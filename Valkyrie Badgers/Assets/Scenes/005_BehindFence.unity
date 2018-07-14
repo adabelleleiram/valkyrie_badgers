@@ -395,6 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301786828}
   - component: {fileID: 1301786827}
+  - component: {fileID: 1301786829}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -461,6 +462,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1301786829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301786826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: Nope. I'm not entering that dark forest without directions and some light.
+  desc: {fileID: 1622751545}
 --- !u!1 &1344241617
 GameObject:
   m_ObjectHideFlags: 0
