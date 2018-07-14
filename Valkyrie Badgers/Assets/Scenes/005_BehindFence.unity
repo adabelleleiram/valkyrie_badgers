@@ -726,12 +726,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &1393943390 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
-    type: 2}
-  m_PrefabInternal: {fileID: 1393943389}
-  m_Script: {fileID: 11500000, guid: 1a93883f9af03f846b8ec0fdbb71457a, type: 3}
 --- !u!1 &1393943391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
@@ -1168,12 +1162,12 @@ MonoBehaviour:
   ifEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1393943390}
-        m_MethodName: Unlock
+      - m_Target: {fileID: 1687580852}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

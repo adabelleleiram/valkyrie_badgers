@@ -8,6 +8,11 @@ public class DescOnClick : MonoBehaviour {
 
   private void OnMouseUpAsButton()
   {
+    SetDesc();
+  }
+
+  public void SetDesc()
+  {
     desc.SetDescription(descIn);
   }
 }
