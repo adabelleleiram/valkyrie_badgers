@@ -8,6 +8,7 @@ public class PersistencyManager : MonoBehaviour
     Dictionary<string, bool> activeStates = new Dictionary<string, bool>();
     Dictionary<string, bool> unlockedDoors = new Dictionary<string, bool>();
     Dictionary<string, int> counterStates = new Dictionary<string, int>();
+    Dictionary<string, bool> clickedStates = new Dictionary<string, bool>();
 
     public void SetActiveState(GameObject anObject)
     {
@@ -53,6 +54,20 @@ public class PersistencyManager : MonoBehaviour
             counterStates.Add(id, 0);
 
         return counterStates[id];
+    }
+
+    public void SetClickedState(GameObject anObject, bool aClicked)
+    {
+        clickedStates[GetObjectID(anObject)] = aClicked;
+    }
+
+    public bool GetClickedState(GameObject anObject)
+    {
+        string id = GetObjectID(anObject);
+        if (!clickedStates.ContainsKey(id))
+            clickedStates.Add(id, false);
+
+        return clickedStates[id];
     }
 
     string GetObjectID(GameObject anObject)
