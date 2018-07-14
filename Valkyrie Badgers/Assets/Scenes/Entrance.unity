@@ -406,6 +406,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114076029291400592, guid: 16d330f3b5d534c46b0e2739837d2dd6,
+        type: 2}
+      propertyPath: scene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: cdf6d7643fbd6334c933521621610932,
+        type: 3}
+    - target: {fileID: 114076029291400592, guid: 16d330f3b5d534c46b0e2739837d2dd6,
+        type: 2}
+      propertyPath: scene.m_SceneName
+      value: 011_GraveEntrance
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
   m_IsPrefabAsset: 0
