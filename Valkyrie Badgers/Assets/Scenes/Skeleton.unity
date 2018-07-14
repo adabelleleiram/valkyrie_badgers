@@ -756,6 +756,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114076029291400592, guid: 16d330f3b5d534c46b0e2739837d2dd6,
+        type: 2}
+      propertyPath: scene.m_SceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046,
+        type: 3}
+    - target: {fileID: 114076029291400592, guid: 16d330f3b5d534c46b0e2739837d2dd6,
+        type: 2}
+      propertyPath: scene.m_SceneName
+      value: 013_BurialChamber
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
   m_IsPrefabAsset: 0
@@ -1729,6 +1740,7 @@ GameObject:
   - component: {fileID: 2063450653}
   - component: {fileID: 2063450652}
   - component: {fileID: 2063450651}
+  - component: {fileID: 2063450656}
   m_Layer: 0
   m_Name: Feather
   m_TagString: Untagged
@@ -1859,3 +1871,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2063450656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063450650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
