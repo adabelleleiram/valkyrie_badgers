@@ -11,6 +11,8 @@ public class SequenceMusicPlayer : MonoBehaviour
     List<LoopTrack> currentTracksForSequence = new List<LoopTrack>();
     List<LoopTrack> currentTracksToRemove = new List<LoopTrack>();
 
+    LoopSequence currentLoopSequence;
+
     private void Start()
     {
         musicLooper = GetComponent<MusicLooper>();
@@ -28,6 +30,7 @@ public class SequenceMusicPlayer : MonoBehaviour
 
         AddSequenceTracks(loopSequence, aTrigger);
         musicLooper.SetBaseTrack(loopSequence.baseLoop);
+        currentLoopSequence = loopSequence;
 
         foreach (MusicLooper.PlayingTrack playingTrack in playingTracks)
         {
@@ -46,12 +49,12 @@ public class SequenceMusicPlayer : MonoBehaviour
 
     void OnLoopStopped(LoopTrack aTrack)
     {
-        if(currentTracksToRemove.Exists(x => x == aTrack))
+        if (currentTracksToRemove.Exists(x => x == aTrack))
         {
             currentTracksToRemove.Remove(aTrack);
             musicLooper.RemoveTrack(aTrack);
 
-            if(currentTracksToRemove.Count == 0)
+            if (currentTracksToRemove.Count == 0)
             {
                 PlaySequenceTracks();
                 musicLooper.onLoopStopped -= OnLoopStopped;
@@ -63,11 +66,11 @@ public class SequenceMusicPlayer : MonoBehaviour
     {
         List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
 
-        foreach(LoopSequence.Sequence sequence in aSequence.sequences)
+        foreach (LoopSequence.Sequence sequence in aSequence.sequences)
         {
-            foreach(LoopTrack track in sequence.loops)
+            foreach (LoopTrack track in sequence.loops)
             {
-                if(!playingTracks.Exists(x => x.loopTrack == track))
+                if (!playingTracks.Exists(x => x.loopTrack == track))
                     musicLooper.AddTrack(track);
                 currentTracksForSequence.Add(track);
             }
@@ -83,5 +86,25 @@ public class SequenceMusicPlayer : MonoBehaviour
         {
             musicLooper.PlayTrack(track);
         }
+    }
+
+    public float GetCurrentSequenceLength()
+    {
+        if (currentLoopSequence == null)
+            return 0;
+
+        return currentLoopSequence.baseLoop.clip.length;
+    }
+
+    public float GetCurrentSequenceTime()
+    {
+        if (currentLoopSequence == null)
+            return 0;
+
+        MusicLooper.PlayingTrack playingTrack = musicLooper.activeTracks.Find(x => x.loopTrack == currentLoopSequence.baseLoop);
+        if (playingTrack == null)
+            return 0;
+
+        return playingTrack.audioSource.time;
     }
 }

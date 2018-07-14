@@ -9,6 +9,7 @@ public class ItemCombine : MonoBehaviour
     public class OnCombine : UnityEvent { }
 
     public Item itemToCombineWith;
+    public int minRequiredCount = 1;
     public OnCombine onCombine;
     public ItemDescription description;
     public bool deleteObject;
@@ -21,7 +22,7 @@ public class ItemCombine : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (MouseCursor.instance.currentDraggedItem == itemToCombineWith)
+        if (MouseCursor.instance.currentDraggedItem == itemToCombineWith && minRequiredCount <= itemToCombineWith.counter)
         {
             MouseCursor.instance.SetCursor(MouseCursor.instance.combineCursor);
             itemEnteredCollider = true;
