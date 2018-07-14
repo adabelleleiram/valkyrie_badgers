@@ -12,7 +12,7 @@ public class ItemCombine : MonoBehaviour
     public int minRequiredCount = 1;
     public OnCombine onCombine;
     public ItemDescription description;
-    public bool deleteObject;
+    public bool deactivateObject;
     public bool deleteItem;
 
     public static event UnityAction GlobalOnCombine;
@@ -31,11 +31,7 @@ public class ItemCombine : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (gameObject == deleteObject)
-        {
-            itemEnteredCollider = false;
-            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
-        }
+        itemEnteredCollider = false;
     }
 
     private void Update()
@@ -45,6 +41,7 @@ public class ItemCombine : MonoBehaviour
             MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
             onCombine.Invoke();
             GlobalOnCombine.Invoke();
+            itemEnteredCollider = false;
 
             if (deleteItem)
             {
@@ -52,9 +49,9 @@ public class ItemCombine : MonoBehaviour
                 if(description != null)
                     description.ClearDescription();
             }
-            if (deleteObject)
+            if (deactivateObject)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
