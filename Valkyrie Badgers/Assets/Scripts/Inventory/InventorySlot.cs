@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Assertions;
 
 public class InventorySlot : MonoBehaviour
 {
@@ -21,7 +22,10 @@ public class InventorySlot : MonoBehaviour
   public void ChangeFeatherOnCount()
   {
     Debug.Log(item.counter);
-    icon.sprite = GameHandler.inventory.featherSprites[item.counter - 2];
+    if (item.counter >= GameHandler.inventory.featherSprites.Length)
+      Debug.Log("Missing icon in feathers resources, no:" + item.counter);
+    else
+      icon.sprite = GameHandler.inventory.featherSprites[item.counter - 2];
   }
 
   public void ClearSlot()
