@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   sequences:
-  - trigger: {fileID: 0}
-    loops: []
-  - trigger: {fileID: 0}
-    loops: []
-  - trigger: {fileID: 0}
-    loops: []
+  - trigger: {fileID: 11400000, guid: 32719f63e49d7534a9b2279096d6ea7a, type: 2}
+    loops:
+    - {fileID: 11400000, guid: c613e9e21d4e2ad4e8bddf0a9bd8241f, type: 2}
+    - {fileID: 11400000, guid: 1c5b384e377a3b044897db28542c1579, type: 2}
+  - trigger: {fileID: 11400000, guid: 89058fdaf5f3dba488b31e446bfc6c95, type: 2}
+    loops:
+    - {fileID: 11400000, guid: cf8b072ef2d006845a8c0b06ce6ae26f, type: 2}
   baseLoop: {fileID: 11400000, guid: 1c5b384e377a3b044897db28542c1579, type: 2}

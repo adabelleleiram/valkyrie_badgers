@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114699514389036982}
   - component: {fileID: 114008992810722704}
   - component: {fileID: 114795325556627946}
+  - component: {fileID: 114046771353704380}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -86,6 +87,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8c9b8abcd47d3489fbf5f9a6fcb608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114046771353704380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1520850932516240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c8336ce52fd8248b5e39025cf17815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loopSequences:
+  - {fileID: 11400000, guid: 11b89a83be34d8e41b545fbb4aa21900, type: 2}
 --- !u!114 &114131315976907368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+  hiddenItems: []
 --- !u!114 &114699514389036982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,3 +200,4 @@ MonoBehaviour:
       m_SceneName: 012_GraveTunnel
     - m_SceneAsset: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046, type: 3}
       m_SceneName: 013_BurialChamber
+  startSequence: {fileID: 11400000, guid: 32719f63e49d7534a9b2279096d6ea7a, type: 2}

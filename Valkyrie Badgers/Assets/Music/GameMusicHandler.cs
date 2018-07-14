@@ -63,7 +63,9 @@ public class GameMusicHandler : MonoBehaviour
 
         Debug.Log("GameMusicHandler: Setting loop collection: " + aLoopCollection.ToString());
 
-        if (currentLoopCollection == null)
+        List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
+
+        if (playingTracks.Count == 0)
         {
             currentLoopCollection = aLoopCollection;
             Debug.Log("GameMusicHandler: No previous loop collection");
@@ -84,14 +86,15 @@ public class GameMusicHandler : MonoBehaviour
             currentChange = null;
 
             currentTransition.nextCollection = aLoopCollection;
-            currentTransition.transitionBaseTrack = currentLoopCollection.loopBase.clip.length < aLoopCollection.loopBase.clip.length
-                ? aLoopCollection.loopBase : currentLoopCollection.loopBase;
+            currentTransition.transitionBaseTrack = aLoopCollection.loopBase;
+            if(currentLoopCollection != null 
+                && currentLoopCollection.loopBase.clip.length < aLoopCollection.loopBase.clip.length)
+                currentTransition.transitionBaseTrack = currentLoopCollection.loopBase;
+
 
             Debug.Log("GameMusicHandler: Setting transition base track: " + currentTransition.transitionBaseTrack.ToString());
 
             bool hasTransitionTrack = false;
-
-            List<MusicLooper.PlayingTrack> playingTracks = musicLooper.activeTracks;
 
             foreach (LoopCollection.Track track in aLoopCollection.loopTracks)
             {

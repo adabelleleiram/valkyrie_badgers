@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicHandler : MonoBehaviour
 {
@@ -18,7 +19,9 @@ public class MusicHandler : MonoBehaviour
     GameMusicHandler gameMusicHandler;
     SequenceMusicPlayer sequenceMusicPlayer;
 
-    bool sequencedMusic = false;
+    bool sequencedMusic;
+
+    public bool playingSequencedMusic { get { return sequencedMusic;  } }
 
     void Start()
     {
@@ -30,23 +33,38 @@ public class MusicHandler : MonoBehaviour
         GameHandler.inventory.OnItemPickUp += TriggerMusicVariation;
         ItemCombine.GlobalOnCombine += TriggerMusicVariation;
 
-        // TEMP
-        OnSceneChange(scenesForLoops[0].scenes[0]);
-        // TEMP
+        TriggerLoopSequence(startSequence);
+    }
+
+    public void TriggerLoopSequence(LoopSequenceTrigger aTrigger)
+    {
+        sequenceMusicPlayer.TriggerMusicSequence(aTrigger);
+        sequencedMusic = true;
+    }
+
+    public void TriggerGameMusic()
+    {
+        sequencedMusic = false;
+        PlaySceneMusic(SceneManager.GetActiveScene().name);
     }
 
     void OnSceneChange(SceneField aScene)
     {
         if (!sequencedMusic)
         {
-            ScenesForLoop loop = scenesForLoops.Find(x => x.scenes.Exists(y => y.SceneName == aScene.SceneName));
-            if(loop != null)
-            {
-                if (gameMusicHandler.playingLoopCollection != loop.loopCollection)
-                    gameMusicHandler.SetLoopCollection(loop.loopCollection);
-                else
-                    gameMusicHandler.TriggerMusicVariation();
-            }
+            PlaySceneMusic(aScene.SceneName);
+        }
+    }
+
+    void PlaySceneMusic(string aSceneName)
+    {
+        ScenesForLoop loop = scenesForLoops.Find(x => x.scenes.Exists(y => y.SceneName == aSceneName));
+        if (loop != null)
+        {
+            if (gameMusicHandler.playingLoopCollection != loop.loopCollection)
+                gameMusicHandler.SetLoopCollection(loop.loopCollection);
+            else
+                gameMusicHandler.TriggerMusicVariation();
         }
     }
 
