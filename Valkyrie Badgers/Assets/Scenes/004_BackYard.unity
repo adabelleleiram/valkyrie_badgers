@@ -10587,6 +10587,81 @@ PolygonCollider2D:
       - {x: 0.56, y: -0.28}
       - {x: 0.56, y: -0.06}
       - {x: 0.52, y: 0.02}
+--- !u!1 &1255903011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479347660962642, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+    type: 2}
+  m_PrefabInternal: {fileID: 1716898357}
+--- !u!114 &1255903012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255903011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1255903013}
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Flying_Room3
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1255903014}
+        m_MethodName: SetClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!95 &1255903013 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95933750525654476, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
+    type: 2}
+  m_PrefabInternal: {fileID: 1716898357}
+--- !u!114 &1255903014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255903011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825952ed3c2adab49a59d0d90f85acf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1255903011}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1256980810
 GameObject:
   m_ObjectHideFlags: 0
@@ -16328,7 +16403,9 @@ Prefab:
       propertyPath: triggerName
       value: Flying_Room3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114868848139714774, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+    - {fileID: 114071259540812890, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
   m_IsPrefabAsset: 0
 --- !u!114 &1811342516 stripped
