@@ -1030,6 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 8823208b6fa064b83866af0fb1848e25, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -1538,12 +1539,12 @@ Prefab:
         type: 2}
       propertyPath: nextScene.m_SceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: b52de7d3258310148af8e892ee9a849b,
+      objectReference: {fileID: 102900000, guid: 61f975d747b63174b849e05e0828b028,
         type: 3}
     - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
         type: 2}
       propertyPath: nextScene.m_SceneName
-      value: 004_BackYard
+      value: 002_CabinLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
