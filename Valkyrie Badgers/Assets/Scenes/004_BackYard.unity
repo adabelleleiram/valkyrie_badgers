@@ -11137,6 +11137,11 @@ Prefab:
       propertyPath: nextScene.m_SceneName
       value: 005_BehindFence
       objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
