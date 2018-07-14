@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class ItemPickup : MonoBehaviour
 {
-  public Item item;
-  public void OnMouseDown()
-  {
-    PickUp();
-  }
+    [System.Serializable]
+    public class OnPickUp : UnityEvent { }
 
-  public void PickUp()
-  {
-    GameHandler.inventory.Add(item);
-    gameObject.SetActive(false);
-  }
+    public Item item;
+    public OnPickUp onPickUp;
+    public void OnMouseDown()
+    {
+        PickUp();
+    }
+
+    public void PickUp()
+    {
+        GameHandler.inventory.Add(item);
+        gameObject.SetActive(false);
+        onPickUp.Invoke();
+    }
 }
