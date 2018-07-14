@@ -107,4 +107,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScenes/EndScene_Valkyrie.unity
     guid: d0415226d3854094398035597c7c84ca
+  - enabled: 1
+    path: Assets/Scenes/EndScenes/EndScene_Sky.unity
+    guid: 7f2b94f09f905964c83d8d3cfbe758c9
   m_configObjects: {}
