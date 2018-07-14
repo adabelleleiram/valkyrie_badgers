@@ -9997,6 +9997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10156,6 +10157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 144cde46eb03c4afe90e08fb350223ab, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -10518,6 +10520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 83121c29dcc4d0c4ab4e5a7b92b1bcc8, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
@@ -11016,12 +11019,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: 2691aee621c30467280f0b78ddb49e03, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1367275380}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1393943390}
+        m_MethodName: Unlock
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11122,9 +11137,38 @@ Prefab:
       propertyPath: nextScene.m_SceneName
       value: 005_BehindFence
       objectReference: {fileID: 0}
+    - target: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+        type: 2}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72da9719a8b171d408c571e3fd96fb52, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1393943390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114874828151937464, guid: 72da9719a8b171d408c571e3fd96fb52,
+    type: 2}
+  m_PrefabInternal: {fileID: 1393943389}
+  m_Script: {fileID: 11500000, guid: 1a93883f9af03f846b8ec0fdbb71457a, type: 3}
+--- !u!1 &1393943391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1284894728471616, guid: 72da9719a8b171d408c571e3fd96fb52,
+    type: 2}
+  m_PrefabInternal: {fileID: 1393943389}
+--- !u!114 &1393943392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1393943391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descIn: I cant't get through.
+  desc: {fileID: 1811342516}
 --- !u!1 &1433576061
 GameObject:
   m_ObjectHideFlags: 0
@@ -16139,6 +16183,16 @@ Prefab:
       propertyPath: nextScene.m_SceneName
       value: 003_CabinRight
       objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: locked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864271593606500, guid: 87d09e058698dad41ae030fc537eb6c9,
+        type: 2}
+      propertyPath: left
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d09e058698dad41ae030fc537eb6c9, type: 2}
   m_IsPrefabAsset: 0
@@ -16584,6 +16638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToCombineWith: {fileID: 11400000, guid: f963d54c65b134118b1c9440b64cd5df, type: 2}
+  minRequiredCount: 1
   onCombine:
     m_PersistentCalls:
       m_Calls:

@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Viking letters! I wonder what they say.
+  descIn: Hmm....
   desc: {fileID: 1622751545}
 --- !u!4 &1344241620
 Transform:
