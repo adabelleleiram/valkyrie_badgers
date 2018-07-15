@@ -648,28 +648,13 @@ GameObject:
   m_Component:
   - component: {fileID: 403480513}
   - component: {fileID: 403480512}
-  - component: {fileID: 403480511}
-  - component: {fileID: 403480514}
   m_Layer: 0
   m_Name: Dead_Fly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &403480511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403480510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persistActive: 1
-  activeOnStart: 0
+  m_IsActive: 0
 --- !u!212 &403480512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -729,34 +714,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &403480514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403480510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 825952ed3c2adab49a59d0d90f85acf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onDestroy:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 403480510}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  clicked: 0
 --- !u!1001 &1071667097
 Prefab:
   m_ObjectHideFlags: 0
@@ -842,6 +799,10 @@ Prefab:
         type: 2}
       propertyPath: activeOnStart
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479347660962642, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61248698802407882, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
@@ -1355,7 +1316,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  item: {fileID: 11400000, guid: a88fbe71c6e9dad43b8d7b28e0504e31, type: 2}
   defaultItem: 1
 --- !u!1 &1800937463
 GameObject:
@@ -1493,7 +1454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c18632f34c454fa4046de47dc78c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  item: {fileID: 11400000, guid: a88fbe71c6e9dad43b8d7b28e0504e31, type: 2}
 --- !u!114 &1800937469
 MonoBehaviour:
   m_ObjectHideFlags: 0
