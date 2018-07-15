@@ -10,6 +10,8 @@ public class Door : MonoBehaviour
     public bool locked = false;
     public bool left = false;
 
+    bool cursorSet = false;
+
     [System.Serializable]
     public class UnlockEvent : UnityEvent { }
 
@@ -27,6 +29,7 @@ public class Door : MonoBehaviour
     {
         if (!locked)
         {
+            cursorSet = true;
             if (left)
                 MouseCursor.instance.SetCursor(MouseCursor.instance.leftDoorCursor);
             else
@@ -36,7 +39,11 @@ public class Door : MonoBehaviour
 
     void OnMouseExit()
     {
-        MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+        if(cursorSet)
+        {
+            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+            cursorSet = false;
+        }
     }
 
     public void Unlock()
@@ -53,6 +60,15 @@ public class Door : MonoBehaviour
     private void Start()
     {
         locked = GameHandler.persistencyManager.GetLockedState(gameObject, locked);
+    }
+
+    private void OnDisable()
+    {
+        if (cursorSet && MouseCursor.instance != null)
+        {
+            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+            cursorSet = false;
+        }
     }
 
     private void OnDestroy()
