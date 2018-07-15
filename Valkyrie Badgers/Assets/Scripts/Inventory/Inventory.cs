@@ -24,10 +24,12 @@ public class Inventory : MonoBehaviour
             {
                 Item current = items.Find(x => item == x);
                 current.counter++;
-                return;
             }
-            items.Add(item);
-            item.counter = 1;
+            else
+            {
+                items.Add(item);
+                item.counter = 1;
+            }
         }
         else
         {

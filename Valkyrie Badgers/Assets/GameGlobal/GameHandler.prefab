@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1113681483772774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.653, y: 0.9039998, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4288532511322112}
@@ -508,6 +508,8 @@ MonoBehaviour:
     m_SceneName: 012_GraveTunnel
   - m_SceneAsset: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046, type: 3}
     m_SceneName: 013_BurialChamber
+  - m_SceneAsset: {fileID: 102900000, guid: ca88fe1d3cc91e24296f9386972fcabc, type: 3}
+    m_SceneName: Skeleton
 --- !u!114 &114046771353704380
 MonoBehaviour:
   m_ObjectHideFlags: 1
