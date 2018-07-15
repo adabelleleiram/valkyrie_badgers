@@ -10057,7 +10057,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1811342516}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &783336125
 MonoBehaviour:
@@ -10231,7 +10231,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1811342516}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &814468743
 MonoBehaviour:
@@ -10619,6 +10619,35 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1255903015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255903011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a936a72f6a3863148ba7c1ba60fcb743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ifEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  defaultItem: 0
 --- !u!1 &1301786826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10913,7 +10942,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1811342516}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &1367275385
 MonoBehaviour:
@@ -16421,7 +16450,7 @@ MonoBehaviour:
     m_TypeName: ItemCombine+OnCombine, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   description: {fileID: 1811342516}
-  deleteObject: 0
+  deactivateObject: 0
   deleteItem: 1
 --- !u!114 &1992966578
 MonoBehaviour:
