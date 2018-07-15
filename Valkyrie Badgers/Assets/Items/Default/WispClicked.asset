@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: WispClicked
   icon: {fileID: 0}
-  isDefaultItem: 0
+  isDefaultItem: 1
   description: Desc
-  counter: 0
+  counter: 1

@@ -812,7 +812,7 @@ Prefab:
     - target: {fileID: 114265531671656438, guid: 42c42f5ea22504c1683c0e75d7ccbb12,
         type: 2}
       propertyPath: activeOnStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61248698802407882, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
@@ -1257,6 +1257,7 @@ GameObject:
   - component: {fileID: 1687580855}
   - component: {fileID: 1687580854}
   - component: {fileID: 1687580853}
+  - component: {fileID: 1687580856}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1309,6 +1310,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687580856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687580852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a936a72f6a3863148ba7c1ba60fcb743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ifEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 117478084}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  defaultItem: 1
 --- !u!1 &1800937463
 GameObject:
   m_ObjectHideFlags: 0
