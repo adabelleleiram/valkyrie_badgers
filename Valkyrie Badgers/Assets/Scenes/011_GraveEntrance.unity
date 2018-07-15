@@ -716,7 +716,6 @@ GameObject:
   m_Component:
   - component: {fileID: 598774513}
   - component: {fileID: 598774512}
-  - component: {fileID: 598774514}
   - component: {fileID: 598774515}
   m_Layer: 0
   m_Name: EntranceDoor
@@ -784,19 +783,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &598774514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 598774511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descIn: This must be the old burial site. The entrance is blocked.
-  desc: {fileID: 1983267537}
 --- !u!95 &598774515
 Animator:
   serializedVersion: 3
@@ -886,11 +872,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.062591314, y: 0.561863}
-      - {x: -0.6381006, y: 0.7054269}
-      - {x: -0.75469494, y: -0.037061036}
-      - {x: 0.6295128, y: -0.45433438}
-      - {x: 0.67982817, y: 0.39247173}
+    - - {x: 0.3351627, y: 0.6056744}
+      - {x: 0.14579666, y: 0.6832932}
+      - {x: -0.5819831, y: 0.7229515}
+      - {x: -1.195619, y: -2.1575265}
+      - {x: -0.12825955, y: -2.8167298}
+      - {x: 0.6535633, y: -2.8551917}
+      - {x: 0.9363662, y: 0.3223738}
 --- !u!114 &1250315271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,6 +1256,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1250315269}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   item: {fileID: 11400000, guid: 94b2748431dc34841b70683a011a93b0, type: 2}
@@ -1365,9 +1364,3 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2713d3c0d0a2249a7aef80a0df4728, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &1983267537 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
-    type: 2}
-  m_PrefabInternal: {fileID: 386016105}
-  m_Script: {fileID: 11500000, guid: 4f424abc03f0a744eacf6ea5db4709fe, type: 3}
