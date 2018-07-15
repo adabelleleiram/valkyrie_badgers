@@ -4,71 +4,73 @@ using UnityEngine.Assertions;
 
 public class InventorySlot : MonoBehaviour
 {
-  [HideInInspector]
-  public Item item;
+    [HideInInspector]
+    public Item item;
 
-  public Image icon;
-  public Image active;
-  public Image inactive;
-  public ItemDescription description;
+    public Image icon;
+    public Image active;
+    public Image inactive;
+    public ItemDescription description;
+    public Text numberText;
 
-  public void AddItem(Item newItem)
-  {
-    item = newItem;
-    icon.sprite = item.icon;
-    icon.enabled = true;
-  }
-
-  public void ChangeFeatherOnCount()
-  {
-    if (item.counter >= GameHandler.inventory.featherSprites.Length)
-      Debug.Log("Missing icon in feathers resources, no:" + item.counter);
-    else
-      icon.sprite = GameHandler.inventory.featherSprites[item.counter - 2];
-  }
-
-  public void ClearSlot()
-  {
-    item = null;
-    icon.sprite = null;
-    icon.enabled = false;
-    active.enabled = false;
-    inactive.enabled = true;
-  }
-
-  public void OnMouseDown()
-  {
-    if (item)
+    public void AddItem(Item newItem)
     {
-      MouseCursor.instance.DragItem(item);
-      icon.enabled = false;
-      ShowItemDescription();
+        item = newItem;
+        icon.sprite = item.icon;
+        icon.enabled = true;
+        numberText.text = "";
     }
-  }
 
-  public void OnMouseUp()
-  {
-    if (item)
+    public void UpdateItemCount()
     {
-      MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
-      icon.enabled = true;
+        if(item.collectableNumber > 1)
+        {
+            numberText.text = item.counter + "/" + item.collectableNumber;
+        }
     }
-  }
 
-  public void OnClick()
-  {
-    if (item)
+    public void ClearSlot()
     {
-      ShowItemDescription();
+        item = null;
+        icon.sprite = null;
+        icon.enabled = false;
+        active.enabled = false;
+        inactive.enabled = true;
     }
-  }
 
-  public void ShowItemDescription()
-  {
-    if (!item)
-      return;
+    public void OnMouseDown()
+    {
+        if (item)
+        {
+            MouseCursor.instance.DragItem(item);
+            icon.enabled = false;
+            ShowItemDescription();
+        }
+    }
 
-    active.enabled = description.SetDescription(this.item);
-    inactive.enabled = !active.enabled;
-  }
+    public void OnMouseUp()
+    {
+        if (item)
+        {
+            MouseCursor.instance.SetCursor(MouseCursor.instance.defaultCursor);
+            icon.enabled = true;
+        }
+    }
+
+    public void OnClick()
+    {
+        if (item)
+        {
+            ShowItemDescription();
+        }
+    }
+
+    public void ShowItemDescription()
+    {
+        if (!item)
+            return;
+
+        active.enabled = description.SetDescription(this.item);
+        inactive.enabled = !active.enabled;
+    }
 }

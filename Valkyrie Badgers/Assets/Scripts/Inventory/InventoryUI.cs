@@ -26,7 +26,7 @@ public class InventoryUI : MonoBehaviour
 
         //Feathers
         if (currentItem.counter > 1 && currentItem)
-          slots[i].ChangeFeatherOnCount();
+          slots[i].UpdateItemCount();
       }
       else
       {
