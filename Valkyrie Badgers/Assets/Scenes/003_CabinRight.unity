@@ -2315,7 +2315,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  item: {fileID: 11400000, guid: f1888a2a84f786049a76430ead594a84, type: 2}
   defaultItem: 1
 --- !u!1001 &1745417156
 Prefab:
@@ -3017,8 +3017,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2078875015}
+        m_MethodName: Get
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &2078875015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078875012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0b57848a283d94a8c229f7f6ae9a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 400458972e4b1f546a76369a94a3db65, type: 2}
 --- !u!114 &2078875020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3046,6 +3069,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnChangeScene+DestroyEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  clicked: 0
 --- !u!114 &2093943437 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,

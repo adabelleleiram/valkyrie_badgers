@@ -9,10 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7bbf4e8c7aca90408bc3b412315dbf0, type: 3}
-  m_Name: WispClicked
+  m_Name: WispClicked3
   m_EditorClassIdentifier: 
-  name: WispClicked
+  name: New Item
   icon: {fileID: 0}
   isDefaultItem: 1
   description: Desc
   counter: 1
+  collectableNumber: 1

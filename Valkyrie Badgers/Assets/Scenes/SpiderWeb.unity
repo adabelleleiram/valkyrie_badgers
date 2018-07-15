@@ -843,6 +843,10 @@ Prefab:
       propertyPath: activeOnStart
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1479347660962642, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61248698802407882, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
     - {fileID: 114868848139714774, guid: 42c42f5ea22504c1683c0e75d7ccbb12, type: 2}
@@ -1355,7 +1359,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  item: {fileID: 11400000, guid: a88fbe71c6e9dad43b8d7b28e0504e31, type: 2}
   defaultItem: 1
 --- !u!1 &1800937463
 GameObject:
@@ -1493,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e32c18632f34c454fa4046de47dc78c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 17212ec4988aa4ba8a241740180eb26e, type: 2}
+  item: {fileID: 11400000, guid: a88fbe71c6e9dad43b8d7b28e0504e31, type: 2}
 --- !u!114 &1800937469
 MonoBehaviour:
   m_ObjectHideFlags: 0
