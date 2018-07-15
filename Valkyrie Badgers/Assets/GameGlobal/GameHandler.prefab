@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 114008992810722704}
   - component: {fileID: 114795325556627946}
   - component: {fileID: 114046771353704380}
+  - component: {fileID: 114030894879347350}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -74,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1113681483772774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.653, y: 0.9039998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4288532511322112}
@@ -476,6 +477,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8c9b8abcd47d3489fbf5f9a6fcb608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114030894879347350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1520850932516240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d62bcb2c35fd0a4ea12761dabd8dc88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstLoopTrigger: {fileID: 11400000, guid: a156de510f43ef6408b1e495d5f9f429, type: 2}
+  itemRequirements:
+  - item: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
+    count: 1
+    completed: 0
+  secondLoopTrigger: {fileID: 11400000, guid: 2e2ef61a90e53f44bbc7b04a336be2f8, type: 2}
+  sceneRequirements:
+  - m_SceneAsset: {fileID: 102900000, guid: 22dec0d92b5299543a48d3de18ee430a, type: 3}
+    m_SceneName: 012_GraveTunnel
+  - m_SceneAsset: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046, type: 3}
+    m_SceneName: 013_BurialChamber
 --- !u!114 &114046771353704380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -502,6 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bdf6a663146a143ab68935b0a9a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shownLogo: 0
 --- !u!114 &114232058693627610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -595,8 +619,8 @@ MonoBehaviour:
       m_SceneName: 006_Forest1
     - m_SceneAsset: {fileID: 102900000, guid: 898c17ad7c9a771428f6e36522da27d7, type: 3}
       m_SceneName: 007_Forest2
-    - m_SceneAsset: {fileID: 102900000, guid: a4c611e8596fdd54fbcc7a3820363114, type: 3}
-      m_SceneName: 008_Forest3
+    - m_SceneAsset: {fileID: 102900000, guid: 7942406783b394f158873767c851b0a0, type: 3}
+      m_SceneName: 008_Forest5
     - m_SceneAsset: {fileID: 102900000, guid: 9c826853dd049bb41b6e58cd03f78560, type: 3}
       m_SceneName: 009_Forest4
     - m_SceneAsset: {fileID: 102900000, guid: 0b74ca1219e1b94439e8a8aae17443da, type: 3}
@@ -607,4 +631,14 @@ MonoBehaviour:
       m_SceneName: 012_GraveTunnel
     - m_SceneAsset: {fileID: 102900000, guid: 34ea4228931737e49b9fe03be8991046, type: 3}
       m_SceneName: 013_BurialChamber
+    - m_SceneAsset: {fileID: 102900000, guid: a1babbe7ab4ed475b9ad70fe70a4170c, type: 3}
+      m_SceneName: 015_Forest1_Bright
+    - m_SceneAsset: {fileID: 102900000, guid: 6c57c91d92c71440c9419011e80b84dc, type: 3}
+      m_SceneName: 016_Forest2_Bright
+    - m_SceneAsset: {fileID: 102900000, guid: 4947c253d5f844d55a9a9b9b0a922d85, type: 3}
+      m_SceneName: 017_Forest3_Bright
+    - m_SceneAsset: {fileID: 102900000, guid: 25dc6e37668de4c71b4468c711f6e7ad, type: 3}
+      m_SceneName: 018_Forest4_Bright
+    - m_SceneAsset: {fileID: 102900000, guid: dfc3f62d476a54fb1a940094b60ff3ff, type: 3}
+      m_SceneName: 019_Forest5_Bright
   startSequence: {fileID: 11400000, guid: 32719f63e49d7534a9b2279096d6ea7a, type: 2}

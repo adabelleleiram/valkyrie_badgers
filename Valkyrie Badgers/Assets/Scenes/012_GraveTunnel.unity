@@ -380,6 +380,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &985891753
 GameObject:
   m_ObjectHideFlags: 0
