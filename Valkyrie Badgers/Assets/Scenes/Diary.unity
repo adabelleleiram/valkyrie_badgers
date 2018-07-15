@@ -144,6 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 58df277c980484f038d696f2e10f1784, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &767351362
 MonoBehaviour:
   m_ObjectHideFlags: 0

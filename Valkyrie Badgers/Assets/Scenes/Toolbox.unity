@@ -284,6 +284,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 2691aee621c30467280f0b78ddb49e03, type: 2}
+  onPickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!60 &734373620
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -393,9 +398,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114030894879347350, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1301786826

@@ -285,6 +285,10 @@ Prefab:
       propertyPath: scene.m_SceneName
       value: 001_CabinExterior
       objectReference: {fileID: 0}
+    - target: {fileID: 4320494528327586, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16d330f3b5d534c46b0e2739837d2dd6, type: 2}
   m_IsPrefabAsset: 0
@@ -398,7 +402,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4511892361225282, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0344c2efc8e6634c857ac2c23d2ae46, type: 2}
