@@ -7,7 +7,7 @@ public class OnChangeScene : MonoBehaviour
   public class DestroyEvent : UnityEvent { }
 
   public DestroyEvent onDestroy;
-  bool clicked = false;
+  public bool clicked = false;
 
   private void OnDestroy()
   {
