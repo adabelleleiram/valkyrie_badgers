@@ -218,32 +218,32 @@ Prefab:
     - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 242.5
       objectReference: {fileID: 0}
     - target: {fileID: 224996774642982538, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -55
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -55
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 485
       objectReference: {fileID: 0}
     - target: {fileID: 224317814665519798, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 224685728812092532, guid: 68d4cf6819ae68d449a51ea1af1f1680,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d4cf6819ae68d449a51ea1af1f1680, type: 2}
@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 228182941}
   - component: {fileID: 228182945}
   - component: {fileID: 228182944}
+  - component: {fileID: 228182946}
   m_Layer: 0
   m_Name: Acorn
   m_TagString: Untagged
@@ -385,6 +386,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: ItemPickup+OnPickUp, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &228182946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228182940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c04348146b9953549b655cdc56718a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistActive: 1
+  activeOnStart: 1
 --- !u!1 &985891753
 GameObject:
   m_ObjectHideFlags: 0
