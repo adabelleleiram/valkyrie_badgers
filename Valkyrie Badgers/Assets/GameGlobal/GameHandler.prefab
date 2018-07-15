@@ -490,8 +490,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstLoopTrigger: {fileID: 11400000, guid: a156de510f43ef6408b1e495d5f9f429, type: 2}
   itemRequirements:
-  - item: {fileID: 11400000, guid: 05f41462b45ed439291ef6822cfdbf52, type: 2}
+  - item: {fileID: 11400000, guid: 820338837be73462d85e86fbd9b90738, type: 2}
     count: 1
+    completed: 0
+  - item: {fileID: 11400000, guid: d6118c9c14431430c86fff24bc67a17c, type: 2}
+    count: 1
+    completed: 0
+  - item: {fileID: 11400000, guid: 324be1c04807944c581fb0b05a620f5b, type: 2}
+    count: 1
+    completed: 0
+  - item: {fileID: 11400000, guid: b4ef307d23a6647208e1c2b9c8cded9d, type: 2}
+    count: 10
     completed: 0
   secondLoopTrigger: {fileID: 11400000, guid: 2e2ef61a90e53f44bbc7b04a336be2f8, type: 2}
   sceneRequirements:
