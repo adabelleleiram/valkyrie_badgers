@@ -197,7 +197,10 @@ GameObject:
   m_Component:
   - component: {fileID: 776499523}
   - component: {fileID: 776499522}
+  - component: {fileID: 776499526}
   - component: {fileID: 776499521}
+  - component: {fileID: 776499525}
+  - component: {fileID: 776499524}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -264,6 +267,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &776499524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776499520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene:
+    m_SceneAsset: {fileID: 102900000, guid: ca88fe1d3cc91e24296f9386972fcabc, type: 3}
+    m_SceneName: Skeleton
+--- !u!114 &776499525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776499520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 776499524}
+        m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!60 &776499526
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 776499520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.84, y: 0.58}
+    newSize: {x: 1.84, y: 0.58}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.82, y: -0.13}
+      - {x: 0.91999996, y: -0.04}
+      - {x: 0.91999996, y: 0.06}
+      - {x: 0.88, y: 0.12}
+      - {x: 0.79999995, y: 0.17}
+      - {x: 0.59999996, y: 0.25}
+      - {x: 0.39, y: 0.29}
+      - {x: -0.099999994, y: 0.29}
+      - {x: -0.32, y: 0.25}
+      - {x: -0.53, y: 0.19}
+      - {x: -0.76, y: 0.089999996}
+      - {x: -0.84999996, y: 0.03}
+      - {x: -0.91999996, y: -0.049999997}
+      - {x: -0.91999996, y: -0.14999999}
+      - {x: -0.87, y: -0.21}
+      - {x: -0.76, y: -0.26}
+      - {x: -0.55, y: -0.29}
+      - {x: 0, y: -0.29}
+      - {x: 0.29999998, y: -0.26}
+      - {x: 0.55, y: -0.21}
 --- !u!114 &1065591883 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114138760649459248, guid: 68d4cf6819ae68d449a51ea1af1f1680,
@@ -967,9 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783808848}
   - component: {fileID: 1783808847}
-  - component: {fileID: 1783808850}
-  - component: {fileID: 1783808849}
-  - component: {fileID: 1783808846}
+  - component: {fileID: 1783808851}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -977,20 +1063,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1783808846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1783808845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08ea96dbfce0a7498ccc8782006723d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene:
-    m_SceneAsset: {fileID: 102900000, guid: ca88fe1d3cc91e24296f9386972fcabc, type: 3}
-    m_SceneName: Skeleton
 --- !u!212 &1783808847
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1050,7 +1122,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1783808849
+--- !u!114 &1783808851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1058,15 +1130,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783808845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c30fcd541c2c4c40be8a1f6c73b1fc1, type: 3}
+  m_Script: {fileID: 11500000, guid: a936a72f6a3863148ba7c1ba60fcb743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onClick:
+  ifEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1783808846}
-        m_MethodName: Load
-        m_Mode: 1
+      - m_Target: {fileID: 1783808845}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1075,52 +1147,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: OnClick+ClickEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    m_TypeName: HasItem+IfEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!60 &1783808850
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1783808845}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 0.58}
-    newSize: {x: 1.84, y: 0.58}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.82, y: -0.13}
-      - {x: 0.91999996, y: -0.04}
-      - {x: 0.91999996, y: 0.06}
-      - {x: 0.88, y: 0.12}
-      - {x: 0.79999995, y: 0.17}
-      - {x: 0.59999996, y: 0.25}
-      - {x: 0.39, y: 0.29}
-      - {x: -0.099999994, y: 0.29}
-      - {x: -0.32, y: 0.25}
-      - {x: -0.53, y: 0.19}
-      - {x: -0.76, y: 0.089999996}
-      - {x: -0.84999996, y: 0.03}
-      - {x: -0.91999996, y: -0.049999997}
-      - {x: -0.91999996, y: -0.14999999}
-      - {x: -0.87, y: -0.21}
-      - {x: -0.76, y: -0.26}
-      - {x: -0.55, y: -0.29}
-      - {x: 0, y: -0.29}
-      - {x: 0.29999998, y: -0.26}
-      - {x: 0.55, y: -0.21}
+  item: {fileID: 11400000, guid: 552bad186feef48439feb36e2f97ec6e, type: 2}
+  defaultItem: 1
 --- !u!1001 &1853338069
 Prefab:
   m_ObjectHideFlags: 0

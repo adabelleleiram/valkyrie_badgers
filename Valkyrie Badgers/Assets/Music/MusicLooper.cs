@@ -167,9 +167,14 @@ public class MusicLooper : MonoBehaviour
         audioSource.volume = 0;
         audioSource.loop = true;
         audioSource.outputAudioMixerGroup = mixer;
-        audioSource.time = baseTrack == null ? 0 : baseTrack.audioSource.time % aLoopTrack.clip.length;
 
         audioSource.Play();
+
+        float time = 0;
+        if (baseTrack != null)
+            time = baseTrack.audioSource.time % aLoopTrack.clip.length;
+
+        audioSource.time = time;
 
         return audioSource;
     }
