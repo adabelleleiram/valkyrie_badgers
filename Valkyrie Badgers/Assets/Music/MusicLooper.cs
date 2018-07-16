@@ -30,6 +30,8 @@ public class MusicLooper : MonoBehaviour
 
     public float loopFadeTime { get { return fadeTime; } }
 
+    public float timeInLoop { get { return baseTrack != null ? baseTrack.audioSource.time : 0; } }
+
     List<PlayingTrack> playingTracks = new List<PlayingTrack>();
     PlayingTrack baseTrack;
 

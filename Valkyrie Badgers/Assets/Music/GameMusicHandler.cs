@@ -24,6 +24,7 @@ public class GameMusicHandler : MonoBehaviour
         {
             StartingTransitionTracks,
             StoppingPrevious,
+            WaitToStartNextLoops,
             StartingNextLoops,
             Done
         };
@@ -53,6 +54,15 @@ public class GameMusicHandler : MonoBehaviour
         musicLooper = GetComponent<MusicLooper>();
         musicLooper.onLoopStarted += OnLoopStarted;
         musicLooper.onLoopStopped += OnLoopStopped;
+    }
+
+    private void Update()
+    {
+        if(currentTransition.state == Transition.State.WaitToStartNextLoops)
+        {
+            if (musicLooper.timeInLoop > musicLooper.loopFadeTime)
+                PlayNextCollectionTracks();
+        }
     }
 
     public void SetLoopCollection(LoopCollection aLoopCollection)
@@ -150,7 +160,7 @@ public class GameMusicHandler : MonoBehaviour
         if (currentTransition.state == Transition.State.StoppingPrevious)
         {
             if (currentTransition.tracksToRemove.Exists(x => x == aTrack))
-                PlayNextCollectionTracks();
+                currentTransition.state = Transition.State.WaitToStartNextLoops;
         }
     }
 

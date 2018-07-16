@@ -146,7 +146,7 @@ MonoBehaviour:
   orionFadeTime: 3
   overlay: {fileID: 984318733}
   creditsBg: {fileID: 21300000, guid: 567771ea63ed66044a5bc9de0b7c0458, type: 3}
-  minCreditsTime: 16
+  minCreditsTime: 28
   credits: {fileID: 628026347}
   mainMenu:
     m_SceneAsset: {fileID: 102900000, guid: 2afb0bc556ac5f3498875c363ca71f60, type: 3}

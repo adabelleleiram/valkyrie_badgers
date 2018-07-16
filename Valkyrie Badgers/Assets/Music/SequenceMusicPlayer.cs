@@ -32,12 +32,21 @@ public class SequenceMusicPlayer : MonoBehaviour
         musicLooper.SetBaseTrack(loopSequence.baseLoop);
         currentLoopSequence = loopSequence;
 
-        foreach (MusicLooper.PlayingTrack playingTrack in playingTracks)
+        for(int i = playingTracks.Count-1; i >= 0; --i)
         {
+            MusicLooper.PlayingTrack playingTrack = playingTracks[i];
             if (!currentTracksForSequence.Exists(x => x == playingTrack.loopTrack))
             {
-                currentTracksToRemove.Add(playingTrack.loopTrack);
-                musicLooper.StopTrack(playingTrack.loopTrack);
+                if(playingTrack.isPlaying && !playingTrack.isChanging)
+                {
+                    currentTracksToRemove.Add(playingTrack.loopTrack);
+                    musicLooper.StopTrack(playingTrack.loopTrack);
+                }
+                else
+                {
+                    musicLooper.RemoveTrack(playingTrack.loopTrack);
+                }
+                
             }
         }
 

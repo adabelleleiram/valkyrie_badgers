@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1113681483772774}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.653, y: 0.9039998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4288532511322112}
@@ -622,10 +622,12 @@ MonoBehaviour:
       m_SceneName: 003_CabinRight
     - m_SceneAsset: {fileID: 102900000, guid: b52de7d3258310148af8e892ee9a849b, type: 3}
       m_SceneName: 004_BackYard
-  - loopCollection: {fileID: 11400000, guid: f2e9520c7a0c47a4abdff7ffa968502c, type: 2}
-    scenes:
     - m_SceneAsset: {fileID: 102900000, guid: d9dae7f8a1628aa44ac6759a913d5baf, type: 3}
       m_SceneName: 005_BehindFence
+  - loopCollection: {fileID: 11400000, guid: f2e9520c7a0c47a4abdff7ffa968502c, type: 2}
+    scenes:
+    - m_SceneAsset: {fileID: 102900000, guid: dfc3f62d476a54fb1a940094b60ff3ff, type: 3}
+      m_SceneName: 019_Forest5_Bright
     - m_SceneAsset: {fileID: 102900000, guid: 8dabb5583cfcb284381d91738bab544b, type: 3}
       m_SceneName: 006_Forest1
     - m_SceneAsset: {fileID: 102900000, guid: 898c17ad7c9a771428f6e36522da27d7, type: 3}
@@ -650,6 +652,4 @@ MonoBehaviour:
       m_SceneName: 017_Forest3_Bright
     - m_SceneAsset: {fileID: 102900000, guid: 25dc6e37668de4c71b4468c711f6e7ad, type: 3}
       m_SceneName: 018_Forest4_Bright
-    - m_SceneAsset: {fileID: 102900000, guid: dfc3f62d476a54fb1a940094b60ff3ff, type: 3}
-      m_SceneName: 019_Forest5_Bright
   startSequence: {fileID: 11400000, guid: 32719f63e49d7534a9b2279096d6ea7a, type: 2}
