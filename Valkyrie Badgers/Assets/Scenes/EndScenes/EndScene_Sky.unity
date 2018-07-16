@@ -146,8 +146,8 @@ MonoBehaviour:
   orionFadeTime: 3
   overlay: {fileID: 984318733}
   creditsBg: {fileID: 21300000, guid: 567771ea63ed66044a5bc9de0b7c0458, type: 3}
-  minCreditsTime: 8
-  credits: {fileID: 0}
+  minCreditsTime: 16
+  credits: {fileID: 628026347}
   mainMenu:
     m_SceneAsset: {fileID: 102900000, guid: 2afb0bc556ac5f3498875c363ca71f60, type: 3}
     m_SceneName: Menu
@@ -946,13 +946,14 @@ GameObject:
   - component: {fileID: 628026344}
   - component: {fileID: 628026345}
   - component: {fileID: 628026346}
+  - component: {fileID: 628026347}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &628026343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1023,6 +1024,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &628026347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628026342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30909e47bb25e024583f6f4facab4dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1300414715}
 --- !u!1001 &686518945
 Prefab:
   m_ObjectHideFlags: 0
@@ -1249,7 +1262,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 4, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984318735
 MonoBehaviour:
