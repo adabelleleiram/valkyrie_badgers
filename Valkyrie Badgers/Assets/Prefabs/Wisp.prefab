@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114868848139714774}
   - component: {fileID: 114265531671656438}
   - component: {fileID: 95933750525654476}
-  - component: {fileID: 114071259540812890}
   m_Layer: 0
   m_Name: Wisp
   m_TagString: Untagged
@@ -88,18 +87,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114071259540812890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479347660962642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe6314cdf73240c5a34c0f9c243b849, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerName: Flying_Room1
 --- !u!114 &114265531671656438
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1134,7 +1134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: Whatever that is, it's too high up for me to reach.
+  descIn: It's too high up for me to reach.
   desc: {fileID: 2093943437}
 --- !u!114 &840831734
 MonoBehaviour:
