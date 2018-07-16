@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 5
-  scrollOffset: 19.8
+  scrollOffset: 19.7
 --- !u!212 &468534236
 SpriteRenderer:
   m_ObjectHideFlags: 0
