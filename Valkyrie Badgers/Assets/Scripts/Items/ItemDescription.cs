@@ -5,40 +5,42 @@ using UnityEngine.UI;
 
 public class ItemDescription : MonoBehaviour
 {
-  Item currentItem;
-  Text text;
+    Item currentItem;
+    Text text;
 
-  private void Start()
-  {
-    text = GetComponentInChildren<Text>();
-    text.text = "";
-  }
+    public Item itemDescribed { get { return currentItem; } }
 
-  public void SetDescription(string desc)
-  {
-    text.text = desc;
-  }
-
-  public bool SetDescription(Item item)
-  {
-    if (item == currentItem)
-      return true;
-
-    if (currentItem)
+    private void Start()
     {
-      ClearDescription();
-      return false;
+        text = GetComponentInChildren<Text>();
+        text.text = "";
     }
 
-    currentItem = item;
-    text.text = currentItem.description;
-    return true;
-  }
+    public void SetDescription(string desc)
+    {
+        ClearDescription();
+        text.text = desc;
+    }
 
-  public void ClearDescription()
-  {
-    text.text = "";
-    if ( currentItem != null )
-      currentItem = null;
-  }
+    public bool SetDescription(Item item)
+    {
+        if (item == currentItem)
+            return true;
+
+        if (currentItem)
+        {
+            ClearDescription();
+            return false;
+        }
+
+        currentItem = item;
+        text.text = currentItem.description;
+        return true;
+    }
+
+    public void ClearDescription()
+    {
+        text.text = "";
+        currentItem = null;
+    }
 }

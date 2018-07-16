@@ -73,4 +73,19 @@ public class InventorySlot : MonoBehaviour
         active.enabled = description.SetDescription(this.item);
         inactive.enabled = !active.enabled;
     }
+
+    void ClearItemDescription()
+    {
+        active.enabled = false;
+        inactive.enabled = true;
+    }
+
+    private void Update()
+    {
+        if(active.enabled)
+        {
+            if (description.itemDescribed != item)
+                ClearItemDescription();
+        }
+    }
 }
