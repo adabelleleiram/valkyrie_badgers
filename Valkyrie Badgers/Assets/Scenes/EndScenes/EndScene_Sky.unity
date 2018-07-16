@@ -2164,7 +2164,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Anna-Karin Bergkvist\nKatarina Lindstr\xF6m\nRebecca Tell"
+  m_Text: "Anna-Karin Bergkvist\nBobbi A Sand\nKatarina Lindstr\xF6m\nRebecca Tell"
 --- !u!222 &1766966931
 CanvasRenderer:
   m_ObjectHideFlags: 0
