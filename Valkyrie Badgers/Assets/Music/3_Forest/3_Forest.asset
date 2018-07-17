@@ -22,6 +22,4 @@ MonoBehaviour:
     weight: 1
   - loopTrack: {fileID: 11400000, guid: 2d2fd3dc481619147a75803cb30c3929, type: 2}
     weight: 0.5
-  - loopTrack: {fileID: 11400000, guid: cf8b072ef2d006845a8c0b06ce6ae26f, type: 2}
-    weight: 0
   loopBase: {fileID: 11400000, guid: 3b7ce949bd8153a46b45b5aa65b3c8f5, type: 2}

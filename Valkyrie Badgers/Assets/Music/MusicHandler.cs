@@ -86,8 +86,6 @@ public class MusicHandler : MonoBehaviour
         {
             if (gameMusicHandler.playingLoopCollection != loop.loopCollection)
                 gameMusicHandler.SetLoopCollection(loop.loopCollection);
-            else
-                gameMusicHandler.TriggerMusicVariation();
         }
     }
 

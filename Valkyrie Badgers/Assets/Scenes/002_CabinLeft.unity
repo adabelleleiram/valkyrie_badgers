@@ -536,7 +536,7 @@ MonoBehaviour:
       PublicKeyToken=null
   description: {fileID: 1817923392}
   deactivateObject: 0
-  deleteItem: 0
+  deleteItem: 1
 --- !u!114 &225153816
 MonoBehaviour:
   m_ObjectHideFlags: 0
