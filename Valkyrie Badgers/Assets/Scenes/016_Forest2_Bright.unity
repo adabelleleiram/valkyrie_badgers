@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  descIn: It does'nt like the light.
+  descIn: It doesn't like the light.
   desc: {fileID: 1605735096}
 --- !u!60 &2045270271
 PolygonCollider2D:
