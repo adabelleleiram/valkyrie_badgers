@@ -16,7 +16,7 @@ public class PersistencyManager : MonoBehaviour
 
     public void SetActiveState(GameObject anObject)
     {
-        activeStates[GetObjectID(anObject)] = anObject.activeInHierarchy;
+        activeStates[GetObjectID(anObject)] = anObject.activeSelf;
     }
 
     public void SetUnlockedState(Door door)
