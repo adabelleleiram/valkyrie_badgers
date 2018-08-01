@@ -237,13 +237,8 @@ PolygonCollider2D:
       - {x: -1.2380364, y: -0.13626194}
       - {x: -1.2777523, y: -1.0363436}
       - {x: -0.33890614, y: -1.09832}
-      - {x: -0.74856055, y: 0.27756417}
-      - {x: -0.6019514, y: 1.7490329}
-      - {x: -0.2522939, y: 2.5601578}
-      - {x: 0.3186569, y: 2.779564}
-      - {x: 0.6807892, y: 2.1358733}
-      - {x: 0.9172077, y: -0.098335624}
       - {x: 0.56043345, y: -1.1349429}
+      - {x: 1.3585652, y: -1.0266}
       - {x: 1.6689329, y: -0.8913052}
       - {x: 1.5588627, y: 0.5214729}
       - {x: 0.8680297, y: 3.1171546}
@@ -347,7 +342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &908502720
 GameObject:
@@ -467,7 +462,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.738001}
 --- !u!1001 &1071667097
 Prefab:
@@ -788,74 +783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   descIn: Nope. I'm not entering that dark forest without directions and some light.
   desc: {fileID: 1622751545}
---- !u!1 &1344241617
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1344241620}
-  - component: {fileID: 1344241619}
-  - component: {fileID: 1344241618}
-  m_Layer: 0
-  m_Name: Runes_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1344241618
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344241617}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.081834555, y: 1.9401057}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1718607, y: 0.25450945}
-  m_EdgeRadius: 0
---- !u!114 &1344241619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344241617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8584fc6329ff640a0f9345ee32638b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descIn: Hmm....
-  desc: {fileID: 1622751545}
---- !u!4 &1344241620
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344241617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.005561157, y: -0.49588883, z: 0.22933732}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1393943389
 Prefab:
   m_ObjectHideFlags: 0
